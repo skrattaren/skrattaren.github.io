@@ -1,0 +1,6 @@
+Mercurial zsh completion with vim
+sterkrigblogshowdml50019492
+2012-06-20 19:06:23
+hg,programmierung,vim
+
+How to re-format output of <i>hg help &lt;command&gt;</i> for use in <a href="http://selenic.com/repo/hg/file/tip/contrib/zsh_completion" rel="nofollow" target="_blank">Mercurial zsh_completion file. ... </a>

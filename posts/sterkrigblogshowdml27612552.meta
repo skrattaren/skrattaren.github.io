@@ -1,0 +1,6 @@
+Two (probably) useful Mercurial hooks
+sterkrigblogshowdml27612552
+2011-03-16 15:03:48
+hg,linux,eng
+
+Here&#39;s two <a href="http://mercurial.selenic.com/" rel="nofollow" target="_blank">Mercurial</a> <a href="http://mercurial.selenic.com/wiki/Hook" rel="nofollow" target="_blank">hooks</a> I wrote for my work. One is a reminder to mention <a href="http://trac.edgewall.com/" rel="nofollow" target="_blank">Trac</a> tickets in commit messages, and the other notifies a developer when someone (not him) touches his part of project. ... 
