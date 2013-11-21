@@ -1,5 +1,6 @@
-| (Just to save a useful and complex construct for future reference)
-| List all the overlay maintainers who hasn't migrated their packages to
+(Just to save a useful and complex construct for future reference)
+
+List all the overlay maintainers who hasn't migrated their packages to
 *virtual/pkgconfig*:
 
 ::
@@ -8,6 +9,6 @@
            | xargs -I {} grep '<name>' '{}/metadata.xml' \
            | sed 's:\s\+<name>\(.\+\)</name>:\1:' | sort -u
 
-| 
-| Yes, I use *ack* instead of *grep*, being too lazy to add all the
+
+Yes, I use *ack* instead of *grep*, being too lazy to add all the
 neccessary options.
