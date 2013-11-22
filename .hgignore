@@ -3,3 +3,4 @@ syntax: glob
 cache/
 output/
 posts/*.wp
+.doit.db
