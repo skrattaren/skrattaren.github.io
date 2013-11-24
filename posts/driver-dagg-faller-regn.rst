@@ -5,6 +5,8 @@
 
 .. TEASER_END
 
+::
+
  | När hösten är kommen skall brudkransen viras
  | och Olof sitt bröllop med Jungfrun ska firas
  | men framtiden ligger i Herranoms hägn;
