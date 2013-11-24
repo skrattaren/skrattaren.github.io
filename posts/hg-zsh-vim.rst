@@ -2,10 +2,10 @@ How to re-format output of *hg help <command>* for use in `Mercurial
 zsh\_completion file
 <http://selenic.com/repo/hg/file/tip/contrib/zsh_completion>`__.
 
-We start with simple generic template copied from some other command
-like export:
+.. TEASER_END
 
-::
+We start with simple generic template copied from some other command
+like export::
 
     _hg_cmd_graft() {
       _arguments -s -w : $_hg_global_opts \
@@ -13,9 +13,7 @@ like export:
     }
 
 
-Let's copy graft-specific options from \`hg help graft\` output:
-
-::
+Let's copy graft-specific options from ``hg help graft`` output::
 
       -c --continue    resume interrupted graft
       -e --edit        invoke editor on commit messages
@@ -28,9 +26,7 @@ Let's copy graft-specific options from \`hg help graft\` output:
       -n --dry-run     do not perform actions, just print output
 
 
-Now select help text and reformat it with a bit of regexps:
-
-::
+Now select help text and reformat it with a bit of regexps::
 
 
     :'<,'>s:^\s\+\(-[a-zA-Z0-9]\) \(--[a-z-]\+\)\s\+:  '(\2 \1)'{\1,\2}'[
@@ -42,9 +38,7 @@ Now select help text and reformat it with a bit of regexps:
     :'<,'>s:'\[[A-Z]\+\s\+:'[
 
 
-And the result is...
-
-::
+And the result is::
 
 
     _hg_cmd_graft() {
