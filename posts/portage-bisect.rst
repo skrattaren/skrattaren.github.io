@@ -34,29 +34,16 @@ question from certain changeset (and then test it for bug) after running
 ::
 
     #!/bin/sh
-
-
-
     rm -rf /tmp/awesome*
-
     cp -rp ~sterkrig/tmp/awesome /tmp/awesome-3.4.999
-
     rm -rf /tmp/awesome-3.4.999/.*
-
     cd /tmp
-
     tar cjf awesome-3.4.999.tar.bz2 awesome-3.4.999
-
     mv -f awesome-3.4.999.tar.bz2 /usr/portage/distfiles
-
     chown portage:portage /usr/portage/distfiles/awesome-3.4.999.tar.bz2
-
     chmod 664 /usr/portage/distfiles/awesome-3.4.999.tar.bz2
-
     ebuild --force /usr/local/portage/x11-wm/awesome/awesome-3.4.999.ebuild manifest
-
     emerge awesome
-
     cd ~
 
 Что тут происходит:
@@ -71,8 +58,11 @@ question from certain changeset (and then test it for bug) after running
    Portage) и устанавливаем эту версию
 
 Секите на здоровье! (-;Е
- P.S. А моя ошибка была исправлена в git через три дня после моего
+
+P.S. А моя ошибка была исправлена в git через три дня после моего
 сообщения. А никто и не заметил, хе-хе.
+
+-------------
 
 Let me explain what does it do:
 
@@ -84,5 +74,6 @@ Let me explain what does it do:
    awesome-3.4.5.ebuild from the tree) and *emerge* it
 
 Happy bisecting!
- P.S. And my bug was fixed three days after report. And nobody had
+
+P.S. And my bug was fixed three days after report. And nobody had
 noted it, hehe.

@@ -28,7 +28,6 @@
 
 --------------
 
-
 `**Айархаан - Добун
 Дуораан** <http://tuvarock.nnm.ru/ajarhaan_dobun_duoraan>`__ |image0|
 
@@ -49,8 +48,8 @@
 #. Алтан аал чуорааннаар
 
 
- `**Хатылаевтар - Айар кут
-ситимэ** <http://tuvarock.nnm.ru/ajarhaan_dobun_duoraan>`__ |image1|
+`**Хатылаевтар - Айар кут ситимэ**
+<http://tuvarock.nnm.ru/ajarhaan_dobun_duoraan>`__ |image1|
 
 #. Куйаар тойуга
 #. Айыллыы
@@ -69,8 +68,8 @@
 #. Кымыс ырыата
 
 
- `**Хатылаевтар -
-Дьүһүлгэн** <http://tuvarock.nnm.ru/ajarhaan_dobun_duoraan>`__ |image2|
+`**Хатылаевтар - Дьүһүлгэн** <http://tuvarock.nnm.ru/ajarhaan_dobun_duoraan>`__
+|image2|
 
 #. Боотурдар
 #. Ат тэтимэ

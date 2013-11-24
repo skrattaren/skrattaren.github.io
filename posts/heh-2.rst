@@ -3,14 +3,11 @@
 .. date: 2008-12-10 09:12:03
 .. tags: хе-хе,рус
 
-Terry Pratchett, "Thud!"
-Речь идёт о танцовщицах клуба "Pink Pussycat"
+Terry Pratchett, "Thud!". Речь идёт о танцовщицах клуба "Pink Pussycat"
 
     | "I don't believe there's a dancer called Broccoli!"
     | "Well, she used to be called Candi, sarge, but then she heard that
-    broccoli is better for you..."
-
-
+      broccoli is better for you..."
 
     | От конфет и сладостей
     | Зубам не будет радости!
