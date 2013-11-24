@@ -9,6 +9,7 @@ book context to get the joke fully, but here they are anyway.
 
 .. _pdfgrep: http://pdfgrep.sourceforge.net/
 
+.. TEASER_END
 
 Interesting Times
 -----------------
