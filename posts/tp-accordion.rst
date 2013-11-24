@@ -21,11 +21,11 @@ Interesting Times
 The Truth
 ---------
 
-    | 'Twenty-six people are mentioned by name.'
-    | 'As accordionists?'
-    | 'Yes.'
-    | 'Won't they complain?'
-    | 'They didn't have to play the accordion'
+ | 'Twenty-six people are mentioned by name.'
+ | 'As accordionists?'
+ | 'Yes.'
+ | 'Won't they complain?'
+ | 'They didn't have to play the accordion'
 
 
 The Amazing Maurice and His Educated Rodents
@@ -34,6 +34,7 @@ The Amazing Maurice and His Educated Rodents
    Of course there weren't just rat plagues — sometimes there were
    plagues of accordion-players, bricks tied up with string, or fish…
 
+-------------
 
    People could tolerate rats in the cream, and rats in the roof, and
    rats in the teapot, but they drew the line at tap-dancing. If you
