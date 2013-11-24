@@ -49,5 +49,5 @@ Python using recursive ***yield*** expression.
 
     81
 
-| 
-| `**Pygmented** <http://pygments.org/>`__
+
+`**Pygmented** <http://pygments.org/>`__

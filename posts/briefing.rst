@@ -1,20 +1,20 @@
-| Музыка прошлой недели
-| /Last week's music/
-| Musik av den sista veckan
-| |image0|
+Музыка прошлой недели
+/Last week's music/
+Musik av den sista veckan
+|image0|
 
-| |Jabber status (sterkrig@jabber.se)|
-| **Тут я буду писать всё, что должно быть в самом начале** (-:Е
-|  **/ This post contains everything meant to be on the very top/
+|Jabber status (sterkrig@jabber.se)|
+**Тут я буду писать всё, что должно быть в самом начале** (-:Е
+ **/ This post contains everything meant to be on the very top/
  Den här anteckningen innehåller allting som jag önskar att visa i
 början** (-:E
 
-| 
-|  `**Who are those
+
+ `**Who are those
 omni-nationalists?** <http://my.opera.com/Sterkrig/blog/show.dml/585884#omni>`__
-|  `**Om du talar svenska
+ `**Om du talar svenska
 bra...** <http://my.opera.com/Sterkrig/blog/orientering#for_svenskar>`__
-|  ...
+ ...
 
 --------------
 

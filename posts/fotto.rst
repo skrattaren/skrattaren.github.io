@@ -15,5 +15,5 @@ och
 "`Isblommor <http://my.opera.com/Sterkrig/albums/show.dml?id=207677>`__\ "
 (**nytt!**)
 
-| 
-|  (-:E
+
+ (-:E

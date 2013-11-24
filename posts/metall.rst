@@ -1,6 +1,6 @@
-| Slutligen har vinter kommit!
-|  Nu dags att lyssna på nordisk metal (-%E
-|  Ja, det ljuder jättebra med det nya ljudsystemet!
+Slutligen har vinter kommit!
+ Nu dags att lyssna på nordisk metal (-%E
+ Ja, det ljuder jättebra med det nya ljudsystemet!
 
     Ensamheten, tecken av kraft,
      Ensamheten, tecken av kraft,

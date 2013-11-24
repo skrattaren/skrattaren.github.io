@@ -1,6 +1,6 @@
 |image0|
 
-| You scored as **Njord**.
+You scored as **Njord**.
 
 Tyr
 
@@ -100,10 +100,10 @@ Sif
 
 30%
 
-| 
-| `Which Norse God or Goddess are you most
+
+`Which Norse God or Goddess are you most
 like? <http://quizfarm.com/test.php?q_id=75898>`__
-| created with `QuizFarm.com <http://quizfarm.com>`__
-|  (-%E
+created with `QuizFarm.com <http://quizfarm.com>`__
+ (-%E
 
 .. |image0| image:: http://quizfarm.com/images/1126647692GodNjord.gif

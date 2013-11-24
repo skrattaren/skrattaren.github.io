@@ -1,4 +1,4 @@
-| `Официальный украинский языковой файл для Opera
+`Официальный украинский языковой файл для Opera
 9.6 <http://www.opera.com/download/lng/960/ouw960_uk.lng>`__
 
     | ; Used in the progress bar while the user selects to accept or

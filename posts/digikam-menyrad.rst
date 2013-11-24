@@ -7,8 +7,8 @@ you've disabled it accidentally?
 Vill du möjliggöra menyrad i `digiKam <http://www.digikam.org/>`__? Se
 här!
 
-| 
-|  ***sterkrig@trollsdatorn ~ $** nano ~/.kde/share/config/digikamrc*
+
+ ***sterkrig@trollsdatorn ~ $** nano ~/.kde/share/config/digikamrc*
 
 ::
 

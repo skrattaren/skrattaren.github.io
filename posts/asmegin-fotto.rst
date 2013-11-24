@@ -6,7 +6,7 @@ look them through while waiting for new CD!
 
 Ásmegins fotografialbum om inspelning av det nya CD:
 
-| 
-| 
-| 
+
+
+
 `Ásmegin <http://www.asmegin.com/Galleri/index.php?gallery=Recordings%20of%20the%20new%20album>`__

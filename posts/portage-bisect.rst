@@ -64,8 +64,8 @@ question from certain changeset (and then test it for bug) after running
    является простой копией awesome-3.4.5.ebuild из официального дерева
    Portage) и устанавливаем эту версию
 
-| Секите на здоровье! (-;Е
-|  P.S. А моя ошибка была исправлена в git через три дня после моего
+Секите на здоровье! (-;Е
+ P.S. А моя ошибка была исправлена в git через три дня после моего
 сообщения. А никто и не заметил, хе-хе.
 
 Let me explain what does it do:
@@ -77,6 +77,6 @@ Let me explain what does it do:
 -  next thing is to update manifest for our ebuild (it's just a copy of
    awesome-3.4.5.ebuild from the tree) and *emerge* it
 
-| Happy bisecting!
-|  P.S. And my bug was fixed three days after report. And nobody had
+Happy bisecting!
+ P.S. And my bug was fixed three days after report. And nobody had
 noted it, hehe.

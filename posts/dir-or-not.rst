@@ -1,4 +1,4 @@
-| GNU coreutils are so elusive:
+GNU coreutils are so elusive:
 
 ::
 

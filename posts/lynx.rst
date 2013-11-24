@@ -1,5 +1,5 @@
-| |image0| |image1| |image2|
-|  **`Ещё /More/ Mer <http://pixdaus.com/?sort=tag&tag=lynx>`__**
+|image0| |image1| |image2|
+ **`Ещё /More/ Mer <http://pixdaus.com/?sort=tag&tag=lynx>`__**
 
 .. |image0| image:: http://pixdaus.com/small3/1258525360teBHKzq.jpeg
    :target: http://pixdaus.com/single.php?id=206050&from=embed2

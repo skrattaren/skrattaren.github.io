@@ -6,8 +6,8 @@ someone (not him) touches his part of project. ...
 
 --------------
 
-| 
-| Here's reminder. It's commit hook, run after commit was made. If you
+
+Here's reminder. It's commit hook, run after commit was made. If you
 forgot to write something like "fixes #666", it'd *echo* "Have you
 forgot to mention ticket?" and commit message back to you, just in time
 for *hg rollback* (or *hg commit --amend* in recent Mercurial versions)
@@ -23,12 +23,12 @@ and changing message. Or ignoring it, of course.
 
     echo "Have you forgot to mention ticket?"hg log -r "${HG_NODE}" --template "{desc}\n"
 
-| 
+
 
 --------------
 
-| 
-| And here's notifier. It's intended to be *incoming* hook and looks if
+
+And here's notifier. It's intended to be *incoming* hook and looks if
 files in certain directories were modifiled by anyone except certain
 person. And sends message via ssmtp.
 
@@ -52,16 +52,16 @@ person. And sends message via ssmtp.
 
     exit 0
 
-| 
-| Regexp example (looks for files in *\`hg root\`/modules/* and *\`hg
+
+Regexp example (looks for files in *\`hg root\`/modules/* and *\`hg
 root\`/lib/modules/*):
 
 ::
 
     (^| )(lib/)?modules
 
-| 
-| Sample */var/hg/ntf.templ*:
+
+Sample */var/hg/ntf.templ*:
 
 ::
 
@@ -76,5 +76,5 @@ root\`/lib/modules/*):
 
     <Notification message body>
 
-| 
-| `**Pygmented** <http://pygments.org/>`__
+
+`**Pygmented** <http://pygments.org/>`__

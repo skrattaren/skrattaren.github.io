@@ -20,7 +20,9 @@
     «Человек, которого „Шантарам“ не тронет до глубины души, либо не
     имеет сердца, либо мертв, либо то и другое одновременно»
 
-Джонатан Кэрролл (Справедливости ради замечу, что отрицательных отзывов
+Джонатан Кэрролл
+
+(Справедливости ради замечу, что отрицательных отзывов
 `тоже хватает <http://www.livelib.ru/book/1000329470/reviews>`__)
 
 --------------
@@ -36,8 +38,7 @@ war, (of course!) love… Modern literature without dirt, sex, drugs and
 violence on every other page. Book that gives you something to think
 about without showing off intelligence. If you heed my advice, read it.
 
-    | Anyone who walks away from Shantaram untouched is either heartless
-    or dead or
-    | both.
+    Anyone who walks away from *Shantaram* untouched is either heartless or
+    dead or both.
 
 - Jonathan Carroll

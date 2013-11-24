@@ -1,4 +1,4 @@
-| If you had tried to use `Flask <http://flask.pocoo.org/>`__ sessions
+If you had tried to use `Flask <http://flask.pocoo.org/>`__ sessions
 and got something like that:
 
 ::
@@ -22,15 +22,15 @@ and got something like that:
       File "/usr/lib64/python2.7/hmac.py", line 72, in __init__
         self.outer.update(key.translate(trans_5C))
 
-| 
-| ...you might be obscured. Fear not! The reason may lurk in
+
+...you might be obscured. Fear not! The reason may lurk in
 
 ::
 
     from __future__ import unicode_literals
 
-| 
-| Just declare your SECRET\_KEY as \`bytes\` object and get happy again!
+
+Just declare your SECRET\_KEY as \`bytes\` object and get happy again!
 
 ::
 

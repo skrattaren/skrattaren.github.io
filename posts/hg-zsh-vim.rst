@@ -2,7 +2,7 @@ How to re-format output of *hg help <command>* for use in `Mercurial
 zsh\_completion file.
 ... <http://selenic.com/repo/hg/file/tip/contrib/zsh_completion>`__
 
-| We start with simple generic template copied from some other command
+We start with simple generic template copied from some other command
 like export:
 
 ::
@@ -12,8 +12,8 @@ like export:
       '*:revision:_hg_labels'
     }
 
-| 
-| Let's copy graft-specific options from \`hg help graft\` output:
+
+Let's copy graft-specific options from \`hg help graft\` output:
 
 ::
 
@@ -27,8 +27,8 @@ like export:
       -t --tool VALUE  specify merge tool
       -n --dry-run     do not perform actions, just print output
 
-| 
-| Now select help text and reformat it with a bit of regexps:
+
+Now select help text and reformat it with a bit of regexps:
 
 ::
 
@@ -41,8 +41,8 @@ like export:
 
     :'<,'>s:'\[[A-Z]\+\s\+:'[
 
-| 
-| And the result is...
+
+And the result is...
 
 ::
 
@@ -61,6 +61,6 @@ like export:
       '*:revision:_hg_labels'
     }
 
-| 
-| Vim have helped you as it could, now decide is there anything left to
+
+Vim have helped you as it could, now decide is there anything left to
 be done.

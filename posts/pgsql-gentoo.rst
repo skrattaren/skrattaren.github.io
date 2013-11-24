@@ -1,4 +1,4 @@
-| Just a note for those who looks for info on Gentoo & PostgreSQL (like
+Just a note for those who looks for info on Gentoo & PostgreSQL (like
 I did today):
 
 -  yes, as you might be already suspecting, PostgreSQL has been split
@@ -8,9 +8,9 @@ I did today):
    also it's a dep for lots of packages, for example, those with
    USE="postgres") or *dev-db/postgresql-server* (PostgreSQL server)
 
-| 
+
 
 --------------
 
-| 
-| Got stable now, old-style packages are masked and will be removed.
+
+Got stable now, old-style packages are masked and will be removed.

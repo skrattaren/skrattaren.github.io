@@ -1,11 +1,10 @@
-| Вниманию товарищей, смотрящих фильмы или сериалы на иностранных
+Вниманию товарищей, смотрящих фильмы или сериалы на иностранных
 языках,
-| предлагается следующий хитрый финт ушами.
+предлагается следующий хитрый финт ушами.
 
 --------------
 
-| 
-| If you watch anything in foreign language, here's simple trick for
+If you watch anything in foreign language, here's simple trick for
 you.
 
 --------------
