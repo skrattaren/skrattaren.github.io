@@ -1,6 +1,6 @@
 How to re-format output of *hg help <command>* for use in `Mercurial
-zsh\_completion file.
-... <http://selenic.com/repo/hg/file/tip/contrib/zsh_completion>`__
+zsh\_completion file
+<http://selenic.com/repo/hg/file/tip/contrib/zsh_completion>`__.
 
 We start with simple generic template copied from some other command
 like export:

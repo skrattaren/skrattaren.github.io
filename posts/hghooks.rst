@@ -2,7 +2,9 @@ Here's two `Mercurial <http://mercurial.selenic.com/>`__
 `hooks <http://mercurial.selenic.com/wiki/Hook>`__ I wrote for my work.
 One is a reminder to mention `Trac <http://trac.edgewall.com/>`__
 tickets in commit messages, and the other notifies a developer when
-someone (not him) touches his part of project. ...
+someone (not him) touches his part of project.
+
+.. TEASER_END
 
 --------------
 

@@ -9,7 +9,8 @@ Since I'm not phone geek **at all**, I've decided to buy the simplest
 (just to call and write SMS) of **Philips Xenium** series (exceptional
 battery lifetime). So, here it is, my **Philips Xenium E100**.
 
-...
+
+.. TEASER_END
 
 По личным впечатлениям решил написать для тех, кто думает, не купить ли
 его, отзыв. Предостерегаю: всё плохо. Батарея и правда держит долго. Так

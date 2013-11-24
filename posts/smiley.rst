@@ -1,4 +1,6 @@
-Upgrade! ...
+Upgrade!
+
+.. TEASER_END
 
 **Так было /The thing was/ Likaså det var**
 |image0|

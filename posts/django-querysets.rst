@@ -12,7 +12,8 @@ when you add/change **SuperObject** in Django admin, there's all
 choices, and limit dynamically (perhaps, depending on current user).
 Here's quite straightforward but working technique.
 
-...
+
+.. TEASER_END
 
 ::
 

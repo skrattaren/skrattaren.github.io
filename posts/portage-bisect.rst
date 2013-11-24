@@ -12,7 +12,8 @@ appeared that simple compiling and running the binary wasn't enough for
 reproducing it, so I though a bit and managed to couple *bisect*\ ing
 and Portage.
 
-...
+
+.. TEASER_END
 
 Будем считать, что Вы в курсе, что такое ***bisect*** (а если не знаете,
 но хотите узнать, обратитесь к документации), так что всё, что нужно

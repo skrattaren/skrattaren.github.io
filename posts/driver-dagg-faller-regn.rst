@@ -1,7 +1,9 @@
  | Herr Olof han rider att möta sin brud
  | långt borta i främmande land
  | skön Jungfrun hon sömmar en gyllene skrud
- | hon väver de skira gullband. ...
+ | hon väver de skira gullband.
+
+.. TEASER_END
 
  | När hösten är kommen skall brudkransen viras
  | och Olof sitt bröllop med Jungfrun ska firas

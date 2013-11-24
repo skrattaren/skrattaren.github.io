@@ -13,7 +13,8 @@ Python code, portion by portion? There's a use for two monitors: the
 first one displays coding, the second one keeps freshly generated result
 always ready for review.“
 
-...
+
+.. TEASER_END
 
 Сказано — сделано. Идея потихоньку назревала: работаю я на `Gentoo
 Linux <http://gentoo.org/>`__, а ядро Linux умеет

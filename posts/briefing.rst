@@ -14,7 +14,8 @@ början** (-:E
 omni-nationalists?** <http://my.opera.com/Sterkrig/blog/show.dml/585884#omni>`__
  `**Om du talar svenska
 bra...** <http://my.opera.com/Sterkrig/blog/orientering#for_svenskar>`__
- ...
+
+.. TEASER_END
 
 --------------
 

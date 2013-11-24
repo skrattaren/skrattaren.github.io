@@ -4,7 +4,8 @@
 Just a (probably) useful examle of nested Python generator written in
 Python using recursive ***yield*** expression.
 
-...
+
+.. TEASER_END
 
 ::
 
