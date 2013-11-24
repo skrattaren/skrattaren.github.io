@@ -1,3 +1,8 @@
+.. title: (-%E
+.. slug: smiley
+.. date: 2006-12-23 23:12:50
+.. tags: 
+
 Upgrade!
 
 .. TEASER_END

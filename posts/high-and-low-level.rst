@@ -1,3 +1,8 @@
+.. title: Высоко и низко/ High-level and low-level
+.. slug: high-and-low-level
+.. date: 2008-07-21 19:07:08
+.. tags: python,eng,рус,programmierung
+
 Из свежих впечатлений.
 
  Засада "низкоуровневого" программирования — полдня писать код, модуль

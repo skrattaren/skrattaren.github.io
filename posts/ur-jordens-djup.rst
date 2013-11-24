@@ -1,3 +1,8 @@
+.. title: Ur Jordens Djup
+.. slug: ur-jordens-djup
+.. date: 2007-02-11 15:02:57
+.. tags: sve,musik,рус,eng
+
 Новый альбом Finntroll! В конце марта!
 /New album by Finntroll will be released in March!/
 Nya Finntrolls album ska bli utgivat i Mars!

@@ -1,3 +1,8 @@
+.. title: Рыси /Lynx/ Lodjur
+.. slug: lynx
+.. date: 2010-02-22 22:02:52
+.. tags: 
+
 |image0| |image1| |image2|
  **`Ещё /More/ Mer <http://pixdaus.com/?sort=tag&tag=lynx>`__**
 

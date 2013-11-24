@@ -1,3 +1,8 @@
+.. title: Коржики!
+.. slug: kookeez
+.. date: 2010-06-14 17:06:03
+.. tags: хе-хе
+
 `Официальный украинский языковой файл для Opera
 9.6 <http://www.opera.com/download/lng/960/ouw960_uk.lng>`__
 

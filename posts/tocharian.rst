@@ -1,3 +1,8 @@
+.. title: Тохарский / Tocharian
+.. slug: tocharian
+.. date: 2007-01-11 12:01:18
+.. tags: рус,lang,eng
+
 |image0|
  Кусок манускрипта на тохарском / An excerpt from tocharian manuscript
 

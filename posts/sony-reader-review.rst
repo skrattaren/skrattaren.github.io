@@ -1,3 +1,8 @@
+.. title: Sony PRSA-CL10B: отзыв / review
+.. slug: sony-reader-review
+.. date: 2011-11-25 11:11:53
+.. tags: рус,eng
+
 Приобрёл я `Sony Reader
 PRS-T1 <http://www.exler.ru/expromt/12-10-2011.htm>`__. Отличная
 читалка, могу рекомендовать. Но без обложки не очень-то хорошо, так что

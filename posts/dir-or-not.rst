@@ -1,3 +1,8 @@
+.. title: Make up your mind
+.. slug: dir-or-not
+.. date: 2013-10-22 14:10:33
+.. tags: хе-хе,linux,eng
+
 GNU coreutils are so elusive:
 
 ::

@@ -1,3 +1,8 @@
+.. title: ФАС Microsoft!
+.. slug: fudge-ms
+.. date: 2009-02-12 18:02:57
+.. tags: рус,linux
+
 `ФАС РФ собирается провести расследование на предмет законности и
 оправданности предустановки
 Windows <http://www.kommersant.ru/doc.aspx?DocsID=1117248>`__

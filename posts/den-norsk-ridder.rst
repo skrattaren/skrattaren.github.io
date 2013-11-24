@@ -1,3 +1,8 @@
+.. title: Nils Olav III den norsk ridder
+.. slug: den-norsk-ridder
+.. date: 2008-08-20 12:08:47
+.. tags: sve,рус,linux,eng
+
 |image0|
 
 Бравый королевский пингвин Нильс Олав Третий повышен в звании до

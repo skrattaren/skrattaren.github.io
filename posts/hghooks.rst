@@ -1,3 +1,8 @@
+.. title: Two (probably) useful Mercurial hooks
+.. slug: hghooks
+.. date: 2011-03-16 15:03:48
+.. tags: hg,linux,eng
+
 Here's two `Mercurial <http://mercurial.selenic.com/>`__
 `hooks <http://mercurial.selenic.com/wiki/Hook>`__ I wrote for my work.
 One is a reminder to mention `Trac <http://trac.edgewall.com/>`__

@@ -1,3 +1,8 @@
+.. title: Воин Открытых Исходников /OpenSource warrior/ Den krigaren av Öppna Källkod
+.. slug: OK-krigaren
+.. date: 2007-10-19 15:10:00
+.. tags: sve,рус,linux,eng
+
 Только вчера вышли **\*Ubuntu 7.10**, а уже тем же вечером я выкачал
 все восемь образов
 `Kubuntu <http://kubuntu.org/announcements/7.10-release.php>`__ и

@@ -1,3 +1,8 @@
+.. title: Касательно русских и русского...
+.. slug: rus-and-ru
+.. date: 2006-12-03 23:12:48
+.. tags: рус,folk
+
 Добрый дядька `**profiT** <http://my.opera.com/profiT/about/>`__
 подкинул по Ябберу `интересную
 статейку <http://www.kominarod.ru/gazeta/papers/paper_822.html>`__. Сам

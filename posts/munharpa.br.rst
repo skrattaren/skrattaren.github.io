@@ -1,3 +1,8 @@
+.. title: Munharpa i Brasilien
+.. slug: munharpa.br
+.. date: 2007-11-13 15:11:06
+.. tags: musik
+
 `Barbatuques -
 Baiana <http://myspacetv.com/index.cfm?fuseaction=vids.individual&videoid=3321621>`__
 

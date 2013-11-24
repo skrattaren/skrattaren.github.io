@@ -1,3 +1,8 @@
+.. title: "sterkrig"
+.. slug: sterkrig-is-min-nama
+.. date: 2007-04-01 17:04:38
+.. tags: sve,рус,eng
+
 Решил сегодня погуглить по своему имени, посмотреть, где наследил в
 сети. Всё мне было понятно, кроме `этого
 pdf-файла <http://www.vasttrafik.se/directory/publications/51188/Pling%20060908.pdf>`__.

@@ -1,3 +1,8 @@
+.. title: Piping commands till it hurts
+.. slug: piping-cmds
+.. date: 2012-07-04 12:07:18
+.. tags: gentoo,linux,eng
+
 (Just to save a useful and complex construct for future reference)
 
 List all the overlay maintainers who hasn't migrated their packages to

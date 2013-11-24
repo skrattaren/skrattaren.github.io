@@ -1,3 +1,8 @@
+.. title: Python: вложенный итератор / nested iterator
+.. slug: py-nested-iter
+.. date: 2010-07-08 19:07:01
+.. tags: python,рус,eng
+
 Просто образчик вложенного итератора на Python, через рекурсивное
 выражение ***yield***.
 

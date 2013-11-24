@@ -1,3 +1,8 @@
+.. title: Подарки /New Year Presents/ Nyårspresenter
+.. slug: presenter
+.. date: 2007-01-14 15:01:51
+.. tags: sve,eng,рус
+
 Мой кабан в своём домике. Спасибо
 `Маше <http://my.opera.com/gagnjungfrun/>`__ и
 `Динаре <http://my.opera.com/trolljomfru/>`__!

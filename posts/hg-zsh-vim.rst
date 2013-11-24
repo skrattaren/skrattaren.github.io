@@ -1,3 +1,8 @@
+.. title: Mercurial zsh completion with vim
+.. slug: hg-zsh-vim
+.. date: 2012-06-20 19:06:23
+.. tags: hg,programmierung,vim
+
 How to re-format output of *hg help <command>* for use in `Mercurial
 zsh\_completion file
 <http://selenic.com/repo/hg/file/tip/contrib/zsh_completion>`__.

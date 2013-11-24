@@ -1,3 +1,8 @@
+.. title: Gentoo: DRM, Radeon/RadeonHD, ATI R6xx/R7xx
+.. slug: radeon-drm-gentoo
+.. date: 2009-03-28 15:03:39
+.. tags: рус,linux,eng
+
 Результат часового разбирательства на канале
 `**#radeon** <http://dri.freedesktop.org/wiki/ATIRadeon>`__:
 

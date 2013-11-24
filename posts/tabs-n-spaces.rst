@@ -1,3 +1,8 @@
+.. title: Tabs and spaces
+.. slug: tabs-n-spaces
+.. date: 2010-06-15 13:06:12
+.. tags: python,programmierung,eng
+
 That's quite old and well-known, of course, but I now have to deal
 with code like that (count the spaces!):
 

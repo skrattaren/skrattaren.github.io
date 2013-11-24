@@ -1,3 +1,8 @@
+.. title: psycopg2 возвращает кортеж из строки / psycopg2 returns tuples of string
+.. slug: psycopg-tuples-of-strings
+.. date: 2009-12-29 14:12:20
+.. tags: python,linux,eng,рус
+
 Игрался я сегодня с базой на `PostgreSQL <http://www.postgresql.org/>`__
 (v8.3, если кому интересно) из Python посредством psycopg2, но внезапно
 застрял, да как-то неожиданно. Вылез в оболочку

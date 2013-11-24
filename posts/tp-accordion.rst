@@ -1,3 +1,8 @@
+.. title: Terry Pratchett: accordion quotes
+.. slug: tp-accordion
+.. date: 2013-04-09 16:04:43
+.. tags: хе-хе,eng
+
 Terry Pratchett seems to have a thing about accordion players. I've got a
 couple of friends playing (or used to play) accordion, so I have collected
 these quotes from Discworld books for them (and hopefully other people) to

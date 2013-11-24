@@ -1,3 +1,8 @@
+.. title: Django: limiting querysets in admin forms
+.. slug: django-querysets
+.. date: 2008-11-27 01:11:27
+.. tags: python,django,eng,programmierung
+
 Допустим, у Вас в приложении Django есть две модели, **Object** и
 **SuperObject**, связанных через **ManyToMany**. И когда Вы добавляете
 или изменяете **SuperObject**, Вы видите в форме список из всех

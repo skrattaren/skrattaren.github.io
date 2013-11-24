@@ -1,3 +1,8 @@
+.. title: Fotto
+.. slug: fotto
+.. date: 2007-02-22 19:02:00
+.. tags: sve,рус,fotto,eng
+
 Новый альбом
 "`Isblommor <http://my.opera.com/Sterkrig/albums/show.dml?id=207677>`__\ "
 и кое-какие дополнения к

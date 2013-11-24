@@ -1,3 +1,8 @@
+.. title: Metall!
+.. slug: metall
+.. date: 2006-12-30 15:12:02
+.. tags: musik,sve
+
 Slutligen har vinter kommit!
  Nu dags att lyssna på nordisk metal (-%E
  Ja, det ljuder jättebra med det nya ljudsystemet!
