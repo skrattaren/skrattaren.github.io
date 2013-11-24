@@ -194,7 +194,11 @@ REDIRECTIONS = []
 # "rsync -rav output/* joe@my.site:/srv/www/site"
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
-# DEPLOY_COMMANDS = []
+DEPLOY_COMMANDS = [
+        'hg -R ./output/ addremove',
+        'hg -R ./output/ commit -m "Update content"',
+        'hg -R ./output/ push',
+]
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
