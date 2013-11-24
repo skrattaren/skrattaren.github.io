@@ -1,5 +1,5 @@
 .. title: Посвящение LoiR'у
-.. slug: loiralee
+.. slug: loirille
 .. date: 2008-04-24 14:04:11
 .. tags: рус,skapelse
 

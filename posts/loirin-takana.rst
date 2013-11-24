@@ -1,5 +1,5 @@
 .. title: По следам LoiR'а
-.. slug: loirinemme
+.. slug: loirin-takana
 .. date: 2007-05-02 12:05:15
 .. tags: рус
 
