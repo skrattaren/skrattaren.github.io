@@ -1,7 +1,7 @@
 .. title: Пишешь код и видишь результат / Change the code and see the result
 .. slug: codewatch
 .. date: 2009-12-22 18:12:20
-.. tags: python,linux,eng
+.. tags: python,linux,eng,programmierung
 
 Пришла мне тут в голову интересная идея. Нужно написать генератор кода
 на C++ (по данным, вытягиваемым из базы данных), так что я установил
@@ -56,47 +56,28 @@ filechange event.
 
 **А вот и код / And here's the code**:
 
-::
+.. code-block:: python
 
     #!/usr/bin/env python
-
     # -*- coding: utf-8 -*-
 
-
-
     from inotifyx import *
-
     import sys, os, logging, subprocess
-
-
 
     import templater
 
-
-
     from pygments import highlight
-
     from pygments.lexers import HtmlLexer
-
     from pygments.formatters import TerminalFormatter
 
-
-
     # Logging is helpful in debugging
-
     LOG_FILENAME = '/tmp/debug_viewer.log'
-
     logging.basicConfig(filename=LOG_FILENAME,level=logging.DEBUG)
 
-
-
     # Initting inotifyx
-
     fd = init()
 
     watcher = add_watch(fd, 'templater.py', IN_MODIFY)
-
-
 
     try:
         # Starting infinite loop
@@ -121,12 +102,9 @@ filechange event.
             less.terminate()
             logging.debug('_______________________\n')
 
-
     except KeyboardInterrupt:
         less.terminate()
         os.close(fd)
-
-`**Pygmented** <http://pygments.org/>`__
 
 За комментарии считайте записи для журналирования (следил за ними через
 *tail -f* в третьем терминале)
