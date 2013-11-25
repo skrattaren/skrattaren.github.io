@@ -9,8 +9,7 @@
 `mp3-шечка <http://files.myopera.com/Sterkrig/musik/%D0%9D%D0%B0%20%D1%80%D0%B5%D1%87%D0%BA%D0%B5%20%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5%20%D0%B3%D0%B0%D1%8E.mp3>`__
 
 .. TEASER_END
-
-::
+..
 
  | На речке возле гаю,
  | Возле тихого Дунаю
