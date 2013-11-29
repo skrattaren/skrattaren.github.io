@@ -1,4 +1,4 @@
-.. title: Первый /The first/ Den första
+.. title: Первый
 .. slug: foersta
 .. date: 2006-11-26 23:11:52
 .. tags: рус
