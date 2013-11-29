@@ -57,6 +57,7 @@ TRANSLATIONS = {
     DEFAULT_LANG: "",
     # Example for another language:
     "ru": "./ru",
+    #"sv": "./sv",
 }
 
 # Links for the sidebar / navigation bar.
