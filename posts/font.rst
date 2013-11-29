@@ -3,11 +3,7 @@
 .. date: 2007-03-19 22:03:56
 .. tags: sve,рус,eng
 
-Кто-нибудь знает, что это за шрифт и где его взять?
-
-Does anybody knows what font is this and where to get a similar one?
-
-Vem vet vad teckesnitt är det?
+Does anybody know what font is this and where to get a similar one?
 
 |image0|
 

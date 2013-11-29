@@ -1,14 +1,7 @@
-.. title: Задачка / A quest
+.. title: A quest
 .. slug: quest
 .. date: 2008-10-03 23:10:54
 .. tags: python,рус,linux,eng,jabber,programmierung
-
-Теперь в моём частично полном распоряжении (то есть пароль root'а есть,
-но не только у меня) имеется круглосуточно работающий (в идеале)
-Linux-сервер со внешним IP и полным доступом. Python, Django,
-PostgreSQL, nginx... То есть наличествует возможность сделать
-более-менее что угодно, остаётся решить, что же мне такого-эдакого
-угодно. Принимаются идеи (-:Е
 
 Now I have a Linux-server with external IP at my (almost my) disposal.
 Python, Django, PostgreSQL, nginx... So I can do everything I want. All

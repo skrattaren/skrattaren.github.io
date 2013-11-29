@@ -1,10 +1,7 @@
-.. title: Python: вложенный итератор / nested iterator
+.. title: Python: nested iterator
 .. slug: py-nested-iter
 .. date: 2010-07-08 19:07:01
 .. tags: python,рус,eng
-
-Просто образчик вложенного итератора на Python, через рекурсивное
-выражение ***yield***.
 
 Just a (probably) useful examle of nested Python generator written in
 Python using recursive ***yield*** expression.
@@ -12,48 +9,33 @@ Python using recursive ***yield*** expression.
 
 .. TEASER_END
 
-::
+.. code-block:: python
 
-    [color=#408080][i]#!/usr/bin/env python2.6[/i][/color]
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
 
-    [color=#408080][i]# -*- coding: utf-8 -*-[/i][/color]
+    sample = (1, 2, (3, 4, 5), 6, ((7, ), 8), 9)
 
+    def cycle(smth):
+        for i in smth:
+            if isinstance(i, int):
+                yield i**2
+            else:
+                for j in cycle(i):
+                    yield j
 
+    for j in cycle(sample):
+        print(j)
 
-    sample [color=#666666]=[/color] ([color=#666666]1[/color], [color=#666666]2[/color], ([color=#666666]3[/color], [color=#666666]4[/color], [color=#666666]5[/color]), [color=#666666]6[/color], (([color=#666666]7[/color], ), [color=#666666]8[/color]), [color=#666666]9[/color])
-
-
-
-    [color=#008000][b]def[/b][/color] [color=#0000FF]cycle[/color](smth):
-        [color=#008000][b]for[/b][/color] i [color=#AA22FF][b]in[/b][/color] smth:
-            [color=#008000][b]if[/b][/color] [color=#008000]isinstance[/color](i, [color=#008000]int[/color]):
-                [color=#008000][b]yield[/b][/color] i[color=#666666]**[/color][color=#666666]2[/color]
-            [color=#008000][b]else[/b][/color]:
-                [color=#008000][b]for[/b][/color] j [color=#AA22FF][b]in[/b][/color] cycle(i):
-                    [color=#008000][b]yield[/b][/color] j
-
-
-    [color=#008000][b]for[/b][/color] j [color=#AA22FF][b]in[/b][/color] cycle(sample):
-        [color=#008000][b]print[/b][/color](j)
-    -------
+    -------------
 
     1
-
     4
-
     9
-
     16
-
     25
-
     36
-
     49
-
     64
-
     81
 
-
-`**Pygmented** <http://pygments.org/>`__

@@ -1,4 +1,4 @@
-.. title: Большие новости! /Great news!/ Bandbrytande nyheter!
+.. title: Great news!
 .. slug: nyheter
 .. date: 2007-05-16 01:05:58
 .. tags: sve,рус,eng,хе-хе
