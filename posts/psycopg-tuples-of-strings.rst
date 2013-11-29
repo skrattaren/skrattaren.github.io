@@ -1,7 +1,7 @@
 .. title: psycopg2 returns tuples of string
 .. slug: psycopg-tuples-of-strings
 .. date: 2009-12-29 14:12:20
-.. tags: python,linux,eng,рус
+.. tags: python,linux
 
 Today I was fiddling with `PostgreSQL <http://www.postgresql.org/>`__
 (v8.3, if anyone is interested) database from Python using famous
