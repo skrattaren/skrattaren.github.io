@@ -1,7 +1,7 @@
 .. title: Nyårspresenter
 .. slug: presenter
 .. date: 2007-01-14 15:01:51
-.. tags: sve,eng,рус
+.. tags: 
 
 Mitt vild svin i sitt hus. Tack till
 `Marria <http://my.opera.com/gagnjungfrun/>`__ och

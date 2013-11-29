@@ -1,7 +1,7 @@
 .. title: {hg, git} bisect + portage
 .. slug: portage-bisect
 .. date: 2010-06-15 19:06:24
-.. tags: рус,gentoo,linux,eng,hg
+.. tags: gentoo,linux,hg
 
 Recently I did stumble into a `annoying bug in awesome
 WM <http://awesome.naquadah.org/bugs/index.php?do=details&task_id=772>`__.

@@ -1,7 +1,7 @@
 .. title: Flask sessions and unicode_literals
 .. slug: flask-u-literals
 .. date: 2011-04-07 17:04:43
-.. tags: python,programmierung,eng
+.. tags: python,programmierung
 
 If you had tried to use `Flask <http://flask.pocoo.org/>`__ sessions
 and got something like that:

@@ -1,7 +1,7 @@
 .. title: Sony PRSA-CL10B: отзыв
 .. slug: sony-reader-review
 .. date: 2011-11-25 11:11:53
-.. tags: рус,eng
+.. tags: 
 
 Приобрёл я `Sony Reader
 PRS-T1 <http://www.exler.ru/expromt/12-10-2011.htm>`__. Отличная

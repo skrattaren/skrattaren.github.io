@@ -1,7 +1,7 @@
 .. title: Задачка / A quest
 .. slug: quest
 .. date: 2008-10-03 23:10:54
-.. tags: python,рус,linux,eng,jabber,programmierung
+.. tags: python,linux,jabber,programmierung
 
 Теперь в моём частично полном распоряжении (то есть пароль root'а есть,
 но не только у меня) имеется круглосуточно работающий (в идеале)

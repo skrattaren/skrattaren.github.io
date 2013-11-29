@@ -1,7 +1,7 @@
 .. title: Toshiba Satellite L350D-10X
 .. slug: gentoobook
 .. date: 2009-02-13 21:02:47
-.. tags: рус,eng
+.. tags: 
 
 `Ну и вот
 <http://ru.computers.toshiba-europe.com/innovation/product/Satellite-L350D-10X/1055720/toshibaShop/false/>`__

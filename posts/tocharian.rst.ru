@@ -1,7 +1,7 @@
 .. title: Тохарский
 .. slug: tocharian
 .. date: 2007-01-11 12:01:18
-.. tags: рус,lang,eng
+.. tags: lang
 
 |image0|
  Кусок манускрипта на тохарском

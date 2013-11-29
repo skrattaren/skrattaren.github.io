@@ -1,7 +1,7 @@
 .. title: Font
 .. slug: font
 .. date: 2007-03-19 22:03:56
-.. tags: sve,рус,eng
+.. tags: 
 
 Does anybody know what font is this and where to get a similar one?
 

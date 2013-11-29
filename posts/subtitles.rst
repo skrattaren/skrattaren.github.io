@@ -1,7 +1,7 @@
 .. title: Subtitles
 .. slug: subtitles
 .. date: 2012-01-21 10:01:11
-.. tags: рус,eng
+.. tags: 
 
 If you watch anything in foreign language, here's simple trick for
 you.

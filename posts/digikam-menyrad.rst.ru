@@ -1,7 +1,7 @@
 .. title: digiKam: Строка меню
 .. slug: digikam-menyrad
 .. date: 2008-01-04 22:01:06
-.. tags: sve,рус,linux,eng
+.. tags: linux
 
 Случайно отключили строку меня в `digiKam <http://www.digikam.org/>`__?
 Не беда.

@@ -1,7 +1,7 @@
 .. title: Про манула
 .. slug: om-manul
 .. date: 2009-05-24 18:05:06
-.. tags: рус,skapelse
+.. tags: skapelse
 
 Придумал вот, надо задокументировать.
 

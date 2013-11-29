@@ -1,7 +1,7 @@
 .. title: New Year Presents
 .. slug: presenter
 .. date: 2007-01-14 15:01:51
-.. tags: sve,eng,рус
+.. tags: 
 
 My wild boar and his house. Thanks to
 `Marria <http://my.opera.com/gagnjungfrun/>`__ and

@@ -1,7 +1,7 @@
 .. title: Python: nested iterator
 .. slug: py-nested-iter
 .. date: 2010-07-08 19:07:01
-.. tags: python,рус,eng
+.. tags: python
 
 Just a (probably) useful examle of nested Python generator written in
 Python using recursive ***yield*** expression.

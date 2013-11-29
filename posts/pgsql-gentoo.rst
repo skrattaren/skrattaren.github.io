@@ -1,7 +1,7 @@
 .. title: PostgreSQL on Gentoo: split ebuilds
 .. slug: pgsql-gentoo
 .. date: 2008-10-16 23:10:39
-.. tags: eng,gentoo
+.. tags: gentoo
 
 Just a note for those who looks for info on Gentoo & PostgreSQL (like
 I did today):

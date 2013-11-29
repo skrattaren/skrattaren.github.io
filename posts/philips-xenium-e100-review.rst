@@ -1,7 +1,7 @@
 .. title: Philips Xenium E100: review
 .. slug: philips-xenium-e100-review
 .. date: 2009-07-10 22:07:58
-.. tags: рус,eng
+.. tags: 
 
 Recently my old Siemens C60 has died, so I had to buy new cell phone.
 Since I'm not phone geek **at all**, I've decided to buy the simplest

@@ -1,7 +1,7 @@
 .. title: Отто-носорог
 .. slug: otto
 .. date: 2007-04-07 18:04:47
-.. tags: рус,sagor
+.. tags: sagor
 
 Отличнейшая сказка Оле Лунн Киркегор (*Ole Lund Kirkegaard*)
 "Отто-носорог" (*Otto er et næsehorn*). Всем

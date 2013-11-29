@@ -1,7 +1,7 @@
 .. title: Two (probably) useful Mercurial hooks
 .. slug: hghooks
 .. date: 2011-03-16 15:03:48
-.. tags: hg,linux,eng
+.. tags: hg,linux
 
 Here's two `Mercurial <http://mercurial.selenic.com/>`__
 `hooks <http://mercurial.selenic.com/wiki/Hook>`__ I wrote for my work.

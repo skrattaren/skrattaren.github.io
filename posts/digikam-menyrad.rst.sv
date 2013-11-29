@@ -1,7 +1,7 @@
 .. title: digiKam: Menyrad
 .. slug: digikam-menyrad
 .. date: 2008-01-04 22:01:06
-.. tags: sve,рус,linux,eng
+.. tags: linux
 
 Vill du möjliggöra menyrad i `digiKam <http://www.digikam.org/>`__? Se
 här!

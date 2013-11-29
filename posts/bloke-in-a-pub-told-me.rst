@@ -1,7 +1,7 @@
 .. title: А вот
 .. slug: bloke-in-a-pub-told-me
 .. date: 2008-03-22 00:03:10
-.. tags: рус
+.. tags: 
 
 Maybe some day I'll translate this post in English... But I doubt it
 (-%E

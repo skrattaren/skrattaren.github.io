@@ -1,7 +1,7 @@
 .. title: OpenSource warrior
 .. slug: OK-krigaren
 .. date: 2007-10-19 15:10:00
-.. tags: sve,рус,linux,eng
+.. tags: linux
 
 I am great warrior of OpenSource, indeed. On Thu, Oct 18 Kubuntu_ and Xubuntu_
 7.10 were released and in that evening I've downloaded all eight *.iso*-images

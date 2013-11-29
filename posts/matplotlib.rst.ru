@@ -1,7 +1,7 @@
 .. title: Matplotlib
 .. slug: matplotlib
 .. date: 2008-12-15 12:12:33
-.. tags: python,рус,programmierung,eng
+.. tags: python,programmierung
 
 В помощь начинающим использовать рисовательную библиотеку
 `Matplotlib <http://matplotlib.sourceforge.net/index.html>`__: тамошняя

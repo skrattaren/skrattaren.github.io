@@ -1,7 +1,7 @@
 .. title: IMified
 .. slug: imified
 .. date: 2007-10-28 00:10:45
-.. tags: sve,рус,eng,jabber
+.. tags: jabber
 
 Наконец у меня заработал `этот сервис <http://imified.com/>`__, можно
 и "о нём поведать миру" [ц]

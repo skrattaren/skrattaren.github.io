@@ -1,7 +1,7 @@
 .. title: Toshiba Satellite L350D-10X
 .. slug: gentoobook
 .. date: 2009-02-13 21:02:47
-.. tags: рус,eng
+.. tags: 
 
 Couldn't find more or less official description in English. Kind of
 weird (-:E

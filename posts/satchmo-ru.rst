@@ -1,7 +1,7 @@
 .. title: Satchmo по-русски
 .. slug: satchmo-ru
 .. date: 2009-04-16 21:04:53
-.. tags: рус,django
+.. tags: django
 
 Итак, я перевёл-таки
 `Satchmo <http://www.satchmoproject.com/trac/ticket/787>`__ на русский

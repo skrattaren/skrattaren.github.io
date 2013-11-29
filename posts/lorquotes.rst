@@ -1,7 +1,7 @@
 .. title: Одной целью в жизни меньше
 .. slug: lorquotes
 .. date: 2008-08-12 12:08:58
-.. tags: рус,linux,хе-хе
+.. tags: linux,хе-хе
 
 Сбылась мечта идиота. Я попал в `цитатник
 ЛОРа <http://www.lorquotes.ru/view-quote.php?id=4225>`__. Гы-гы (-%Е

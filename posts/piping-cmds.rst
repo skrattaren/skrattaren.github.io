@@ -1,7 +1,7 @@
 .. title: Piping commands till it hurts
 .. slug: piping-cmds
 .. date: 2012-07-04 12:07:18
-.. tags: gentoo,linux,eng
+.. tags: gentoo,linux
 
 (Just to save a useful and complex construct for future reference)
 

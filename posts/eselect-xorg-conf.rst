@@ -1,7 +1,7 @@
 .. title: Eselect'ing xorg.conf
 .. slug: eselect-xorg-conf
 .. date: 2010-03-07 16:03:34
-.. tags: рус,gentoo,eng
+.. tags: gentoo
 
 While experimenting with *nvidia*\ **/**\ *nouveau* I've decided to
 write module for *app-admin/eselect* to *eselect* required

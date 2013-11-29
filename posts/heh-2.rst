@@ -1,7 +1,7 @@
 .. title: Хе-хе
 .. slug: heh-2
 .. date: 2008-12-10 09:12:03
-.. tags: хе-хе,рус
+.. tags: хе-хе
 
 Terry Pratchett, "Thud!". Речь идёт о танцовщицах клуба "Pink Pussycat"
 

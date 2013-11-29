@@ -1,7 +1,7 @@
 .. title: Change the code and see the result
 .. slug: codewatch
 .. date: 2009-12-22 18:12:20
-.. tags: python,linux,eng,programmierung
+.. tags: python,linux,programmierung
 
 An interesting idea came to me several days ago. I have to write C++
 code generator (sourcing data from SQL database), so I installed

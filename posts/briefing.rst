@@ -1,7 +1,7 @@
 .. title: Вводная /Briefing/ Orientering
 .. slug: briefing
 .. date: 2006-11-26 18:11:43
-.. tags: eng,sve
+.. tags: 
 
 Музыка прошлой недели
 /Last week's music/

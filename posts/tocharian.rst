@@ -1,7 +1,7 @@
 .. title: Tocharian
 .. slug: tocharian
 .. date: 2007-01-11 12:01:18
-.. tags: рус,lang,eng
+.. tags: lang
 
 |image0|
 An excerpt from tocharian manuscript

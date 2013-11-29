@@ -1,7 +1,7 @@
 .. title: Shantaram
 .. slug: shantaram
 .. date: 2012-07-04 12:07:04
-.. tags: рус,eng,böker
+.. tags: böker
 
 Digging through my ebook reader's memory, I've stumbled upon book
 hitherto quite unknown to me, „Shantaram“ by Gregory David Roberts. So

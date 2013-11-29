@@ -1,7 +1,7 @@
 .. title: Diablo Swing Orchestra
 .. slug: dso
 .. date: 2007-02-19 17:02:01
-.. tags: musik,рус
+.. tags: musik
 
 |image0|
 Адская группенция. Втыкайте, кто ещё не воткнул!

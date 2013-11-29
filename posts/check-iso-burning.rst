@@ -1,7 +1,7 @@
 .. title: How to check if your ISO-image has been burnt properly
 .. slug: check-iso-burning
 .. date: 2009-02-08 13:02:17
-.. tags: linux,eng
+.. tags: linux
 
 If you has burnt some .iso-image with known md5-checksum, you can
 verify if disk is valid and was burnt properly

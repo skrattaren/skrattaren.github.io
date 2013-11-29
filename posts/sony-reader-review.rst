@@ -1,7 +1,7 @@
 .. title: Sony PRSA-CL10B: review
 .. slug: sony-reader-review
 .. date: 2011-11-25 11:11:53
-.. tags: рус,eng
+.. tags: 
 
 I've recently bought `Sony Reader
 PRS-T1 <http://www.techradar.com/reviews/gadgets/portable-video/portable-media-players-recorders/sony-reader-prs-t1-1037776/review>`__.

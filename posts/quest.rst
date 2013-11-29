@@ -1,7 +1,7 @@
 .. title: A quest
 .. slug: quest
 .. date: 2008-10-03 23:10:54
-.. tags: python,рус,linux,eng,jabber,programmierung
+.. tags: python,linux,jabber,programmierung
 
 Now I have a Linux-server with external IP at my (almost my) disposal.
 Python, Django, PostgreSQL, nginx... So I can do everything I want. All

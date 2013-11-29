@@ -1,7 +1,7 @@
 .. title: Edicode
 .. slug: edicode
 .. date: 2006-12-07 16:12:08
-.. tags: sve,eng,рус
+.. tags: 
 
 About two weeks ago `**LoiR** <http://my.opera.com/LoiR/about/>`__, a
 friend of mine, pointed

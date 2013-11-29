@@ -1,7 +1,7 @@
 .. title: {hg, git} bisect + portage
 .. slug: portage-bisect
 .. date: 2010-06-15 19:06:24
-.. tags: рус,gentoo,linux,eng,hg
+.. tags: gentoo,linux,hg
 
 Не так давно имел я счастье вляпаться в `неприятную
 ошибочку <http://awesome.naquadah.org/bugs/index.php?do=details&task_id=772>`__

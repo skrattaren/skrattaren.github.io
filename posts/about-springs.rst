@@ -1,7 +1,7 @@
 .. title: About springs
 .. slug: about-springs
 .. date: 2011-03-01 12:03:27
-.. tags: рус,eng
+.. tags: 
 
 Spring has came (to northern hemisphere, that is). That is to say,
 calendar one, and it doesn't seem true one to me. We count years by sun,

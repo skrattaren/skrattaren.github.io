@@ -1,7 +1,7 @@
 .. title: Пишешь код и видишь результат
 .. slug: codewatch
 .. date: 2009-12-22 18:12:20
-.. tags: python,linux,eng,programmierung
+.. tags: python,linux,programmierung
 
 Пришла мне тут в голову интересная идея. Нужно написать генератор кода
 на C++ (по данным, вытягиваемым из базы данных), так что я установил

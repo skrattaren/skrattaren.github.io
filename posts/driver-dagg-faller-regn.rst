@@ -1,7 +1,7 @@
 .. title: Driver dagg, faller regn
 .. slug: driver-dagg-faller-regn
 .. date: 2012-01-08 14:01:33
-.. tags: sve,musik
+.. tags: musik
 
  | Herr Olof han rider att möta sin brud
  | långt borta i främmande land

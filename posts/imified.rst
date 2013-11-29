@@ -1,7 +1,7 @@
 .. title: IMified
 .. slug: imified
 .. date: 2007-10-28 00:10:45
-.. tags: sve,рус,eng,jabber
+.. tags: jabber
 
 Now IMified works at last, so I can "spread the word" about it. But...
 it's too late and I'm too lazy to type all that you can read on the

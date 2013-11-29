@@ -1,7 +1,7 @@
 .. title: Íslenska
 .. slug: islenska
 .. date: 2006-12-17 17:12:18
-.. tags: lang,sve,eng,рус
+.. tags: lang
 
 There's a good word in Old Icelandic, **hraustr** (meaning *brave,
 strong*). Sounds conformably. It's believed to be derived from

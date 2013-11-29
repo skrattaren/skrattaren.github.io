@@ -1,7 +1,7 @@
 .. title: Высоко и низко
 .. slug: high-and-low-level
 .. date: 2008-07-21 19:07:08
-.. tags: python,eng,рус,programmierung
+.. tags: python,programmierung
 
 Из свежих впечатлений.
 

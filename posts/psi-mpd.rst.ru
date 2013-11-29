@@ -1,7 +1,7 @@
 .. title: Psi + MPD: Publish tune (XEP-0118)
 .. slug: psi-mpd
 .. date: 2008-08-28 18:08:34
-.. tags: рус,linux,eng,jabber,musik
+.. tags: linux,jabber,musik
 
 |image0|
 
