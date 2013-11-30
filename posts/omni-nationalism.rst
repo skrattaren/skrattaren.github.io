@@ -1,30 +1,7 @@
-.. title: Вводная /Briefing/ Orientering
-.. slug: briefing
+.. title: Omni-nationalism
+.. slug: omni-nationalism
 .. date: 2006-11-26 18:11:43
 .. tags: 
-
-Музыка прошлой недели
-/Last week's music/
-Musik av den sista veckan
-|image0|
-
-|Jabber status (sterkrig@jabber.se)|
-
-**Тут я буду писать всё, что должно быть в
-самом начале** (-:Е **/ This post contains everything meant to be on the very
-top/ Den här anteckningen innehåller allting som jag önskar att visa i början**
-(-:E
-
-
-`**Who are those omni-nationalists?**
-<http://my.opera.com/Sterkrig/blog/show.dml/585884#omni>`__
-
-`**Om du talar svenska bra...**
-<http://my.opera.com/Sterkrig/blog/orientering#for_svenskar>`__
-
-.. TEASER_END
-
---------------
 
 Probably you came there following the link in my forum signature
 promising to explain my *user title*. Well, "omni-nationalist" is a term
@@ -48,11 +25,3 @@ Well, now you can see, what's my point about. I believe that every folk
 with its culture and language is dramatically important, so that worths
 to be uneasy about it. Thanks for patience and attention (-:E
 
---------------
-
-Om du är svensk eller talar svenska bra, varsågod och beriktiga mina fel
-i meddeland på svenska (-:E
-
-.. |image0| image:: http://imagegen.last.fm/Sterkrig1/artists/Sterkrig.gif
-   :target: http://www.last.fm/user/Sterkrig/
-.. |Jabber status (sterkrig@jabber.se)| image:: http://web-apps.ru:11000/jabber-presence/img/jid/sterkrig%40jabber.se/

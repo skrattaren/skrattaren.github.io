@@ -2,7 +2,6 @@ Blog TODO list
 **************
 
  * decide about commenting system (Disqus_/IntenseDebate_/LiveFyre_)
- * fix up "Briefing"
  * improve general structure
  * choose a theme
 
