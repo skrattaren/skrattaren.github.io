@@ -6,16 +6,18 @@ import time
 # Configuration, please edit
 
 # Data about this site
-BLOG_AUTHOR = "Шуйский Николай [krigstask, Ŝtérkrìg]"
-BLOG_TITLE = "Päiväcirja"
+BLOG_AUTHOR = "Шуйский Николай (Nikolaj Sjuskij)"
+BLOG_TITLE = "Unseen Hexadecimals"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://my.opera.com/community/"
+SITE_URL = "http://skrattaren.bitbucket.org/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://my.opera.com/community/"
+# BASE_URL = "http://skrattaren.bitbucket.org/"
 BLOG_EMAIL = "sterkrig@myopera.com"
-BLOG_DESCRIPTION = "None"
+BLOG_DESCRIPTION = "Usual collection of thoughts, things I want all the "
+"internets to know, and various stuff of historical and sentimental value. "
+"Pretty common homepage, really"
 
 # Nikola is multilingual!
 #
