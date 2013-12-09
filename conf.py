@@ -335,12 +335,12 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # systems, one of "disqus", "livefyre", "intensedebate", "moot",
 #                 "googleplus" or "facebook"
 # COMMENT_SYSTEM = "disqus"
-COMMENT_SYSTEM =  ""
+COMMENT_SYSTEM =  "disqus"
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-# COMMENT_SYSTEM_ID = "nikolademo"
+COMMENT_SYSTEM_ID = "skrattaren-bblogg"
 
 # Enable annotations using annotateit.org?
 # If set to False, you can still enable them for individual posts and pages
