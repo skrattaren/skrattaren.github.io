@@ -198,7 +198,7 @@ REDIRECTIONS = []
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
 DEPLOY_COMMANDS = [
-        'hg -R ./output/ pull',
+        'hg -R ./output/ pull --update',
         'hg -R ./output/ addremove',
         'hg -R ./output/ commit -m "Update content"',
         'hg -R ./output/ push',
