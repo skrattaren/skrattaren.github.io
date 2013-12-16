@@ -14,5 +14,5 @@ Musik av den sista veckan
 |Jabber status (sterkrig@jabber.se)|
 
 .. |image0| image:: http://imagegen.last.fm/Sterkrig/artists/Sterkrig.gif
-   :target: http://www.lastfm.se/user/Sterkrig/?chartstyle=Sterkrig
+   :target: http://www.lastfm.se/user/Sterkrig/charts?charttype=weekly
 .. |Jabber status (sterkrig@jabber.se)| image:: http://web-apps.ru:11000/jabber-presence/img/jid/sterkrig%40jabber.se
