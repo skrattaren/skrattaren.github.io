@@ -1,6 +1,6 @@
 .. link: 
 .. description: 
-.. tags: хе-хе
+.. tags: хе-хе,svafn
 .. date: 2014/02/17 22:14:09
 .. title: Чайка по имени Шуйский Николай
 .. slug: nikolaj-sjujskij-seagull
