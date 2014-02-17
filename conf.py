@@ -14,7 +14,7 @@ SITE_URL = "http://skrattaren.bitbucket.org/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://skrattaren.bitbucket.org/"
-BLOG_EMAIL = "sterkrig@myopera.com"
+BLOG_EMAIL = "skrattaren@yandex.ru"
 BLOG_DESCRIPTION = "Usual collection of thoughts, things I want all the "
 "internets to know, and various stuff of historical and sentimental value. "
 "Pretty common homepage, really"
@@ -198,6 +198,7 @@ REDIRECTIONS = []
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
 DEPLOY_COMMANDS = [
+        'nikola build',
         'hg -R ./output/ pull --update',
         'hg -R ./output/ addremove',
         'hg -R ./output/ commit -m "Update content"',
