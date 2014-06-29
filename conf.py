@@ -638,3 +638,6 @@ LOGGING_HANDLERS = {
 # It can be anything, data, functions, modules, etc.
 
 GLOBAL_CONTEXT = {}
+
+# before proper config update
+TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
