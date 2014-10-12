@@ -1,0 +1,51 @@
+/* author name etc shoul be idented! */
+div.metadata {
+    margin-left: 3em;
+    margin-bottom: 1em;
+    font-style: italic;
+    font-size:80%;
+}
+
+a {
+    color: #8cc88c;
+}
+
+a:hover, a:focus {
+    color: #bbf3bb;
+}
+
+h1.entry-title a {
+    color: #b2c9b2;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #BF410B;
+}
+
+body {
+    color: #cccccc;
+    background-color: #2f230b;
+}
+
+.navbar-inverse {
+    background-color: #082e0b;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #dab5a2;
+}
+
+pre {
+    background-color: #333333;
+    color: #b5b5b5;
+}
+
+.pager li > a {
+    background-color: #333333;
+    border-color: #444444;
+}
+
+.pager li > a:hover,
+.pager li > a:focus {
+    background-color: #444444;
+}
