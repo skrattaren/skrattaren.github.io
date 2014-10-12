@@ -201,7 +201,7 @@ COMPILERS = {
 # If this is set to False, then posts that are not translated to a language
 # LANG will not be visible at all in the pages in that language.
 # Formerly known as HIDE_UNTRANSLATED_POSTS (inverse)
-# SHOW_UNTRANSLATED_POSTS = True
+SHOW_UNTRANSLATED_POSTS = False
 
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
