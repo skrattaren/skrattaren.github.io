@@ -9,13 +9,13 @@
  | hon väver de skira gullband.
 
 .. TEASER_END
-
-::
+..
 
  | När hösten är kommen skall brudkransen viras
  | och Olof sitt bröllop med Jungfrun ska firas
  | men framtiden ligger i Herranoms hägn;
  | driver dagg, faller regn.
+
  | Herr Olof tar tygeln, han håller sin häst
  | förhäxad mot älven han ser
  | för Älvkungen där för sin dotter en fest
@@ -24,6 +24,7 @@
  | han bjuder upp Älvkungens dotter, de dansar
  | Gud tage den djärve Herr Olof i hägn;
  | driver dagg, faller regn.
+
  | Herr Olof och Älvkungens dotter de drar
  | långt fjärran att reda ett bo.
  | Den Lede stod redo att riddaren ta
