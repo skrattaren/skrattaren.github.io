@@ -1,7 +1,7 @@
 .. title: Ek em Njǫrd!
 .. slug: ek-em-njord
 .. date: 2007-01-22 01:01:07
-.. tags: 
+.. tags: draft
 
 .. raw:: html
 
