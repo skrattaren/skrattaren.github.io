@@ -101,6 +101,12 @@ NAVIGATION_LINKS = {
         ("/about", "About me"),
         ("/rss.xml", "RSS feed"),
     ),
+    "ru": (
+        ("/ru/archive.html", "Сундук"),
+        ("/ru/categories/index.html", "Ярлыки"),
+        ("/ru/about", "Про меня"),
+        ("/ru/rss.xml", "Лента RSS"),
+    ),
 }
 
 # Name of the theme to use.
