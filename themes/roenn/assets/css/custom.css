@@ -6,6 +6,14 @@ div.metadata {
     font-size:80%;
 }
 
+/* discern footer */
+footer {
+    border-top: 1px solid;
+    margin: 3em auto 0;
+    text-align: center;
+    width: 60%;
+}
+
 a {
     color: #8cc88c;
 }
