@@ -102,7 +102,7 @@ NAVIGATION_LINKS = {
         ("/rss.xml", "RSS feed"),
     ),
     "ru": (
-        ("/ru/archive.html", "Сундук"),
+        ("/ru/archive.html", "Подшивка"),
         ("/ru/categories/index.html", "Ярлыки"),
         ("/ru/about", "Про меня"),
         ("/ru/rss.xml", "Лента RSS"),
