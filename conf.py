@@ -98,6 +98,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/archive.html", "Archive"),
         ("/categories/index.html", "Tags"),
+        ("/about", "About me"),
         ("/rss.xml", "RSS feed"),
     ),
 }
@@ -165,7 +166,7 @@ POSTS = (
             ("posts/*.rst", "posts", "post.tmpl"),
         )
 PAGES = (
-            ("stories/*.rst", "stories", "story.tmpl"),
+            ("pages/*.rst", ".", "story.tmpl"),
         )
 
 # One or more folders containing files to be copied as-is into the output.
