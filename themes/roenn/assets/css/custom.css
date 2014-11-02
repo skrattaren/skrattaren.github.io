@@ -14,6 +14,7 @@ footer {
     width: 60%;
 }
 
+/* colours! */
 a {
     color: #8cc88c;
 }
@@ -27,16 +28,16 @@ h1.entry-title a {
 }
 
 .navbar-inverse .navbar-brand {
-    color: #BF410B;
+    color: #e42a1a;
 }
 
 body {
     color: #cccccc;
-    background-color: #2f230b;
+    background-color: #162f13;
 }
 
 .navbar-inverse {
-    background-color: #082e0b;
+    background-color: #463415;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -44,7 +45,7 @@ body {
 }
 
 pre {
-    background-color: #333333;
+    background-color: #51551c;
     color: #b5b5b5;
 }
 
