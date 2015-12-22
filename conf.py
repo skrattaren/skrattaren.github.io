@@ -278,13 +278,14 @@ REDIRECTIONS = []
 # "rsync -rav --delete output/ joe@my.site:/srv/www/site"
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = [
-        'nikola build',
-        'hg -R ./output/ pull --update',
-        'hg -R ./output/ addremove',
-        'hg -R ./output/ commit -m "Update content"',
-        'hg -R ./output/ push',
-]
+DEPLOY_COMMANDS = {
+        'default': [
+            'nikola build',
+            'hg -R ./output/ pull --update',
+            'hg -R ./output/ addremove',
+            'hg -R ./output/ commit -m "Update content"',
+            'hg -R ./output/ push',
+            ]}
 
 # For user.github.io/organization.github.io pages, the DEPLOY branch
 # MUST be 'master', and 'gh-pages' for other repositories.
@@ -422,7 +423,7 @@ INDEX_TEASERS = True
 # 'Read more...' for the index page, if INDEX_TEASERS is True (translatable)
 INDEX_READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
 # 'Read more...' for the RSS_FEED, if RSS_TEASERS is True (translatable)
-RSS_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_read})</p>'
+FEED_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_read})</p>'
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
@@ -769,3 +770,5 @@ LOGGING_HANDLERS = {
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {}
+
+WRITE_TAG_CLOUD = True
