@@ -309,6 +309,10 @@ WRITE_TAG_CLOUD = True
 # Tag pages will still be generated.
 HIDDEN_TAGS = ['mathjax']
 
+# If ENABLE_AUTHOR_PAGES is set to True and there is more than one
+# author, author pages are generated.
+ENABLE_AUTHOR_PAGES = False
+
 # Only include tags on the tag list/overview page if there are at least
 # TAGLIST_MINIMUM_POSTS number of posts or more with every tag. Every tag
 # page is still generated, linked from posts, and included in the sitemap.
