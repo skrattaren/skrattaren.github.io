@@ -26,9 +26,11 @@ SITE_URL = "https://skrattaren.bitbucket.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://skrattaren.bitbucket.org/"
 BLOG_EMAIL = "skrattaren@yandex.ru"
-BLOG_DESCRIPTION = "Usual collection of thoughts, things I want all the "
-"internets to know, and various stuff of historical and sentimental value. "
-"Pretty common homepage, really"
+BLOG_DESCRIPTION = (
+    "Usual collection of thoughts, things I want all the "
+    "internets to know, and various stuff of historical and sentimental value. "
+    "Pretty common homepage, really"
+    )
 
 # Nikola is multilingual!
 #
