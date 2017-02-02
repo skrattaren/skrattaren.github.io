@@ -24,7 +24,7 @@ BLOG_TITLE = "Unseen Hexadecimals"  # translatable
 SITE_URL = "https://skrattaren.bitbucket.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://skrattaren.bitbucket.org/"
+# BASE_URL = "https://skrattaren.bitbucket.io/"
 BLOG_EMAIL = "skrattaren@yandex.ru"
 BLOG_DESCRIPTION = (
     "Usual collection of thoughts, things I want all the "
@@ -426,8 +426,10 @@ REDIRECTIONS = []
 # }
 DEPLOY_COMMANDS = {
         'default': [
+            'hg -R ./output/ pull',
+            'hg -R ./output/ update --clean',
+            'nikola clean',
             'nikola build',
-            'hg -R ./output/ pull --update',
             'hg -R ./output/ addremove',
             'hg -R ./output/ commit -m "Update content"',
             'hg -R ./output/ push',
