@@ -17,11 +17,11 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Шуйский Николай (Nikolaj Sjuskij)"
+BLOG_AUTHOR = "Шуйский Николай (Nikolaj Šuskij)"
 BLOG_TITLE = "Unseen Hexadecimals"  # translatable
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://skrattaren.bitbucket.org/"
+SITE_URL = "https://skrattaren.bitbucket.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://skrattaren.bitbucket.org/"
