@@ -6,4 +6,4 @@
 (-%E
 |image0|
 
-.. |image0| image:: http://files.myopera.com/Sterkrig/blog/Garmarna.jpg
+.. |image0| image:: images/blog/Garmarna.jpg

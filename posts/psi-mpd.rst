@@ -16,6 +16,6 @@ you use (`Psi <http://psi-im.org/>`__ 0.11 or later) and
 script <http://code.google.com/p/krigstasks-samling/source/browse/musik/psi-mpd_tune.sh>`__
 running (-:E
 
-.. |image0| image:: http://files.myopera.com/Sterkrig/blog/psi_mpd.png
+.. |image0| image:: images/blog/psi_mpd.png
 
 Dråm — Dråm [2005]
