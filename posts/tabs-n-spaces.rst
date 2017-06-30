@@ -13,12 +13,12 @@ with code like that (count the spaces!):
            c_type.__init__(self, name, struct.calcsize(format))
 
 
-or like that (MyOpera replaces tabs, so believe my comments):
+or like that (``tabstop`` is obviously expected to be 8 or 12):
 
 ::
 
         def genMemList( self, members ):              # indented with 4 spaces
-    #        self.append( '\tdef members(self):\n' )  # indented with one <Tab>
+    	self.append( '\tdef members(self):\n' )  # indented with one <Tab>
 
 
 So…
