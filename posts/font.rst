@@ -7,4 +7,4 @@ Does anybody know what font is this and where to get a similar one?
 
 |image0|
 
-.. |image0| image:: http://files.myopera.com/Sterkrig/blog/teckensnitt.png
+.. |image0| image:: images/blog/teckensnitt.png

@@ -12,5 +12,5 @@ Upgrade!
 **И так стало /And the thing is/ Och likaså det är**
 |image1|
 
-.. |image0| image:: http://files.myopera.com/Sterkrig/blog/the_thing_was.jpg
-.. |image1| image:: http://files.myopera.com/Sterkrig/blog/the_thing_is.jpg
+.. |image0| image:: images/blog/the_thing_was.jpg
+.. |image1| image:: images/blog/the_thing_is.jpg
