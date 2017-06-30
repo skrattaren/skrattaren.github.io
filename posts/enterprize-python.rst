@@ -5,4 +5,4 @@
 
 |image0|
 
-.. |image0| image:: images/blog/pingisracket.jpg
+.. |image0| image:: /images/blog/pingisracket.jpg

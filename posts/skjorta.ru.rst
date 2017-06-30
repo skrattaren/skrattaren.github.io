@@ -4,6 +4,7 @@
 .. tags: musik
 
 (-%E
+
 |image0|
 
-.. |image0| image:: images/blog/Garmarna.jpg
+.. |image0| image:: /images/blog/Garmarna.jpg

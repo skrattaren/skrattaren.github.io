@@ -22,6 +22,7 @@ or like that (MyOpera replaces tabs, so believe my comments):
 
 
 So…
+
 |image0|
 
 --------------

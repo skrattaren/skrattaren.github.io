@@ -8,7 +8,9 @@
 .. TEASER_END
 
 Вещь!
+
 |image0|
+
 Пью с ним чай, исцеляюсь душой и телом (-%Е
 
-.. |image0| image:: images/blog/balsam.jpg
+.. |image0| image:: /images/blog/balsam.jpg

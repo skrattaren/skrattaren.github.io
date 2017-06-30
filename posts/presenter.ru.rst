@@ -11,4 +11,4 @@
 
 |image0|
 
-.. |image0| image:: images/blog/svin_i_sitt_hus.jpg
+.. |image0| image:: /images/blog/svin_i_sitt_hus.jpg

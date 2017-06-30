@@ -7,4 +7,4 @@
 
 |image0|
 
-.. |image0| image:: images/blog/teckensnitt.png
+.. |image0| image:: /images/blog/teckensnitt.png

@@ -13,4 +13,4 @@ Boogie <http://files.myopera.com/Sterkrig/musik/01%20-%20Balrog%20Boogie.mp3>`__
 `Butcher's Ballroom (2006), ~80
 Mb <http://files-upload.com/files/84990/DiabloSwingOrchestra2006thebutchersballr.zip.html>`__
 
-.. |image0| image:: images/blog/dso.png
+.. |image0| image:: /images/blog/dso.png

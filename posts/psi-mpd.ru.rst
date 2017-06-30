@@ -16,6 +16,6 @@ XEP <http://www.xmpp.org/extensions/xep-0118.html>`__) и используете
 sh-сценарий <http://code.google.com/p/krigstasks-samling/source/browse/musik/psi-mpd_tune.sh>`__
 (-:Е
 
-.. |image0| image:: images/blog/psi_mpd.png
+.. |image0| image:: /images/blog/psi_mpd.png
 
 Dråm — Dråm [2005]
