@@ -27,9 +27,9 @@ SITE_URL = "https://skrattaren.bitbucket.io/"
 # BASE_URL = "https://skrattaren.bitbucket.io/"
 BLOG_EMAIL = "skrattaren@yandex.ru"
 BLOG_DESCRIPTION = (
-    "Usual collection of thoughts, things I want all the "
-    "internets to know, and various stuff of historical and sentimental value. "
-    "Pretty common homepage, really"
+    "Usual collection of thoughts, things I want all the internets to know, "
+    "and various stuff of historical and sentimental value. "
+    "Pretty common homepage, really."
     )
 
 # Nikola is multilingual!
