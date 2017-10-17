@@ -670,10 +670,16 @@ FEED_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_re
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 LICENSE = """
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/ar/">
-<img alt="Creative Commons License BY-SA"
-style="border-width:0; margin-bottom:12px;"
-src="http://i.creativecommons.org/l/by-sa/2.5/ar/88x31.png"></a>"""
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0"
+src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span
+xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
+property="dct:title" rel="dct:type">Unseen Hexadecimals</span> by <span
+xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nikolaj
+Šujskij</span> is licensed under a <a rel="license"
+href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+Attribution-ShareAlike 4.0 International License</a>.
+"""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
