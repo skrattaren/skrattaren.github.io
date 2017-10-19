@@ -50,12 +50,12 @@
 * `верх`_
 * `низ`_
 
-.. _верх: http://www.splav.ru/goodsdetail.aspx?gid=20120806165019000380
-.. _низ: http://www.splav.ru/goodsdetail.aspx?gid=20120806165015675712
+.. _верх: https://www.splav.ru/goodsdetail.aspx?gid=20120806165019000380
+.. _низ: https://www.splav.ru/goodsdetail.aspx?gid=20120806165015675712
 
 Также неплохая вещь — трусы до кучи, `Active Power Dry`_, к примеру.
 
-.. _Active Power Dry: http://www.splav.ru/goodsdetail.aspx?gid=20120117114151712259
+.. _Active Power Dry: https://www.splav.ru/goodsdetail.aspx?gid=20120117114151712259
 
 На самом деле я почти уверен, что всё продаваемое в Сплаве термобельё весьма
 прилично и подойдёт для катания.  Я привожу то, чем пользуюсь сам (кроме
@@ -71,10 +71,10 @@
 Важно, чтоб сидело достаточно плотно и по фигуре, а там и более-менее обычная
 флиска_ подойдёт
 
-.. _Techno: http://www.splav.ru/goodsdetail.aspx?gid=20150625113659394003
-.. _Polartec Power Stretch Pro: http://www.splav.ru/goodsdetail.aspx?gid=20151112170356981291
-.. _Island: http://www.splav.ru/goodsdetail.aspx?gid=20111019150530981679
-.. _флиска: http://www.splav.ru/goodsdetail.aspx?gid=20140311133923302859
+.. _Techno: https://www.splav.ru/goodsdetail.aspx?gid=20150625113659394003
+.. _Polartec Power Stretch Pro: https://www.splav.ru/goodsdetail.aspx?gid=20151112170356981291
+.. _Island: https://www.splav.ru/goodsdetail.aspx?gid=20111019150530981679
+.. _флиска: https://www.splav.ru/goodsdetail.aspx?gid=20140311133923302859
 
 Верхний слой (куртка)
 *********************
@@ -91,9 +91,9 @@
 ней бегать жарковато).
 
 
-.. _много: http://www.splav.ru/catalog/odezhda/kurtki/softshell_i_windbloc/
-.. __: http://www.splav.ru/goodsdetail.aspx?gid=20150917175517192126
-.. _Melange: http://www.splav.ru/goodsdetail.aspx?gid=20140219164346111140
+.. _много: https://www.splav.ru/catalog/odezhda/kurtki/softshell_i_windbloc/
+.. __: https://www.splav.ru/goodsdetail.aspx?gid=20150917175517192126
+.. _Melange: https://www.splav.ru/goodsdetail.aspx?gid=20140219164346111140
 
 Штаны (тоже верхний слой)
 *************************
@@ -108,9 +108,9 @@
 С необходимостью поддевать какие-нибудь утепляющие кальсоны я пока не
 сталкивался, так что ничего посоветовать не могу.
 
-.. __: http://www.splav.ru/goodsdetail.aspx?gid=20121010122845126611
-.. _SoftShell Diamond: http://www.splav.ru/goodsdetail.aspx?gid=20110628152754975115
-.. _Glory: http://www.splav.ru/goodsdetail.aspx?gid=20140311133923302859
+.. __: https://www.splav.ru/goodsdetail.aspx?gid=20121010122845126611
+.. _SoftShell Diamond: https://www.splav.ru/goodsdetail.aspx?gid=20110628152754975115
+.. _Glory: https://www.splav.ru/goodsdetail.aspx?gid=20140311133923302859
 
 Дополнительное утепление
 ************************
@@ -121,7 +121,7 @@
 `такое есть`_, но как-то не очень с наличием, и в итоге у меня аналогичная
 штука от **RedFox**.
 
-.. _такое есть: http://www.splav.ru/goodsdetail.aspx?gid=20160627152205100174
+.. _такое есть: https://www.splav.ru/goodsdetail.aspx?gid=20160627152205100174
 
 Носки
 *****
@@ -129,7 +129,7 @@
 Тоже важная штука.  Есть специально катательные `Summit`_, но до их
 приобретения я катался по большей части в `Liner`_, и тоже очень даже хорошо.
 
-.. _Liner: http://www.splav.ru/goodsdetail.aspx?gid=20150921180219810418
+.. _Liner: https://www.splav.ru/goodsdetail.aspx?gid=20150921180219810418
 .. _Summit: https://www.splav.ru/goodsdetail.aspx?gid=20161026174200166800
 
 Перчатки или варежки
@@ -137,7 +137,7 @@
 
 Варежки.  Или как у меня: тёплая перчатка внутри варежки, типа `Action`_.
 
-.. _Action: http://www.splav.ru/goodsdetail.aspx?gid=20120824165946092566
+.. _Action: https://www.splav.ru/goodsdetail.aspx?gid=20120824165946092566
 
 Всякое
 ******
@@ -157,12 +157,12 @@
 * маска или очки: в «Сплаве» тоже есть, например, `Blizzard`_, народ её хвалит,
   но у меня маска и очки из других мест.
 
-.. _мультибандана: http://www.splav.ru/goodsdetail.aspx?gid=20100331160515999633;
-.. _маска или подшлемник: http://www.splav.ru/catalog/odezhda/golovnye_ubory/maski_podshlemniki_polartec__flis_softshell/
-.. _такая: http://www.splav.ru/goodsdetail.aspx?gid=20100225111517437917;
-.. _Gravity: http://www.splav.ru/goodsdetail.aspx?gid=20151123174207658384
-.. _РМ3: http://www.splav.ru/goodsdetail.aspx?gid=20110408103628017438
-.. _Valen: http://www.splav.ru/goodsdetail.aspx?gid=20140307134931412946
-.. _Blizzard: http://www.splav.ru/goodsdetail.aspx?gid=20151007172657582499
+.. _мультибандана: https://www.splav.ru/goodsdetail.aspx?gid=20100331160515999633;
+.. _маска или подшлемник: https://www.splav.ru/catalog/odezhda/golovnye_ubory/maski_podshlemniki_polartec__flis_softshell/
+.. _такая: https://www.splav.ru/goodsdetail.aspx?gid=20100225111517437917;
+.. _Gravity: https://www.splav.ru/goodsdetail.aspx?gid=20151123174207658384
+.. _РМ3: https://www.splav.ru/goodsdetail.aspx?gid=20110408103628017438
+.. _Valen: https://www.splav.ru/goodsdetail.aspx?gid=20140307134931412946
+.. _Blizzard: https://www.splav.ru/goodsdetail.aspx?gid=20151007172657582499
 
 .. vim:filetype=rst
