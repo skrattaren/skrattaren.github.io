@@ -4,3 +4,4 @@ cache/
 output/
 posts/*.wp
 .doit.db
+plugins/
