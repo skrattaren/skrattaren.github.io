@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unseen Hexadecimals (Записи о programmierung)</title><link>https://skrattaren.bitbucket.io/</link><description></description><atom:link href="https://skrattaren.bitbucket.io/ru/categories/programmierung.xml" rel="self" type="application/rss+xml"></atom:link><language>ru</language><lastBuildDate>Sat, 21 May 2022 15:26:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Пишешь код и видишь результат</title><link>https://skrattaren.bitbucket.io/ru/posts/codewatch/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Пришла мне тут в голову интересная идея. Нужно написать генератор кода
+на C++ (по данным, вытягиваемым из базы данных), так что я установил
+&lt;a class="reference external" href="http://jinja.pocoo.org/2/"&gt;Jinja2&lt;/a&gt;, навострил текстовые редакторы и
+подумал: «А не будет ли круто сразу видеть результат, прямо по ходу
+написания кода? Зачем мне два монитора, в конце концов — на одном буду
+писать, а второй пусть результат кажет.»&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://skrattaren.bitbucket.io/ru/posts/codewatch/"&gt;Читать далее…&lt;/a&gt; (1 минут чтения осталось)&lt;/p&gt;&lt;/div&gt;</description><category>linux</category><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/ru/posts/codewatch/</guid><pubDate>Tue, 22 Dec 2009 15:12:20 GMT</pubDate></item><item><title>Matplotlib</title><link>https://skrattaren.bitbucket.io/ru/posts/matplotlib/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;В помощь начинающим использовать рисовательную библиотеку
+&lt;a class="reference external" href="http://matplotlib.sourceforge.net/index.html"&gt;Matplotlib&lt;/a&gt;: тамошняя
+&lt;a class="reference external" href="http://matplotlib.sourceforge.net/contents.html"&gt;документация&lt;/a&gt;
+просторна и обширна, но, к сожалению, довольно запутана. Так что после
+овладения основами рекомендую перейти к &lt;a class="reference external" href="http://matplotlib.sourceforge.net/gallery.html"&gt;галерее
+примеров&lt;/a&gt;, где при
+некотором навыке можно найти не просто кучу полезных примеров, но и
+вычленить интересующие элементы.&lt;/p&gt;</description><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/ru/posts/matplotlib/</guid><pubDate>Mon, 15 Dec 2008 09:12:33 GMT</pubDate></item><item><title>Django: ограничение выборки в формах админки</title><link>https://skrattaren.bitbucket.io/ru/posts/django-querysets/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Допустим, у Вас в приложении Django есть две модели, &lt;strong&gt;Object&lt;/strong&gt; и
+&lt;strong&gt;SuperObject&lt;/strong&gt;, связанных через &lt;strong&gt;ManyToMany&lt;/strong&gt;. И когда Вы добавляете
+или изменяете &lt;strong&gt;SuperObject&lt;/strong&gt;, Вы видите в форме список из всех
+&lt;strong&gt;Object&lt;/strong&gt;'ов. А вы их хотите ограничить, причём динамически — скажем,
+по правам доступа для текущего пользователя. Добиться этого можно,
+например, так.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://skrattaren.bitbucket.io/ru/posts/django-querysets/"&gt;Читать далее…&lt;/a&gt; (1 минут чтения осталось)&lt;/p&gt;&lt;/div&gt;</description><category>django</category><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/ru/posts/django-querysets/</guid><pubDate>Wed, 26 Nov 2008 22:11:27 GMT</pubDate></item><item><title>Задачка / A quest</title><link>https://skrattaren.bitbucket.io/ru/posts/quest/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;Теперь в моём частично полном распоряжении (то есть пароль root'а есть,
+но не только у меня) имеется круглосуточно работающий (в идеале)
+Linux-сервер со внешним IP и полным доступом. Python, Django,
+PostgreSQL, nginx... То есть наличествует возможность сделать
+более-менее что угодно, остаётся решить, что же мне такого-эдакого
+угодно. Принимаются идеи (-:Е&lt;/p&gt;
+&lt;p&gt;Hardingrock - Grimen (2007)&lt;/p&gt;</description><category>jabber</category><category>linux</category><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/ru/posts/quest/</guid><pubDate>Fri, 03 Oct 2008 19:10:54 GMT</pubDate></item><item><title>Высоко и низко</title><link>https://skrattaren.bitbucket.io/ru/posts/high-and-low-level/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;Из свежих впечатлений.&lt;/p&gt;
+&lt;p&gt;Засада "низкоуровневого" программирования — полдня писать код, модуль
+с которым можно было найти за пять минут.&lt;/p&gt;
+&lt;p&gt;Засада "высокоуровневого" программирования — полдня искать модуль для
+кода, который можно было написать за полчаса.&lt;/p&gt;</description><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/ru/posts/high-and-low-level/</guid><pubDate>Mon, 21 Jul 2008 15:07:08 GMT</pubDate></item></channel></rss>

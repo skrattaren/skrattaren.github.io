@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unseen Hexadecimals (Posts about python)</title><link>https://skrattaren.bitbucket.io/</link><description></description><atom:link href="https://skrattaren.bitbucket.io/categories/python.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 21 May 2022 15:26:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Python: usage in enterprise environment</title><link>https://skrattaren.bitbucket.io/posts/enterprize-python/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;&lt;img alt="image0" src="https://skrattaren.bitbucket.io/images/blog/pingisracket.jpg"&gt;&lt;/p&gt;</description><category>python</category><category>хе-хе</category><guid>https://skrattaren.bitbucket.io/posts/enterprize-python/</guid><pubDate>Mon, 31 Oct 2011 07:10:17 GMT</pubDate></item><item><title>Flask sessions and unicode_literals</title><link>https://skrattaren.bitbucket.io/posts/flask-u-literals/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;If you had tried to use &lt;a class="reference external" href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; sessions
+and got something like that:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;File "/usr/lib64/python2.7/site-packages/flask/app.py", line 889, in __call__
+  return self.wsgi_app(environ, start_response)
+File "/usr/lib64/python2.7/site-packages/flask/app.py", line 871, in wsgi_app
+  with self.request_context(environ):
+File "/usr/lib64/python2.7/site-packages/flask/app.py", line 836, in request_context
+  return _RequestContext(self, environ)
+File "/usr/lib64/python2.7/site-packages/flask/ctx.py", line 33, in __init__
+  self.session = app.open_session(self.request)
+File "/usr/lib64/python2.7/site-packages/flask/app.py", line 431, in open_session
+  secret_key=key)
+File "/usr/lib64/python2.7/site-packages/werkzeug/contrib/securecookie.py", line 308, in load_cookie
+  return cls.unserialize(data, secret_key)
+File "/usr/lib64/python2.7/site-packages/werkzeug/contrib/securecookie.py", line 255, in unserialize
+  mac = hmac(secret_key, None, cls.hash_method)
+File "/usr/lib64/python2.7/hmac.py", line 133, in new
+  return HMAC(key, msg, digestmod)
+File "/usr/lib64/python2.7/hmac.py", line 72, in __init__
+  self.outer.update(key.translate(trans_5C))&lt;/pre&gt;
+&lt;p&gt;...you might be obscured. Fear not! The reason may lurk in&lt;/p&gt;
+&lt;pre class="literal-block"&gt;from __future__ import unicode_literals&lt;/pre&gt;
+&lt;p&gt;Just declare your SECRET_KEY as `bytes` object and get happy again!&lt;/p&gt;
+&lt;pre class="literal-block"&gt;SECRET_KEY = b'smthverrysekret'&lt;/pre&gt;</description><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/posts/flask-u-literals/</guid><pubDate>Thu, 07 Apr 2011 13:04:43 GMT</pubDate></item><item><title>Python: nested iterator</title><link>https://skrattaren.bitbucket.io/posts/py-nested-iter/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Just a (probably) useful examle of nested Python generator written in
+Python using recursive &lt;strong&gt;*yield*&lt;/strong&gt; expression.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://skrattaren.bitbucket.io/posts/py-nested-iter/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>python</category><guid>https://skrattaren.bitbucket.io/posts/py-nested-iter/</guid><pubDate>Thu, 08 Jul 2010 15:07:01 GMT</pubDate></item><item><title>Tabs and spaces</title><link>https://skrattaren.bitbucket.io/posts/tabs-n-spaces/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;That's quite old and well-known, of course, but I now have to deal
+with code like that (count the spaces!):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;class c_integral_type(c_type):
+    def __init__(self, name, format, min, max):
+       c_type.__init__(self, name, struct.calcsize(format))&lt;/pre&gt;
+&lt;p&gt;or like that (&lt;code class="docutils literal"&gt;tabstop&lt;/code&gt; is obviously expected to be 8 or 12):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;def genMemList( self, members ):              # indented with 4 spaces
+self.append( '\tdef members(self):\n' )  # indented with one &amp;lt;Tab&amp;gt;&lt;/pre&gt;
+&lt;p&gt;So…&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image0" src="http://www.emacswiki.org/pics/static/TabsSpacesBoth.png"&gt;&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;Oh &lt;strong&gt;noes&lt;/strong&gt;! That's what I had to deal with:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;  % pylint buratino
+   .......
+Your code has been rated at -1.79/10&lt;/pre&gt;
+&lt;p&gt;My code isn't perfect, I'd be first to agree, but it scores 7/10, and
+it's positive 7, mind you!
+Bloody hell. So, back to work then&lt;/p&gt;</description><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/posts/tabs-n-spaces/</guid><pubDate>Tue, 15 Jun 2010 09:06:12 GMT</pubDate></item><item><title>psycopg2 returns tuples of string</title><link>https://skrattaren.bitbucket.io/posts/psycopg-tuples-of-strings/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;Today I was fiddling with &lt;a class="reference external" href="http://www.postgresql.org/"&gt;PostgreSQL&lt;/a&gt;
+(v8.3, if anyone is interested) database from Python using famous
+psycopg2, but suddenly got stuck in unexpected place. Had switched to
+&lt;a class="reference external" href="http://www.bpython-interpreter.org/"&gt;bpython&lt;/a&gt; shell I saw the
+following:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;&amp;gt;&amp;gt;&amp;gt; cur.execute('''SELECT (parent, level) FROM "MsgElems" WHERE msg_id=1;''')
+
+&amp;gt;&amp;gt;&amp;gt; cur.fetchone()
+
+('(0,1)',)&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;SELECT&lt;/em&gt; returned tuple of string, one string. Now that's what I call
+unexpected… I didn't find anything neither in Python DBAPI PEP nor
+psycopg docs, but after some time a bright idea came:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;&amp;gt;&amp;gt;&amp;gt; cur.execute('''SELECT parent, level FROM "MsgElems" WHERE msg_id=1;''')
+
+&amp;gt;&amp;gt;&amp;gt; cur.fetchone()
+
+(0, 1)&lt;/pre&gt;
+&lt;p&gt;Watch out. Meanwhile I'll try to find out, what triggers such weird
+behaviour, and if it is weird at all.&lt;/p&gt;</description><category>linux</category><category>python</category><guid>https://skrattaren.bitbucket.io/posts/psycopg-tuples-of-strings/</guid><pubDate>Tue, 29 Dec 2009 11:12:20 GMT</pubDate></item><item><title>Change the code and see the result</title><link>https://skrattaren.bitbucket.io/posts/codewatch/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;An interesting idea came to me several days ago. I have to write C++
+code generator (sourcing data from SQL database), so I installed
+&lt;a class="reference external" href="http://jinja.pocoo.org/2/"&gt;Jinja2&lt;/a&gt;, sharpened text editors and then
+asked myself: „Wouldn't it be beautiful to see the result just as I type
+Python code, portion by portion? There's a use for two monitors: the
+first one displays coding, the second one keeps freshly generated result
+always ready for review.“&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://skrattaren.bitbucket.io/posts/codewatch/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>linux</category><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/posts/codewatch/</guid><pubDate>Tue, 22 Dec 2009 15:12:20 GMT</pubDate></item><item><title>Matplotlib</title><link>https://skrattaren.bitbucket.io/posts/matplotlib/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;If you plan to use
+&lt;a class="reference external" href="http://matplotlib.sourceforge.net/index.html"&gt;Matplotlib&lt;/a&gt; plotting
+library, remember, that it has vast, but not-so-well organized
+&lt;a class="reference external" href="http://matplotlib.sourceforge.net/contents.html"&gt;documentation&lt;/a&gt;, so
+when you feel yourself familiar with MPL basics, move to &lt;a class="reference external" href="http://matplotlib.sourceforge.net/gallery.html"&gt;examples
+gallery&lt;/a&gt; to find
+illustrated howtos.&lt;/p&gt;</description><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/posts/matplotlib/</guid><pubDate>Mon, 15 Dec 2008 09:12:33 GMT</pubDate></item><item><title>Django: limiting querysets in admin forms</title><link>https://skrattaren.bitbucket.io/posts/django-querysets/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Let's suppose you have two related types of objects in your Django app.
+Call them &lt;strong&gt;Object&lt;/strong&gt; and &lt;strong&gt;SuperObject&lt;/strong&gt;, related &lt;em&gt;ManyToMany&lt;/em&gt;'ly. And
+when you add/change &lt;strong&gt;SuperObject&lt;/strong&gt; in Django admin, there's all
+&lt;strong&gt;Object&lt;/strong&gt;s available for selection. But you need to limit the
+choices, and limit dynamically (perhaps, depending on current user).
+Here's quite straightforward but working technique.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://skrattaren.bitbucket.io/posts/django-querysets/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>django</category><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/posts/django-querysets/</guid><pubDate>Wed, 26 Nov 2008 22:11:27 GMT</pubDate></item><item><title>A quest</title><link>https://skrattaren.bitbucket.io/posts/quest/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;Now I have a Linux-server with external IP at my (almost my) disposal.
+Python, Django, PostgreSQL, nginx... So I can do everything I want. All
+that I need now, is to decide &lt;strong&gt;what&lt;/strong&gt; do I want (-:E
+Any suggestions for me to implement?&lt;/p&gt;
+&lt;p&gt;Hardingrock - Grimen (2007)&lt;/p&gt;</description><category>jabber</category><category>linux</category><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/posts/quest/</guid><pubDate>Fri, 03 Oct 2008 19:10:54 GMT</pubDate></item><item><title>High-level and low-level</title><link>https://skrattaren.bitbucket.io/posts/high-and-low-level/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;Fresh impressions.&lt;/p&gt;
+&lt;p&gt;Low-level programming trap — writing for half of a day code instead
+of finding suitable ready-to-use module in five minutes.&lt;/p&gt;
+&lt;p&gt;High-level programming trap — looking for suitable module for a few
+hours instead of writing your own code in quarter of hour.&lt;/p&gt;</description><category>programmierung</category><category>python</category><guid>https://skrattaren.bitbucket.io/posts/high-and-low-level/</guid><pubDate>Mon, 21 Jul 2008 15:07:08 GMT</pubDate></item></channel></rss>
