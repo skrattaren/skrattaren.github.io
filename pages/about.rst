@@ -19,7 +19,7 @@ atheist and communist.  All in all, quite a merry chap, too!
 My stuff on the interwebz
 =========================
 
-- `BitBucket repos <https://bitbucket.org/skrattaren/>`_
+- `GitHub repos <https://github.com/skrattaren/>`_
 - `Flickr albums <https://www.flickr.com/photos/124746635@N08/albums>`_
 - `BandCamp page <https://bandcamp.com/skrattaren>`_
 - `Last.FM profile <http://www.last.fm/sv/user/Sterkrig>`_

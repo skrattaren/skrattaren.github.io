@@ -103,6 +103,4 @@ Few things worth mentioning:
    reach it
 
 `CLI script (refactored mercilessly) on
-BitBucket <https://bitbucket.org/skrattaren/scripties/src/tip/inotify_watcher.py>`__
-
-`Screencast <http://files.myopera.com/Sterkrig/files/codewatcher.ogv>`__
+GitHub <https://github.com/skrattaren/scripties/blob/master/inotify_watcher.py>`__

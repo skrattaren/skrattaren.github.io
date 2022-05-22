@@ -21,10 +21,10 @@ BLOG_AUTHOR = "Николай Шуйский (Nikolaj Šujskij)"
 BLOG_TITLE = "Unseen Hexadecimals"  # translatable
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://skrattaren.bitbucket.io/"
+SITE_URL = "https://skrattaren.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "https://skrattaren.bitbucket.io/"
+# BASE_URL = "https://skrattaren.github.io/"
 BLOG_EMAIL = "skrattaren@yandex.ru"
 BLOG_DESCRIPTION = (
     "Usual collection of thoughts, things I want all the internets to know, "
