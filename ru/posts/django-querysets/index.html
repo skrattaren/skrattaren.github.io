@@ -9,7 +9,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS (ru)" hreflang="ru" href="../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" hreflang="en" href="../../../rss.xml">
-<link rel="canonical" href="https://skrattaren.bitbucket.io/ru/posts/django-querysets/">
+<link rel="canonical" href="https://skrattaren.github.io/ru/posts/django-querysets/">
 <link rel="icon" href="../../../favicon_16.ico" sizes="16x16">
 <link rel="icon" href="../../../favicon_32.ico" sizes="32x32">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Николай Шуйский (Nikolaj Šujskij)">
@@ -17,7 +17,7 @@
 <link rel="next" href="../hphones/" title="Наушники" type="text/html">
 <meta property="og:site_name" content="Unseen Hexadecimals">
 <meta property="og:title" content="Django: ограничение выборки в формах админки">
-<meta property="og:url" content="https://skrattaren.bitbucket.io/ru/posts/django-querysets/">
+<meta property="og:url" content="https://skrattaren.github.io/ru/posts/django-querysets/">
 <meta property="og:description" content="Допустим, у Вас в приложении Django есть две модели, Object и
 SuperObject, связанных через ManyToMany. И когда Вы добавляете
 или изменяете SuperObject, Вы видите в форме список из всех
@@ -43,7 +43,7 @@ Object'ов. А вы">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://skrattaren.bitbucket.io/ru/">
+            <a class="navbar-brand" href="https://skrattaren.github.io/ru/">
 
                 <span id="blog-title">Unseen Hexadecimals</span>
             </a>
@@ -68,7 +68,7 @@ Object'ов. А вы">
 </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>            </li>
-<li><a href="https://skrattaren.bitbucket.io/" rel="alternate" hreflang="en">English</a></li>
+<li><a href="https://skrattaren.github.io/" rel="alternate" hreflang="en">English</a></li>
 
     <li>
     <a href="index.rst" id="sourcelink">Источник</a>
@@ -114,20 +114,20 @@ Object'ов. А вы">
 по правам доступа для текущего пользователя. Добиться этого можно,
 например, так.</p>
 <!-- TEASER_END -->
-<div class="code"><pre class="code python"><a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-1" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-1" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-1"></a><span class="k">def</span> <span class="nf">make_metaform</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-2" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-2" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-2"></a>    <span class="k">class</span> <span class="nc">MetaForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-3" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-3" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-3"></a>        <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-4" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-4" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-4"></a>            <span class="n">model</span> <span class="o">=</span> <span class="n">SuperObject</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-5" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-5" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-5"></a>        <span class="n">objects_list</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ModelMultipleChoiceField</span><span class="p">(</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-6" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-6" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-6"></a>                <span class="n">queryset</span><span class="o">=</span><span class="n">Object</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">objectmod__user__id</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-7" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-7" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-7"></a>                                                 <span class="n">objectmod__can_read</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-8" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-8" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-8"></a>    <span class="k">return</span> <span class="n">MetaForm</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-9" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-9" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-9"></a>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-10" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-10" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-10"></a>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-11" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-11" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-11"></a><span class="k">class</span> <span class="nc">MetaAdmin</span><span class="p">(</span><span class="n">ZpixObject</span><span class="p">):</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-12" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-12" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-12"></a>    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-13" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-13" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-13"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">form</span> <span class="o">=</span> <span class="n">make_metaform</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
-<a id="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-14" name="rest_code_a8e301e7797a49419d79f2ae5a7c71f3-14" href="#rest_code_a8e301e7797a49419d79f2ae5a7c71f3-14"></a>        <span class="k">return</span> <span class="n">ZpixObject</span><span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+<div class="code"><pre class="code python"><a id="rest_code_667b6d590577479caa6de3a7458746ee-1" name="rest_code_667b6d590577479caa6de3a7458746ee-1" href="#rest_code_667b6d590577479caa6de3a7458746ee-1"></a><span class="k">def</span> <span class="nf">make_metaform</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-2" name="rest_code_667b6d590577479caa6de3a7458746ee-2" href="#rest_code_667b6d590577479caa6de3a7458746ee-2"></a>    <span class="k">class</span> <span class="nc">MetaForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-3" name="rest_code_667b6d590577479caa6de3a7458746ee-3" href="#rest_code_667b6d590577479caa6de3a7458746ee-3"></a>        <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-4" name="rest_code_667b6d590577479caa6de3a7458746ee-4" href="#rest_code_667b6d590577479caa6de3a7458746ee-4"></a>            <span class="n">model</span> <span class="o">=</span> <span class="n">SuperObject</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-5" name="rest_code_667b6d590577479caa6de3a7458746ee-5" href="#rest_code_667b6d590577479caa6de3a7458746ee-5"></a>        <span class="n">objects_list</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ModelMultipleChoiceField</span><span class="p">(</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-6" name="rest_code_667b6d590577479caa6de3a7458746ee-6" href="#rest_code_667b6d590577479caa6de3a7458746ee-6"></a>                <span class="n">queryset</span><span class="o">=</span><span class="n">Object</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">objectmod__user__id</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-7" name="rest_code_667b6d590577479caa6de3a7458746ee-7" href="#rest_code_667b6d590577479caa6de3a7458746ee-7"></a>                                                 <span class="n">objectmod__can_read</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-8" name="rest_code_667b6d590577479caa6de3a7458746ee-8" href="#rest_code_667b6d590577479caa6de3a7458746ee-8"></a>    <span class="k">return</span> <span class="n">MetaForm</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-9" name="rest_code_667b6d590577479caa6de3a7458746ee-9" href="#rest_code_667b6d590577479caa6de3a7458746ee-9"></a>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-10" name="rest_code_667b6d590577479caa6de3a7458746ee-10" href="#rest_code_667b6d590577479caa6de3a7458746ee-10"></a>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-11" name="rest_code_667b6d590577479caa6de3a7458746ee-11" href="#rest_code_667b6d590577479caa6de3a7458746ee-11"></a><span class="k">class</span> <span class="nc">MetaAdmin</span><span class="p">(</span><span class="n">ZpixObject</span><span class="p">):</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-12" name="rest_code_667b6d590577479caa6de3a7458746ee-12" href="#rest_code_667b6d590577479caa6de3a7458746ee-12"></a>    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-13" name="rest_code_667b6d590577479caa6de3a7458746ee-13" href="#rest_code_667b6d590577479caa6de3a7458746ee-13"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">form</span> <span class="o">=</span> <span class="n">make_metaform</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
+<a id="rest_code_667b6d590577479caa6de3a7458746ee-14" name="rest_code_667b6d590577479caa6de3a7458746ee-14" href="#rest_code_667b6d590577479caa6de3a7458746ee-14"></a>        <span class="k">return</span> <span class="n">ZpixObject</span><span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
 </pre></div>
 <p>Что мы тут делаем:</p>
 <ul class="simple">
@@ -165,7 +165,7 @@ Object'ов. А вы">
                     <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="skrattaren-bblogg",
-            disqus_url="https://skrattaren.bitbucket.io/ru/posts/django-querysets/",
+            disqus_url="https://skrattaren.github.io/ru/posts/django-querysets/",
         disqus_title="Django: \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u0435 \u0432\u044b\u0431\u043e\u0440\u043a\u0438 \u0432 \u0444\u043e\u0440\u043c\u0430\u0445 \u0430\u0434\u043c\u0438\u043d\u043a\u0438",
         disqus_identifier="cache/posts/django-querysets.html",
         disqus_config = function () {

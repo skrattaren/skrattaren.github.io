@@ -9,7 +9,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS (ru)" hreflang="ru" href="../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" hreflang="en" href="../../../rss.xml">
-<link rel="canonical" href="https://skrattaren.bitbucket.io/ru/posts/py-nested-iter/">
+<link rel="canonical" href="https://skrattaren.github.io/ru/posts/py-nested-iter/">
 <link rel="icon" href="../../../favicon_16.ico" sizes="16x16">
 <link rel="icon" href="../../../favicon_32.ico" sizes="32x32">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Николай Шуйский (Nikolaj Šujskij)">
@@ -17,7 +17,7 @@
 <link rel="next" href="../about-springs/" title="О вёснах" type="text/html">
 <meta property="og:site_name" content="Unseen Hexadecimals">
 <meta property="og:title" content="Python: вложенный итератор">
-<meta property="og:url" content="https://skrattaren.bitbucket.io/ru/posts/py-nested-iter/">
+<meta property="og:url" content="https://skrattaren.github.io/ru/posts/py-nested-iter/">
 <meta property="og:description" content="Просто образчик вложенного итератора на Python, через рекурсивное
 выражение *yield*.
 
@@ -47,7 +47,7 @@ def cycle(smth):
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://skrattaren.bitbucket.io/ru/">
+            <a class="navbar-brand" href="https://skrattaren.github.io/ru/">
 
                 <span id="blog-title">Unseen Hexadecimals</span>
             </a>
@@ -72,7 +72,7 @@ def cycle(smth):
 </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>            </li>
-<li><a href="https://skrattaren.bitbucket.io/" rel="alternate" hreflang="en">English</a></li>
+<li><a href="https://skrattaren.github.io/" rel="alternate" hreflang="en">English</a></li>
 
     <li>
     <a href="index.rst" id="sourcelink">Источник</a>
@@ -114,33 +114,33 @@ def cycle(smth):
     <p>Просто образчик вложенного итератора на Python, через рекурсивное
 выражение <strong>*yield*</strong>.</p>
 <!-- TEASER_END -->
-<div class="code"><pre class="code python"><a id="rest_code_fb769476391940f986c5bd54dbd26fc0-1" name="rest_code_fb769476391940f986c5bd54dbd26fc0-1" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-1"></a><span class="ch">#!/usr/bin/env python</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-2" name="rest_code_fb769476391940f986c5bd54dbd26fc0-2" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-2"></a><span class="c1"># -*- coding: utf-8 -*-</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-3" name="rest_code_fb769476391940f986c5bd54dbd26fc0-3" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-3"></a>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-4" name="rest_code_fb769476391940f986c5bd54dbd26fc0-4" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-4"></a><span class="n">sample</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">6</span><span class="p">,</span> <span class="p">((</span><span class="mi">7</span><span class="p">,</span> <span class="p">),</span> <span class="mi">8</span><span class="p">),</span> <span class="mi">9</span><span class="p">)</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-5" name="rest_code_fb769476391940f986c5bd54dbd26fc0-5" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-5"></a>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-6" name="rest_code_fb769476391940f986c5bd54dbd26fc0-6" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-6"></a><span class="k">def</span> <span class="nf">cycle</span><span class="p">(</span><span class="n">smth</span><span class="p">):</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-7" name="rest_code_fb769476391940f986c5bd54dbd26fc0-7" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">smth</span><span class="p">:</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-8" name="rest_code_fb769476391940f986c5bd54dbd26fc0-8" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-8"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-9" name="rest_code_fb769476391940f986c5bd54dbd26fc0-9" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-9"></a>            <span class="k">yield</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-10" name="rest_code_fb769476391940f986c5bd54dbd26fc0-10" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-10"></a>        <span class="k">else</span><span class="p">:</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-11" name="rest_code_fb769476391940f986c5bd54dbd26fc0-11" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-11"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-12" name="rest_code_fb769476391940f986c5bd54dbd26fc0-12" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-12"></a>                <span class="k">yield</span> <span class="n">j</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-13" name="rest_code_fb769476391940f986c5bd54dbd26fc0-13" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-13"></a>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-14" name="rest_code_fb769476391940f986c5bd54dbd26fc0-14" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-14"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">sample</span><span class="p">):</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-15" name="rest_code_fb769476391940f986c5bd54dbd26fc0-15" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-16" name="rest_code_fb769476391940f986c5bd54dbd26fc0-16" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-16"></a>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-17" name="rest_code_fb769476391940f986c5bd54dbd26fc0-17" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-17"></a><span class="o">-------------</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-18" name="rest_code_fb769476391940f986c5bd54dbd26fc0-18" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-18"></a>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-19" name="rest_code_fb769476391940f986c5bd54dbd26fc0-19" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-19"></a><span class="mi">1</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-20" name="rest_code_fb769476391940f986c5bd54dbd26fc0-20" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-20"></a><span class="mi">4</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-21" name="rest_code_fb769476391940f986c5bd54dbd26fc0-21" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-21"></a><span class="mi">9</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-22" name="rest_code_fb769476391940f986c5bd54dbd26fc0-22" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-22"></a><span class="mi">16</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-23" name="rest_code_fb769476391940f986c5bd54dbd26fc0-23" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-23"></a><span class="mi">25</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-24" name="rest_code_fb769476391940f986c5bd54dbd26fc0-24" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-24"></a><span class="mi">36</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-25" name="rest_code_fb769476391940f986c5bd54dbd26fc0-25" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-25"></a><span class="mi">49</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-26" name="rest_code_fb769476391940f986c5bd54dbd26fc0-26" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-26"></a><span class="mi">64</span>
-<a id="rest_code_fb769476391940f986c5bd54dbd26fc0-27" name="rest_code_fb769476391940f986c5bd54dbd26fc0-27" href="#rest_code_fb769476391940f986c5bd54dbd26fc0-27"></a><span class="mi">81</span>
+<div class="code"><pre class="code python"><a id="rest_code_fe898abb96084e65990b1ef50dec161c-1" name="rest_code_fe898abb96084e65990b1ef50dec161c-1" href="#rest_code_fe898abb96084e65990b1ef50dec161c-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-2" name="rest_code_fe898abb96084e65990b1ef50dec161c-2" href="#rest_code_fe898abb96084e65990b1ef50dec161c-2"></a><span class="c1"># -*- coding: utf-8 -*-</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-3" name="rest_code_fe898abb96084e65990b1ef50dec161c-3" href="#rest_code_fe898abb96084e65990b1ef50dec161c-3"></a>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-4" name="rest_code_fe898abb96084e65990b1ef50dec161c-4" href="#rest_code_fe898abb96084e65990b1ef50dec161c-4"></a><span class="n">sample</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">6</span><span class="p">,</span> <span class="p">((</span><span class="mi">7</span><span class="p">,</span> <span class="p">),</span> <span class="mi">8</span><span class="p">),</span> <span class="mi">9</span><span class="p">)</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-5" name="rest_code_fe898abb96084e65990b1ef50dec161c-5" href="#rest_code_fe898abb96084e65990b1ef50dec161c-5"></a>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-6" name="rest_code_fe898abb96084e65990b1ef50dec161c-6" href="#rest_code_fe898abb96084e65990b1ef50dec161c-6"></a><span class="k">def</span> <span class="nf">cycle</span><span class="p">(</span><span class="n">smth</span><span class="p">):</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-7" name="rest_code_fe898abb96084e65990b1ef50dec161c-7" href="#rest_code_fe898abb96084e65990b1ef50dec161c-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">smth</span><span class="p">:</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-8" name="rest_code_fe898abb96084e65990b1ef50dec161c-8" href="#rest_code_fe898abb96084e65990b1ef50dec161c-8"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-9" name="rest_code_fe898abb96084e65990b1ef50dec161c-9" href="#rest_code_fe898abb96084e65990b1ef50dec161c-9"></a>            <span class="k">yield</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-10" name="rest_code_fe898abb96084e65990b1ef50dec161c-10" href="#rest_code_fe898abb96084e65990b1ef50dec161c-10"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-11" name="rest_code_fe898abb96084e65990b1ef50dec161c-11" href="#rest_code_fe898abb96084e65990b1ef50dec161c-11"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-12" name="rest_code_fe898abb96084e65990b1ef50dec161c-12" href="#rest_code_fe898abb96084e65990b1ef50dec161c-12"></a>                <span class="k">yield</span> <span class="n">j</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-13" name="rest_code_fe898abb96084e65990b1ef50dec161c-13" href="#rest_code_fe898abb96084e65990b1ef50dec161c-13"></a>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-14" name="rest_code_fe898abb96084e65990b1ef50dec161c-14" href="#rest_code_fe898abb96084e65990b1ef50dec161c-14"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">sample</span><span class="p">):</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-15" name="rest_code_fe898abb96084e65990b1ef50dec161c-15" href="#rest_code_fe898abb96084e65990b1ef50dec161c-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-16" name="rest_code_fe898abb96084e65990b1ef50dec161c-16" href="#rest_code_fe898abb96084e65990b1ef50dec161c-16"></a>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-17" name="rest_code_fe898abb96084e65990b1ef50dec161c-17" href="#rest_code_fe898abb96084e65990b1ef50dec161c-17"></a><span class="o">-------------</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-18" name="rest_code_fe898abb96084e65990b1ef50dec161c-18" href="#rest_code_fe898abb96084e65990b1ef50dec161c-18"></a>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-19" name="rest_code_fe898abb96084e65990b1ef50dec161c-19" href="#rest_code_fe898abb96084e65990b1ef50dec161c-19"></a><span class="mi">1</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-20" name="rest_code_fe898abb96084e65990b1ef50dec161c-20" href="#rest_code_fe898abb96084e65990b1ef50dec161c-20"></a><span class="mi">4</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-21" name="rest_code_fe898abb96084e65990b1ef50dec161c-21" href="#rest_code_fe898abb96084e65990b1ef50dec161c-21"></a><span class="mi">9</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-22" name="rest_code_fe898abb96084e65990b1ef50dec161c-22" href="#rest_code_fe898abb96084e65990b1ef50dec161c-22"></a><span class="mi">16</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-23" name="rest_code_fe898abb96084e65990b1ef50dec161c-23" href="#rest_code_fe898abb96084e65990b1ef50dec161c-23"></a><span class="mi">25</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-24" name="rest_code_fe898abb96084e65990b1ef50dec161c-24" href="#rest_code_fe898abb96084e65990b1ef50dec161c-24"></a><span class="mi">36</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-25" name="rest_code_fe898abb96084e65990b1ef50dec161c-25" href="#rest_code_fe898abb96084e65990b1ef50dec161c-25"></a><span class="mi">49</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-26" name="rest_code_fe898abb96084e65990b1ef50dec161c-26" href="#rest_code_fe898abb96084e65990b1ef50dec161c-26"></a><span class="mi">64</span>
+<a id="rest_code_fe898abb96084e65990b1ef50dec161c-27" name="rest_code_fe898abb96084e65990b1ef50dec161c-27" href="#rest_code_fe898abb96084e65990b1ef50dec161c-27"></a><span class="mi">81</span>
 </pre></div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
@@ -157,7 +157,7 @@ def cycle(smth):
                     <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="skrattaren-bblogg",
-            disqus_url="https://skrattaren.bitbucket.io/ru/posts/py-nested-iter/",
+            disqus_url="https://skrattaren.github.io/ru/posts/py-nested-iter/",
         disqus_title="Python: \u0432\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0439 \u0438\u0442\u0435\u0440\u0430\u0442\u043e\u0440",
         disqus_identifier="cache/posts/py-nested-iter.html",
         disqus_config = function () {

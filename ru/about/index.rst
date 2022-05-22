@@ -17,7 +17,7 @@
 Моё всякое в интернетах
 =======================
 
-- `Репки BitBucket <https://bitbucket.org/skrattaren/>`_
+- `Репки на GitHub <https://github.com/skrattaren/>`_
 - `Альбомы на Flickr <https://www.flickr.com/photos/124746635@N08/albums>`_
 - `Страничка на BandCamp <https://bandcamp.com/skrattaren>`_
 - `Профиль на Last.FM <http://www.last.fm/sv/user/Sterkrig>`_

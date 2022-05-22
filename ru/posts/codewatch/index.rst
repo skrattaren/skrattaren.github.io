@@ -103,6 +103,4 @@ Linux <http://gentoo.org/>`__, а ядро Linux умеет
 
 `Сценарийчик (уже безжалостно перепиленный) для использования в
 командной строке на
-BitBucket <https://bitbucket.org/skrattaren/scripties/src/tip/inotify_watcher.py>`__
-
-`[ВИДЕО!] <http://files.myopera.com/Sterkrig/files/codewatcher.ogv>`__
+GitHub <https://github.com/skrattaren/scripties/blob/master/inotify_watcher.py>`__
