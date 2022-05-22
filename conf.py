@@ -476,11 +476,11 @@ GITHUB_DEPLOY_BRANCH = 'gh-pages'
 # <https://getnikola.com/handbook.html#post-processing-filters>
 #
 # from nikola import filters
-# FILTERS = {
-#    ".html": [filters.typogrify],
-#    ".js": [filters.closure_compiler],
-#    ".jpg": ["jpegoptim --strip-all -m75 -v %s"],
-# }
+FILTERS = {
+   ".html": ["filters.typogrify"],
+   ".css": ["filters.cssminify"],
+   ".js": ["filters.jsminify"],
+}
 
 # Expert setting! Create a gzipped copy of each generated file. Cheap server-
 # side optimization for very high traffic sites or low memory servers.
