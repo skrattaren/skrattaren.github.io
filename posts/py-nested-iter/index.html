@@ -59,10 +59,10 @@ sample = (1, 2, (3, 4, 5), 6, ((7, ), 8">
 <a href="../../categories/">Tags</a>
                 </li>
 <li>
-<a href="../../about">About me</a>
+<a href="../../about">About&nbsp;me</a>
                 </li>
 <li>
-<a href="../../rss.xml">RSS feed</a>
+<a href="../../rss.xml"><span class="caps">RSS</span>&nbsp;feed</a>
 
                 
             </li>
@@ -85,11 +85,11 @@ sample = (1, 2, (3, 4, 5), 6, ((7, ), 8">
         <!--Body content-->
         <div class="row">
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Python: nested iterator</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Python: nested&nbsp;iterator</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Николай Шуйский (Nikolaj Šujskij)
+                    Николай Шуйский (Nikolaj&nbsp;Šujskij)
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -103,41 +103,41 @@ sample = (1, 2, (3, 4, 5), 6, ((7, ), 8">
 
         </div>
                 <div class="metadata posttranslations translations">
-            <h3 class="posttranslations-intro">Also available in:</h3>
+            <h3 class="posttranslations-intro">Also available&nbsp;in:</h3>
                 <p><a href="../../ru/posts/py-nested-iter/" rel="alternate" hreflang="ru">Русский</a></p>
         </div>
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <p>Just a (probably) useful examle of nested Python generator written in
-Python using recursive <strong>*yield*</strong> expression.</p>
+Python using recursive <strong>*yield*</strong>&nbsp;expression.</p>
 <!-- TEASER_END -->
-<div class="code"><pre class="code python"><a id="rest_code_824bb93d11854e108289cc098b20e0c3-1" name="rest_code_824bb93d11854e108289cc098b20e0c3-1" href="#rest_code_824bb93d11854e108289cc098b20e0c3-1"></a><span class="ch">#!/usr/bin/env python</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-2" name="rest_code_824bb93d11854e108289cc098b20e0c3-2" href="#rest_code_824bb93d11854e108289cc098b20e0c3-2"></a><span class="c1"># -*- coding: utf-8 -*-</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-3" name="rest_code_824bb93d11854e108289cc098b20e0c3-3" href="#rest_code_824bb93d11854e108289cc098b20e0c3-3"></a>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-4" name="rest_code_824bb93d11854e108289cc098b20e0c3-4" href="#rest_code_824bb93d11854e108289cc098b20e0c3-4"></a><span class="n">sample</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">6</span><span class="p">,</span> <span class="p">((</span><span class="mi">7</span><span class="p">,</span> <span class="p">),</span> <span class="mi">8</span><span class="p">),</span> <span class="mi">9</span><span class="p">)</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-5" name="rest_code_824bb93d11854e108289cc098b20e0c3-5" href="#rest_code_824bb93d11854e108289cc098b20e0c3-5"></a>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-6" name="rest_code_824bb93d11854e108289cc098b20e0c3-6" href="#rest_code_824bb93d11854e108289cc098b20e0c3-6"></a><span class="k">def</span> <span class="nf">cycle</span><span class="p">(</span><span class="n">smth</span><span class="p">):</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-7" name="rest_code_824bb93d11854e108289cc098b20e0c3-7" href="#rest_code_824bb93d11854e108289cc098b20e0c3-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">smth</span><span class="p">:</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-8" name="rest_code_824bb93d11854e108289cc098b20e0c3-8" href="#rest_code_824bb93d11854e108289cc098b20e0c3-8"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-9" name="rest_code_824bb93d11854e108289cc098b20e0c3-9" href="#rest_code_824bb93d11854e108289cc098b20e0c3-9"></a>            <span class="k">yield</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-10" name="rest_code_824bb93d11854e108289cc098b20e0c3-10" href="#rest_code_824bb93d11854e108289cc098b20e0c3-10"></a>        <span class="k">else</span><span class="p">:</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-11" name="rest_code_824bb93d11854e108289cc098b20e0c3-11" href="#rest_code_824bb93d11854e108289cc098b20e0c3-11"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-12" name="rest_code_824bb93d11854e108289cc098b20e0c3-12" href="#rest_code_824bb93d11854e108289cc098b20e0c3-12"></a>                <span class="k">yield</span> <span class="n">j</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-13" name="rest_code_824bb93d11854e108289cc098b20e0c3-13" href="#rest_code_824bb93d11854e108289cc098b20e0c3-13"></a>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-14" name="rest_code_824bb93d11854e108289cc098b20e0c3-14" href="#rest_code_824bb93d11854e108289cc098b20e0c3-14"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">sample</span><span class="p">):</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-15" name="rest_code_824bb93d11854e108289cc098b20e0c3-15" href="#rest_code_824bb93d11854e108289cc098b20e0c3-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-16" name="rest_code_824bb93d11854e108289cc098b20e0c3-16" href="#rest_code_824bb93d11854e108289cc098b20e0c3-16"></a>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-17" name="rest_code_824bb93d11854e108289cc098b20e0c3-17" href="#rest_code_824bb93d11854e108289cc098b20e0c3-17"></a><span class="o">-------------</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-18" name="rest_code_824bb93d11854e108289cc098b20e0c3-18" href="#rest_code_824bb93d11854e108289cc098b20e0c3-18"></a>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-19" name="rest_code_824bb93d11854e108289cc098b20e0c3-19" href="#rest_code_824bb93d11854e108289cc098b20e0c3-19"></a><span class="mi">1</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-20" name="rest_code_824bb93d11854e108289cc098b20e0c3-20" href="#rest_code_824bb93d11854e108289cc098b20e0c3-20"></a><span class="mi">4</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-21" name="rest_code_824bb93d11854e108289cc098b20e0c3-21" href="#rest_code_824bb93d11854e108289cc098b20e0c3-21"></a><span class="mi">9</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-22" name="rest_code_824bb93d11854e108289cc098b20e0c3-22" href="#rest_code_824bb93d11854e108289cc098b20e0c3-22"></a><span class="mi">16</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-23" name="rest_code_824bb93d11854e108289cc098b20e0c3-23" href="#rest_code_824bb93d11854e108289cc098b20e0c3-23"></a><span class="mi">25</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-24" name="rest_code_824bb93d11854e108289cc098b20e0c3-24" href="#rest_code_824bb93d11854e108289cc098b20e0c3-24"></a><span class="mi">36</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-25" name="rest_code_824bb93d11854e108289cc098b20e0c3-25" href="#rest_code_824bb93d11854e108289cc098b20e0c3-25"></a><span class="mi">49</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-26" name="rest_code_824bb93d11854e108289cc098b20e0c3-26" href="#rest_code_824bb93d11854e108289cc098b20e0c3-26"></a><span class="mi">64</span>
-<a id="rest_code_824bb93d11854e108289cc098b20e0c3-27" name="rest_code_824bb93d11854e108289cc098b20e0c3-27" href="#rest_code_824bb93d11854e108289cc098b20e0c3-27"></a><span class="mi">81</span>
+<div class="code"><pre class="code python"><a id="rest_code_340b02df49184e56a8d8e00a23d7022f-1" name="rest_code_340b02df49184e56a8d8e00a23d7022f-1" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-2" name="rest_code_340b02df49184e56a8d8e00a23d7022f-2" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-2"></a><span class="c1"># -*- coding: utf-8 -*-</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-3" name="rest_code_340b02df49184e56a8d8e00a23d7022f-3" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-3"></a>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-4" name="rest_code_340b02df49184e56a8d8e00a23d7022f-4" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-4"></a><span class="n">sample</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">6</span><span class="p">,</span> <span class="p">((</span><span class="mi">7</span><span class="p">,</span> <span class="p">),</span> <span class="mi">8</span><span class="p">),</span> <span class="mi">9</span><span class="p">)</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-5" name="rest_code_340b02df49184e56a8d8e00a23d7022f-5" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-5"></a>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-6" name="rest_code_340b02df49184e56a8d8e00a23d7022f-6" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-6"></a><span class="k">def</span> <span class="nf">cycle</span><span class="p">(</span><span class="n">smth</span><span class="p">):</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-7" name="rest_code_340b02df49184e56a8d8e00a23d7022f-7" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">smth</span><span class="p">:</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-8" name="rest_code_340b02df49184e56a8d8e00a23d7022f-8" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-8"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-9" name="rest_code_340b02df49184e56a8d8e00a23d7022f-9" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-9"></a>            <span class="k">yield</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-10" name="rest_code_340b02df49184e56a8d8e00a23d7022f-10" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-10"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-11" name="rest_code_340b02df49184e56a8d8e00a23d7022f-11" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-11"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-12" name="rest_code_340b02df49184e56a8d8e00a23d7022f-12" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-12"></a>                <span class="k">yield</span> <span class="n">j</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-13" name="rest_code_340b02df49184e56a8d8e00a23d7022f-13" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-13"></a>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-14" name="rest_code_340b02df49184e56a8d8e00a23d7022f-14" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-14"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">sample</span><span class="p">):</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-15" name="rest_code_340b02df49184e56a8d8e00a23d7022f-15" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-16" name="rest_code_340b02df49184e56a8d8e00a23d7022f-16" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-16"></a>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-17" name="rest_code_340b02df49184e56a8d8e00a23d7022f-17" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-17"></a><span class="o">-------------</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-18" name="rest_code_340b02df49184e56a8d8e00a23d7022f-18" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-18"></a>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-19" name="rest_code_340b02df49184e56a8d8e00a23d7022f-19" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-19"></a><span class="mi">1</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-20" name="rest_code_340b02df49184e56a8d8e00a23d7022f-20" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-20"></a><span class="mi">4</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-21" name="rest_code_340b02df49184e56a8d8e00a23d7022f-21" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-21"></a><span class="mi">9</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-22" name="rest_code_340b02df49184e56a8d8e00a23d7022f-22" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-22"></a><span class="mi">16</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-23" name="rest_code_340b02df49184e56a8d8e00a23d7022f-23" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-23"></a><span class="mi">25</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-24" name="rest_code_340b02df49184e56a8d8e00a23d7022f-24" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-24"></a><span class="mi">36</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-25" name="rest_code_340b02df49184e56a8d8e00a23d7022f-25" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-25"></a><span class="mi">49</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-26" name="rest_code_340b02df49184e56a8d8e00a23d7022f-26" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-26"></a><span class="mi">64</span>
+<a id="rest_code_340b02df49184e56a8d8e00a23d7022f-27" name="rest_code_340b02df49184e56a8d8e00a23d7022f-27" href="#rest_code_340b02df49184e56a8d8e00a23d7022f-27"></a><span class="mi">81</span>
 </pre></div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
@@ -145,10 +145,10 @@ Python using recursive <strong>*yield*</strong> expression.</p>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../portage-bisect/" rel="prev" title="{hg, git} bisect + portage">Previous post</a>
+                <a href="../portage-bisect/" rel="prev" title="{hg, git} bisect + portage">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../about-springs/" rel="next" title="About springs">Next post</a>
+                <a href="../about-springs/" rel="next" title="About springs">Next&nbsp;post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                     <div id="disqus_thread"></div>

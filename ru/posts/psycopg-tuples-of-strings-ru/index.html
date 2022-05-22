@@ -58,10 +58,10 @@ bpythonа и узрел…
 <a href="../../categories/index.html">Ярлыки</a>
                 </li>
 <li>
-<a href="../../about">Про меня</a>
+<a href="../../about">Про&nbsp;меня</a>
                 </li>
 <li>
-<a href="../../rss.xml">Лента RSS</a>
+<a href="../../rss.xml">Лента&nbsp;<span class="caps">RSS</span></a>
 
                 
             </li>
@@ -84,11 +84,11 @@ bpythonа и узрел…
         <!--Body content-->
         <div class="row">
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">psycopg2 возвращает кортеж из строки</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">psycopg2 возвращает кортеж из&nbsp;строки</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Николай Шуйский (Nikolaj Šujskij)
+                    Николай Шуйский (Nikolaj&nbsp;Šujskij)
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -102,7 +102,7 @@ bpythonа и узрел…
 
         </div>
                 <div class="metadata posttranslations translations">
-            <h3 class="posttranslations-intro">Также доступно на:</h3>
+            <h3 class="posttranslations-intro">Также доступно&nbsp;на:</h3>
                 <p><a href="../../../posts/psycopg-tuples-of-strings/" rel="alternate" hreflang="en">English</a></p>
         </div>
 
@@ -110,23 +110,22 @@ bpythonа и узрел…
     <p>Игрался я сегодня с базой на <a class="reference external" href="http://www.postgresql.org/">PostgreSQL</a>
 (v8.3, если кому интересно) из Python посредством psycopg2, но внезапно
 застрял, да как-то неожиданно. Вылез в оболочку
-<a class="reference external" href="http://www.bpython-interpreter.org/">bpython</a>а и узрел…</p>
+<a class="reference external" href="http://www.bpython-interpreter.org/">bpython</a>а и&nbsp;узрел…</p>
 <pre class="literal-block">&gt;&gt;&gt; cur.execute('''SELECT (parent, level) FROM "MsgElems" WHERE msg_id=1;''')
 
 &gt;&gt;&gt; cur.fetchone()
 
 ('(0,1)',)</pre>
-<p><em>SELECT</em> возвращает кортеж из строки, именно <em>одной</em> строки. Вот это
-сюрприз. Ни в Python DBAPI PEP, ни в psycopg docs я ничего не нашёл
-умного, загрустил уже, но потом в голову пришла гениальная (как обычно)
-идея:</p>
+<p><em><span class="caps">SELECT</span></em> возвращает кортеж из строки, именно <em>одной</em> строки. Вот это
+сюрприз. Ни в Python <span class="caps">DBAPI</span> <span class="caps">PEP</span>, ни в psycopg docs я ничего не нашёл
+умного, загрустил уже, но потом в голову пришла гениальная (как обычно)&nbsp;идея:</p>
 <pre class="literal-block">&gt;&gt;&gt; cur.execute('''SELECT parent, level FROM "MsgElems" WHERE msg_id=1;''')
 
 &gt;&gt;&gt; cur.fetchone()
 
 (0, 1)</pre>
 <p>Вот такие пироги, остерегайтесь. А я тем временем попытаюсь выяснить,
-что это за ерунда, да и ерунда ли вообще.</p>
+что это за ерунда, да и ерунда ли&nbsp;вообще.</p>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/linux/" rel="tag">linux</a></li>
@@ -134,10 +133,10 @@ bpythonа и узрел…
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../codewatch/" rel="prev" title="Пишешь код и видишь результат">Предыдущая запись</a>
+                <a href="../codewatch/" rel="prev" title="Пишешь код и видишь результат">Предыдущая&nbsp;запись</a>
             </li>
             <li class="next">
-                <a href="../eselect-xorg-conf/" rel="next" title="Eselect'ing xorg.conf">Следующая запись</a>
+                <a href="../eselect-xorg-conf/" rel="next" title="Eselect'ing xorg.conf">Следующая&nbsp;запись</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Комментарии</h2>
                     <div id="disqus_thread"></div>

@@ -58,10 +58,10 @@ Object">
 <a href="../../categories/">Tags</a>
                 </li>
 <li>
-<a href="../../about">About me</a>
+<a href="../../about">About&nbsp;me</a>
                 </li>
 <li>
-<a href="../../rss.xml">RSS feed</a>
+<a href="../../rss.xml"><span class="caps">RSS</span>&nbsp;feed</a>
 
                 
             </li>
@@ -84,11 +84,11 @@ Object">
         <!--Body content-->
         <div class="row">
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Django: limiting querysets in admin forms</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Django: limiting querysets in admin&nbsp;forms</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Николай Шуйский (Nikolaj Šujskij)
+                    Николай Шуйский (Nikolaj&nbsp;Šujskij)
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -102,50 +102,49 @@ Object">
 
         </div>
                 <div class="metadata posttranslations translations">
-            <h3 class="posttranslations-intro">Also available in:</h3>
+            <h3 class="posttranslations-intro">Also available&nbsp;in:</h3>
                 <p><a href="../../ru/posts/django-querysets/" rel="alternate" hreflang="ru">Русский</a></p>
         </div>
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Let's suppose you have two related types of objects in your Django app.
-Call them <strong>Object</strong> and <strong>SuperObject</strong>, related <em>ManyToMany</em>'ly. And
-when you add/change <strong>SuperObject</strong> in Django admin, there's all
+    <p>Let&#8217;s suppose you have two related types of objects in your Django app.
+Call them <strong>Object</strong> and <strong>SuperObject</strong>, related <em>ManyToMany</em>&#8216;ly. And
+when you add/change <strong>SuperObject</strong> in Django admin, there&#8217;s all
 <strong>Object</strong>s available for selection. But you need to limit the
 choices, and limit dynamically (perhaps, depending on current user).
-Here's quite straightforward but working technique.</p>
+Here&#8217;s quite straightforward but working&nbsp;technique.</p>
 <!-- TEASER_END -->
-<div class="code"><pre class="code python"><a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-1" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-1" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-1"></a><span class="k">def</span> <span class="nf">make_metaform</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-2" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-2" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-2"></a>    <span class="k">class</span> <span class="nc">MetaForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-3" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-3" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-3"></a>        <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-4" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-4" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-4"></a>            <span class="n">model</span> <span class="o">=</span> <span class="n">SuperObject</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-5" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-5" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-5"></a>        <span class="n">objects_list</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ModelMultipleChoiceField</span><span class="p">(</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-6" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-6" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-6"></a>                <span class="n">queryset</span><span class="o">=</span><span class="n">Object</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">objectmod__user__id</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-7" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-7" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-7"></a>                                                 <span class="n">objectmod__can_read</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-8" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-8" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-8"></a>    <span class="k">return</span> <span class="n">MetaForm</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-9" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-9" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-9"></a>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-10" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-10" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-10"></a>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-11" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-11" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-11"></a><span class="k">class</span> <span class="nc">MetaAdmin</span><span class="p">(</span><span class="n">ZpixObject</span><span class="p">):</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-12" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-12" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-12"></a>    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-13" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-13" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-13"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">form</span> <span class="o">=</span> <span class="n">make_metaform</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
-<a id="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-14" name="rest_code_5566f37d59c843c4b8a9e2be5d693a3d-14" href="#rest_code_5566f37d59c843c4b8a9e2be5d693a3d-14"></a>        <span class="k">return</span> <span class="n">ZpixObject</span><span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+<div class="code"><pre class="code python"><a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-1" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-1" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-1"></a><span class="k">def</span> <span class="nf">make_metaform</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-2" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-2" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-2"></a>    <span class="k">class</span> <span class="nc">MetaForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-3" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-3" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-3"></a>        <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-4" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-4" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-4"></a>            <span class="n">model</span> <span class="o">=</span> <span class="n">SuperObject</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-5" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-5" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-5"></a>        <span class="n">objects_list</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ModelMultipleChoiceField</span><span class="p">(</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-6" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-6" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-6"></a>                <span class="n">queryset</span><span class="o">=</span><span class="n">Object</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">objectmod__user__id</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-7" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-7" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-7"></a>                                                 <span class="n">objectmod__can_read</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-8" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-8" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-8"></a>    <span class="k">return</span> <span class="n">MetaForm</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-9" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-9" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-9"></a>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-10" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-10" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-10"></a>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-11" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-11" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-11"></a><span class="k">class</span> <span class="nc">MetaAdmin</span><span class="p">(</span><span class="n">ZpixObject</span><span class="p">):</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-12" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-12" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-12"></a>    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-13" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-13" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-13"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">form</span> <span class="o">=</span> <span class="n">make_metaform</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
+<a id="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-14" name="rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-14" href="#rest_code_0bdd3ec7dfae4bb6947cf1438bdcaa36-14"></a>        <span class="k">return</span> <span class="n">ZpixObject</span><span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
 </pre></div>
-<p>What do we do here:</p>
+<p>What do we do&nbsp;here:</p>
 <ul class="simple">
 <li><p>function <strong>make_metaform</strong> takes <strong>User</strong> object and returns
-<strong>forms.Form</strong> subclass (class factory)</p></li>
+<strong>forms.Form</strong> subclass (class&nbsp;factory)</p></li>
 <li><p>this function creates common <strong>forms.ModelForm</strong> for <strong>SuperObject</strong></p></li>
 <li><p>then it overrides standard (for <strong>ManyToMany</strong> relationship)
 <strong>objects_list</strong> attribute with the same
-<strong>forms.ModelMultipleChoiceField</strong>, but having other <em>queryset</em>
-parameter</p></li>
+<strong>forms.ModelMultipleChoiceField</strong>, but having other <em>queryset</em>&nbsp;parameter</p></li>
 <li><p>in our example we filter <strong>Object</strong>s by permissions, stored in
 other table/model — <strong>ObjectMod</strong></p></li>
 <li><p>we should use modified subclass <strong>ModelAdmin</strong> for managing
-<strong>SuperObject</strong>s in admin</p></li>
+<strong>SuperObject</strong>s in&nbsp;admin</p></li>
 <li><p>as new <strong>MetaAdmin</strong> is created (<strong>__call__</strong>ed), we call
 <strong>metaform</strong> function and assign its result to standard
 <strong>ModelAdmin</strong> attribute <strong>form</strong></p></li>
-<li><p>then we call standard <strong>ModelAdmin</strong> class method</p></li>
+<li><p>then we call standard <strong>ModelAdmin</strong> class&nbsp;method</p></li>
 </ul>
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
@@ -155,10 +154,10 @@ other table/model — <strong>ObjectMod</strong></p></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../pgsql-gentoo/" rel="prev" title="PostgreSQL on Gentoo: split ebuilds">Previous post</a>
+                <a href="../pgsql-gentoo/" rel="prev" title="PostgreSQL on Gentoo: split ebuilds">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../joke/" rel="next" title="A joke">Next post</a>
+                <a href="../joke/" rel="next" title="A joke">Next&nbsp;post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                     <div id="disqus_thread"></div>

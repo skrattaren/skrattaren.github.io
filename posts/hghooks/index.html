@@ -60,10 +60,10 @@ H">
 <a href="../../categories/">Tags</a>
                 </li>
 <li>
-<a href="../../about">About me</a>
+<a href="../../about">About&nbsp;me</a>
                 </li>
 <li>
-<a href="../../rss.xml">RSS feed</a>
+<a href="../../rss.xml"><span class="caps">RSS</span>&nbsp;feed</a>
 
                 
             </li>
@@ -86,11 +86,11 @@ H">
         <!--Body content-->
         <div class="row">
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Two (probably) useful Mercurial hooks</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Two (probably) useful Mercurial&nbsp;hooks</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Николай Шуйский (Nikolaj Šujskij)
+                    Николай Шуйский (Nikolaj&nbsp;Šujskij)
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -105,18 +105,18 @@ H">
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Here's two <a class="reference external" href="http://mercurial.selenic.com/">Mercurial</a>
+    <p>Here&#8217;s two <a class="reference external" href="http://mercurial.selenic.com/">Mercurial</a>
 <a class="reference external" href="http://mercurial.selenic.com/wiki/Hook">hooks</a> I wrote for my work.
 One is a reminder to mention <a class="reference external" href="http://trac.edgewall.com/">Trac</a>
 tickets in commit messages, and the other notifies a developer when
-someone (not him) touches his part of project.</p>
+someone (not him) touches his part of&nbsp;project.</p>
 <!-- TEASER_END -->
 <hr class="docutils">
-<p>Here's reminder. It's commit hook, run after commit was made. If you
-forgot to write something like "fixes #666", it'd <em>echo</em> "Have you
-forgot to mention ticket?" and commit message back to you, just in time
-for <em>hg rollback</em> (or <em>hg commit --amend</em> in recent Mercurial versions)
-and changing message. Or ignoring it, of course.</p>
+<p>Here&#8217;s reminder. It&#8217;s commit hook, run after commit was made. If you
+forgot to write something like &#8220;fixes #666&#8221;, it&#8217;d <em>echo</em> &#8220;Have you
+forgot to mention ticket?&#8221; and commit message back to you, just in time
+for <em>hg rollback</em> (or <em>hg commit &#8212;amend</em> in recent Mercurial versions)
+and changing message. Or ignoring it, of&nbsp;course.</p>
 <pre class="literal-block">#!/bin/sh
 
 ci_msg=$(hg log -r "${HG_NODE}" --template "{desc}")
@@ -125,9 +125,9 @@ echo $ci_msg | egrep -q '#[[:digit:]]{1,4}' &amp;&amp; exit 0
 
 echo "Have you forgot to mention ticket?"hg log -r "${HG_NODE}" --template "{desc}\n"</pre>
 <hr class="docutils">
-<p>And here's notifier. It's intended to be <em>incoming</em> hook and looks if
+<p>And here&#8217;s notifier. It&#8217;s intended to be <em>incoming</em> hook and looks if
 files in certain directories were modifiled by anyone except certain
-person. And sends message via ssmtp.</p>
+person. And sends message via&nbsp;ssmtp.</p>
 <pre class="literal-block">#!/bin/sh
 
 notify() {
@@ -165,10 +165,10 @@ Subject: Achtung Minen!
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../about-springs/" rel="prev" title="About springs">Previous post</a>
+                <a href="../about-springs/" rel="prev" title="About springs">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../flask-u-literals/" rel="next" title="Flask sessions and unicode_literals">Next post</a>
+                <a href="../flask-u-literals/" rel="next" title="Flask sessions and unicode_literals">Next&nbsp;post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                     <div id="disqus_thread"></div>

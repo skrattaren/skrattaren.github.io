@@ -59,10 +59,10 @@ repr">
 <a href="../../categories/">Tags</a>
                 </li>
 <li>
-<a href="../../about">About me</a>
+<a href="../../about">About&nbsp;me</a>
                 </li>
 <li>
-<a href="../../rss.xml">RSS feed</a>
+<a href="../../rss.xml"><span class="caps">RSS</span>&nbsp;feed</a>
 
                 
             </li>
@@ -85,11 +85,11 @@ repr">
         <!--Body content-->
         <div class="row">
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">{hg, git} bisect + portage</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">{hg, git} bisect +&nbsp;portage</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Николай Шуйский (Nikolaj Šujskij)
+                    Николай Шуйский (Nikolaj&nbsp;Šujskij)
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -103,22 +103,22 @@ repr">
 
         </div>
                 <div class="metadata posttranslations translations">
-            <h3 class="posttranslations-intro">Also available in:</h3>
+            <h3 class="posttranslations-intro">Also available&nbsp;in:</h3>
                 <p><a href="../../ru/posts/portage-bisect/" rel="alternate" hreflang="ru">Русский</a></p>
         </div>
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <p>Recently I did stumble into a <a class="reference external" href="http://awesome.naquadah.org/bugs/index.php?do=details&amp;task_id=772">annoying bug in awesome
-WM</a>.
+<span class="caps">WM</span></a>.
 Devs asked me to do <em>git bisect</em> in order to help fixing it, but it
-appeared that simple compiling and running the binary wasn't enough for
+appeared that simple compiling and running the binary wasn&#8217;t enough for
 reproducing it, so I though a bit and managed to couple <em>bisect</em>ing
-and Portage.</p>
+and&nbsp;Portage.</p>
 <!-- TEASER_END -->
 <p>I assume you know what is <strong>*bisect*</strong> (and if not, but want to, see the
 documentation), so basically what you need is to <em>emerge</em> package in
 question from certain changeset (and then test it for bug) after running
-<em>${your-dvcs-here} bisect</em>. Here's how I did it:</p>
+<em>${your-dvcs-here} bisect</em>. Here&#8217;s how I did&nbsp;it:</p>
 <pre class="literal-block">#!/bin/sh
 rm -rf /tmp/awesome*
 cp -rp ~sterkrig/tmp/awesome /tmp/awesome-3.4.999
@@ -131,18 +131,18 @@ chmod 664 /usr/portage/distfiles/awesome-3.4.999.tar.bz2
 ebuild --force /usr/local/portage/x11-wm/awesome/awesome-3.4.999.ebuild manifest
 emerge awesome
 cd ~</pre>
-<p>Let me explain what does it do:</p>
+<p>Let me explain what does it&nbsp;do:</p>
 <ul class="simple">
-<li><p>we'll treat git checkouts as <strong>awesome 3.4.999</strong> (bisecting between
-3.4.4 and 3.4.5), it really doesn't matter;</p></li>
+<li><p>we&#8217;ll treat git checkouts as <strong>awesome 3.4.999</strong> (bisecting between
+3.4.4 and 3.4.5), it really doesn&#8217;t&nbsp;matter;</p></li>
 <li><p>sources are copied to other location, <em>.git</em> gets removed, and <em>tar</em>
-creates tarball similar to those of „official“ releases;</p></li>
-<li><p>next thing is to update manifest for our ebuild (it's just a copy of
-awesome-3.4.5.ebuild from the tree) and <em>emerge</em> it</p></li>
+creates tarball similar to those of „official“&nbsp;releases;</p></li>
+<li><p>next thing is to update manifest for our ebuild (it&#8217;s just a copy of
+awesome-3.4.5.ebuild from the tree) and <em>emerge</em>&nbsp;it</p></li>
 </ul>
-<p>Happy bisecting!</p>
-<p>P.S. And my bug was fixed three days after report. And nobody had
-noted it, hehe.</p>
+<p>Happy&nbsp;bisecting!</p>
+<p><span class="caps">P.S.</span> And my bug was fixed three days after report. And nobody had
+noted it,&nbsp;hehe.</p>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/gentoo/" rel="tag">gentoo</a></li>
@@ -151,10 +151,10 @@ noted it, hehe.</p>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../tabs-n-spaces/" rel="prev" title="Tabs and spaces">Previous post</a>
+                <a href="../tabs-n-spaces/" rel="prev" title="Tabs and spaces">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../py-nested-iter/" rel="next" title="Python: nested iterator">Next post</a>
+                <a href="../py-nested-iter/" rel="next" title="Python: nested iterator">Next&nbsp;post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                     <div id="disqus_thread"></div>

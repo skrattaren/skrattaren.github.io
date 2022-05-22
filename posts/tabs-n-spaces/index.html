@@ -57,10 +57,10 @@ class c_integral_type(c_type):
 <a href="../../categories/">Tags</a>
                 </li>
 <li>
-<a href="../../about">About me</a>
+<a href="../../about">About&nbsp;me</a>
                 </li>
 <li>
-<a href="../../rss.xml">RSS feed</a>
+<a href="../../rss.xml"><span class="caps">RSS</span>&nbsp;feed</a>
 
                 
             </li>
@@ -83,11 +83,11 @@ class c_integral_type(c_type):
         <!--Body content-->
         <div class="row">
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Tabs and spaces</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Tabs and&nbsp;spaces</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Николай Шуйский (Nikolaj Šujskij)
+                    Николай Шуйский (Nikolaj&nbsp;Šujskij)
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -102,24 +102,24 @@ class c_integral_type(c_type):
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>That's quite old and well-known, of course, but I now have to deal
-with code like that (count the spaces!):</p>
+    <p>That&#8217;s quite old and well-known, of course, but I now have to deal
+with code like that (count the&nbsp;spaces!):</p>
 <pre class="literal-block">class c_integral_type(c_type):
     def __init__(self, name, format, min, max):
        c_type.__init__(self, name, struct.calcsize(format))</pre>
-<p>or like that (<code class="docutils literal">tabstop</code> is obviously expected to be 8 or 12):</p>
+<p>or like that&nbsp;(<code class="docutils literal">tabstop</code> is obviously expected to be 8 or&nbsp;12):</p>
 <pre class="literal-block">def genMemList( self, members ):              # indented with 4 spaces
 self.append( '\tdef members(self):\n' )  # indented with one &lt;Tab&gt;</pre>
 <p>So…</p>
 <p><img alt="image0" src="http://www.emacswiki.org/pics/static/TabsSpacesBoth.png"></p>
 <hr class="docutils">
-<p>Oh <strong>noes</strong>! That's what I had to deal with:</p>
+<p>Oh <strong>noes</strong>! That&#8217;s what I had to deal&nbsp;with:</p>
 <pre class="literal-block">  % pylint buratino
    .......
 Your code has been rated at -1.79/10</pre>
-<p>My code isn't perfect, I'd be first to agree, but it scores 7/10, and
-it's positive 7, mind you!
-Bloody hell. So, back to work then</p>
+<p>My code isn&#8217;t perfect, I&#8217;d be first to agree, but it scores 7/10, and
+it&#8217;s positive 7, mind you!
+Bloody hell. So, back to work&nbsp;then</p>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/programmierung/" rel="tag">programmierung</a></li>
@@ -127,10 +127,10 @@ Bloody hell. So, back to work then</p>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../eselect-xorg-conf/" rel="prev" title="Eselect'ing xorg.conf">Previous post</a>
+                <a href="../eselect-xorg-conf/" rel="prev" title="Eselect'ing xorg.conf">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../portage-bisect/" rel="next" title="{hg, git} bisect + portage">Next post</a>
+                <a href="../portage-bisect/" rel="next" title="{hg, git} bisect + portage">Next&nbsp;post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                     <div id="disqus_thread"></div>

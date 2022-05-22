@@ -59,10 +59,10 @@
 <a href="../../categories/index.html">Ярлыки</a>
                 </li>
 <li>
-<a href="../../about">Про меня</a>
+<a href="../../about">Про&nbsp;меня</a>
                 </li>
 <li>
-<a href="../../rss.xml">Лента RSS</a>
+<a href="../../rss.xml">Лента&nbsp;<span class="caps">RSS</span></a>
 
                 
             </li>
@@ -85,11 +85,11 @@
         <!--Body content-->
         <div class="row">
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">{hg, git} bisect + portage</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">{hg, git} bisect +&nbsp;portage</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Николай Шуйский (Nikolaj Šujskij)
+                    Николай Шуйский (Nikolaj&nbsp;Šujskij)
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -103,7 +103,7 @@
 
         </div>
                 <div class="metadata posttranslations translations">
-            <h3 class="posttranslations-intro">Также доступно на:</h3>
+            <h3 class="posttranslations-intro">Также доступно&nbsp;на:</h3>
                 <p><a href="../../../posts/portage-bisect/" rel="alternate" hreflang="en">English</a></p>
         </div>
 
@@ -112,14 +112,13 @@
 ошибочку</a>
 с моим любимым awesome. Разрабы попросили сделать <em>git bisect</em>, чтоб
 найти причину косяка, но выяснилось, что просто запуском свежесобранного
-бинарника не отделаться. Пришлось немного подумать и сопрячь <em>bisect</em> и
-Portage.</p>
+бинарника не отделаться. Пришлось немного подумать и сопрячь <em>bisect</em> и&nbsp;Portage.</p>
 <!-- TEASER_END -->
 <p>Будем считать, что Вы в курсе, что такое <strong>*bisect*</strong> (а если не знаете,
 но хотите узнать, обратитесь к документации), так что всё, что нужно
 сделать, это установить нужный пакет из соответствующей ревизии с
 помощью <em>emerge</em> (ну и проверить его на искомую ошибку) после прогона
-<em>${избранная-dvcs} bisect</em>. Как это сделал я:</p>
+<em>${избранная-dvcs} bisect</em>. Как это сделал&nbsp;я:</p>
 <pre class="literal-block">#!/bin/sh
 rm -rf /tmp/awesome*
 cp -rp ~sterkrig/tmp/awesome /tmp/awesome-3.4.999
@@ -132,20 +131,20 @@ chmod 664 /usr/portage/distfiles/awesome-3.4.999.tar.bz2
 ebuild --force /usr/local/portage/x11-wm/awesome/awesome-3.4.999.ebuild manifest
 emerge awesome
 cd ~</pre>
-<p>Что тут происходит:</p>
+<p>Что тут&nbsp;происходит:</p>
 <ul class="simple">
 <li><p>наши «снимки» из git будут считаться версией <strong>awesome 3.4.999</strong> (мы
-ищем ошибку между 3.4.4 and 3.4.5), на самом деле это неважно;</p></li>
+ищем ошибку между 3.4.4 and 3.4.5), на самом деле это&nbsp;неважно;</p></li>
 <li><p>исходный код копируется в сторонку, <em>.git</em> подчищается, и с помощью
 <em>tar</em> мы получаем архив примерно того же свойства, что и у
-«официальных» версий;</p></li>
-<li><p>далее мы просто обновляем Manifest для нашего ebuild'а (который
+«официальных»&nbsp;версий;</p></li>
+<li><p>далее мы просто обновляем Manifest для нашего ebuild&#8217;а (который
 является простой копией awesome-3.4.5.ebuild из официального дерева
-Portage) и устанавливаем эту версию</p></li>
+Portage) и устанавливаем эту&nbsp;версию</p></li>
 </ul>
-<p>Секите на здоровье! (-;Е</p>
-<p>P.S. А моя ошибка была исправлена в git через три дня после моего
-сообщения. А никто и не заметил, хе-хе.</p>
+<p>Секите на здоровье!&nbsp;(-;Е</p>
+<p><span class="caps">P.S.</span> А моя ошибка была исправлена в git через три дня после моего
+сообщения. А никто и не заметил,&nbsp;хе-хе.</p>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/gentoo/" rel="tag">gentoo</a></li>
@@ -154,10 +153,10 @@ Portage) и устанавливаем эту версию</p></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../kookeez/" rel="prev" title="Коржики!">Предыдущая запись</a>
+                <a href="../kookeez/" rel="prev" title="Коржики!">Предыдущая&nbsp;запись</a>
             </li>
             <li class="next">
-                <a href="../py-nested-iter/" rel="next" title="Python: вложенный итератор">Следующая запись</a>
+                <a href="../py-nested-iter/" rel="next" title="Python: вложенный итератор">Следующая&nbsp;запись</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Комментарии</h2>
                     <div id="disqus_thread"></div>

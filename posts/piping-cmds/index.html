@@ -56,10 +56,10 @@ ag --files-with-matches dev-util/pkgconfig ">
 <a href="../../categories/">Tags</a>
                 </li>
 <li>
-<a href="../../about">About me</a>
+<a href="../../about">About&nbsp;me</a>
                 </li>
 <li>
-<a href="../../rss.xml">RSS feed</a>
+<a href="../../rss.xml"><span class="caps">RSS</span>&nbsp;feed</a>
 
                 
             </li>
@@ -82,11 +82,11 @@ ag --files-with-matches dev-util/pkgconfig ">
         <!--Body content-->
         <div class="row">
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Piping commands till it hurts</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Piping commands till it&nbsp;hurts</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Николай Шуйский (Nikolaj Šujskij)
+                    Николай Шуйский (Nikolaj&nbsp;Šujskij)
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -101,14 +101,14 @@ ag --files-with-matches dev-util/pkgconfig ">
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>(Just to save a useful and complex construct for future reference)</p>
-<p>List all the overlay maintainers who hasn't migrated their packages to
+    <p>(Just to save a useful and complex construct for future&nbsp;reference)</p>
+<p>List all the overlay maintainers who hasn&#8217;t migrated their packages to
 <em>virtual/pkgconfig</em>:</p>
 <pre class="literal-block">ag --files-with-matches dev-util/pkgconfig | xargs dirname | uniq \
        | xargs -I {} grep '&lt;name&gt;' '{}/metadata.xml' \
        | sed 's:\s\+&lt;name&gt;\(.\+\)&lt;/name&gt;:\1:' | sort -u</pre>
 <p>Yes, I use <a class="reference external" href="https://github.com/ggreer/the_silver_searcher">ag</a> instead of <em>grep</em>, being too lazy to add all the necessary
-options. And wait. And <em>ag</em> is so much better however you look at it.</p>
+options. And wait. And <em>ag</em> is so much better however you look at&nbsp;it.</p>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/gentoo/" rel="tag">gentoo</a></li>
@@ -116,10 +116,10 @@ options. And wait. And <em>ag</em> is so much better however you look at it.</p>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../shantaram/" rel="prev" title="Shantaram">Previous post</a>
+                <a href="../shantaram/" rel="prev" title="Shantaram">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../make-sense/" rel="next" title="$ make sense">Next post</a>
+                <a href="../make-sense/" rel="next" title="$ make sense">Next&nbsp;post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                     <div id="disqus_thread"></div>

@@ -60,10 +60,10 @@ _hg_cmd_graft() {
 <a href="../../categories/">Tags</a>
                 </li>
 <li>
-<a href="../../about">About me</a>
+<a href="../../about">About&nbsp;me</a>
                 </li>
 <li>
-<a href="../../rss.xml">RSS feed</a>
+<a href="../../rss.xml"><span class="caps">RSS</span>&nbsp;feed</a>
 
                 
             </li>
@@ -86,11 +86,11 @@ _hg_cmd_graft() {
         <!--Body content-->
         <div class="row">
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Mercurial zsh completion with vim</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Mercurial zsh completion with&nbsp;vim</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Николай Шуйский (Nikolaj Šujskij)
+                    Николай Шуйский (Nikolaj&nbsp;Šujskij)
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -109,12 +109,12 @@ _hg_cmd_graft() {
 zsh_completion file</a>.</p>
 <!-- TEASER_END -->
 <p>We start with simple generic template copied from some other command
-like export:</p>
+like&nbsp;export:</p>
 <pre class="literal-block">_hg_cmd_graft() {
   _arguments -s -w : $_hg_global_opts \
   '*:revision:_hg_labels'
 }</pre>
-<p>Let's copy graft-specific options from <code class="docutils literal">hg help graft</code> output:</p>
+<p>Let&#8217;s copy graft-specific options&nbsp;from <code class="docutils literal">hg help graft</code> output:</p>
 <pre class="literal-block">-c --continue    resume interrupted graft
 -e --edit        invoke editor on commit messages
    --log         append graft info to log message
@@ -124,7 +124,7 @@ like export:</p>
 -u --user USER   record the specified user as committer
 -t --tool VALUE  specify merge tool
 -n --dry-run     do not perform actions, just print output</pre>
-<p>Now select help text and reformat it with a bit of regexps:</p>
+<p>Now select help text and reformat it with a bit of&nbsp;regexps:</p>
 <pre class="literal-block">:'&lt;,'&gt;s:^\s\+\(-[a-zA-Z0-9]\) \(--[a-z-]\+\)\s\+:  '(\2 \1)'{\1,\2}'[
 
 :'&lt;,'&gt;s:^\s\+\(--[a-z-]\+\)\s\+:  '\1[
@@ -132,7 +132,7 @@ like export:</p>
 :'&lt;,'&gt;s:$:]' \
 
 :'&lt;,'&gt;s:'\[[A-Z]\+\s\+:'[</pre>
-<p>And the result is:</p>
+<p>And the result&nbsp;is:</p>
 <pre class="literal-block">_hg_cmd_graft() {
   _arguments -s -w : $_hg_global_opts \
   '(--continue -c)'{-c,--continue}'[resume interrupted graft]' \
@@ -147,7 +147,7 @@ like export:</p>
   '*:revision:_hg_labels'
 }</pre>
 <p>Vim have helped you as it could, now decide is there anything left to
-be done.</p>
+be&nbsp;done.</p>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/hg/" rel="tag">hg</a></li>
@@ -156,10 +156,10 @@ be done.</p>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../subtitles/" rel="prev" title="Subtitles">Previous post</a>
+                <a href="../subtitles/" rel="prev" title="Subtitles">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../shantaram/" rel="next" title="Shantaram">Next post</a>
+                <a href="../shantaram/" rel="next" title="Shantaram">Next&nbsp;post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                     <div id="disqus_thread"></div>
