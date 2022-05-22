@@ -630,8 +630,8 @@ CODE_COLOR_SCHEME = 'native'
 # Used to create favicon link like this:
 # <link rel="name" href="file" sizes="size"/>
 FAVICONS = (
-    ("icon", "/favicon_16.ico", "16x16"),
-    ("icon", "/favicon_32.ico", "32x32"),
+    ("icon", "/files/favicon_16.ico", "16x16"),
+    ("icon", "/files/favicon_32.ico", "32x32"),
 )
 
 # Show only teasers in the index pages? Defaults to False.
