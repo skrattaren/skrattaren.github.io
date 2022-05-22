@@ -1,7 +1,7 @@
 .. title: Деление на команды
 .. slug: picking-teams
 .. date: 2017-11-18 17:55:07 UTC+03:00
-.. tags: 
+.. tags: basketball
 .. category: 
 .. link: 
 .. description: 

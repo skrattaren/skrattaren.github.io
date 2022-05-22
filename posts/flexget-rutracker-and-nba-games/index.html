@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlexGet, RuTracker and NBA games | Unseen Hexadecimals</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (ru)" hreflang="ru" href="../../ru/rss.xml">
+<link rel="canonical" href="https://skrattaren.github.io/posts/flexget-rutracker-and-nba-games/">
+<link rel="icon" href="../../favicon_16.ico" sizes="16x16">
+<link rel="icon" href="../../favicon_32.ico" sizes="32x32">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Николай Шуйский (Nikolaj Šujskij)">
+<link rel="prev" href="../femball/" title="International Women's Basketball Day" type="text/html">
+<meta property="og:site_name" content="Unseen Hexadecimals">
+<meta property="og:title" content="FlexGet, RuTracker and NBA games">
+<meta property="og:url" content="https://skrattaren.github.io/posts/flexget-rutracker-and-nba-games/">
+<meta property="og:description" content="So, you can't afford NBA League Pass and wanna do some piracy?  One could
+download practically anything from RuTracker, including NBA games.  But
+what if you're also a lazy bugger?  Well, there's Flex">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-05-22T18:26:24+03:00">
+<meta property="article:tag" content="basketball">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://skrattaren.github.io/">
+
+                <span id="blog-title">Unseen Hexadecimals</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../archive.html">Archive</a>
+                </li>
+<li>
+<a href="../../categories/">Tags</a>
+                </li>
+<li>
+<a href="../../about">About me</a>
+                </li>
+<li>
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>            </li>
+<li><a href="https://skrattaren.github.io/ru/" rel="alternate" hreflang="ru">Русский</a></li>
+
+    <li>
+    <a href="index.rst" id="sourcelink">Source</a>
+    </li>
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">FlexGet, RuTracker and NBA games</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Николай Шуйский (Nikolaj Šujskij)
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2022-05-22T18:26:24+03:00" itemprop="datePublished" title="22.05.2022, 18:26">22.05.2022, 18:26</time></a>
+            </p>
+                <p class="commentline">        <a href="#disqus_thread" data-disqus-identifier="cache/posts/flexget-rutracker-and-nba-games.html">Comments</a>
+
+
+                    </p>
+<p class="sourceline"><a href="index.rst" class="sourcelink">Source</a></p>
+
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>So, you can't afford NBA League Pass and wanna do some piracy?  One could
+download practically anything from <a class="reference external" href="https://rutracker.org/">RuTracker</a>, including <a class="reference external" href="https://rutracker.org/forum/viewforum.php?f=1997">NBA games</a>.  But
+what if you're also a lazy bugger?  Well, there's <a class="reference external" href="https://flexget.com/">FlexGet</a>!  And it turns out
+to work great with <em>RuTracker</em>, but configuration is a bit quirky.  So here's
+an example for you!</p>
+<!-- TEASER_END -->
+<p>P.S. You'll have to get familiar with FlexGet before being able to plug in this
+snippet, but this is not the place to copy their documentation =)</p>
+<p><a class="reference external" href="../../listings/flexget-config.yml.html">flexget-config.yml</a>  <a class="reference external" href="../../listings/flexget-config.yml">(Source)</a></p>
+<div class="code"><pre class="code yaml"><a id="rest_code_3a005373147d45759c1e064cb9e01773-1" name="rest_code_3a005373147d45759c1e064cb9e01773-1" href="#rest_code_3a005373147d45759c1e064cb9e01773-1"></a><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-2" name="rest_code_3a005373147d45759c1e064cb9e01773-2" href="#rest_code_3a005373147d45759c1e064cb9e01773-2"></a><span class="w">  </span><span class="c1"># RuTracker forum id, look it up in URL</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-3" name="rest_code_3a005373147d45759c1e064cb9e01773-3" href="#rest_code_3a005373147d45759c1e064cb9e01773-3"></a><span class="w">  </span><span class="c1"># e.g. https://rutracker.org/forum/viewforum.php?f=1997</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-4" name="rest_code_3a005373147d45759c1e064cb9e01773-4" href="#rest_code_3a005373147d45759c1e064cb9e01773-4"></a><span class="w">  </span><span class="nt">rtr_f_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1997</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-5" name="rest_code_3a005373147d45759c1e064cb9e01773-5" href="#rest_code_3a005373147d45759c1e064cb9e01773-5"></a><span class="nt">tasks</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-6" name="rest_code_3a005373147d45759c1e064cb9e01773-6" href="#rest_code_3a005373147d45759c1e064cb9e01773-6"></a><span class="w">  </span><span class="nt">nba_tracker</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-7" name="rest_code_3a005373147d45759c1e064cb9e01773-7" href="#rest_code_3a005373147d45759c1e064cb9e01773-7"></a><span class="w">    </span><span class="nt">rss</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-8" name="rest_code_3a005373147d45759c1e064cb9e01773-8" href="#rest_code_3a005373147d45759c1e064cb9e01773-8"></a><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s">"http://feed.rutracker.cc/atom/f/{?</span><span class="nv"> </span><span class="s">rtr_f_id</span><span class="nv"> </span><span class="s">?}.atom"</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-9" name="rest_code_3a005373147d45759c1e064cb9e01773-9" href="#rest_code_3a005373147d45759c1e064cb9e01773-9"></a><span class="w">      </span><span class="nt">other_fields</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-10" name="rest_code_3a005373147d45759c1e064cb9e01773-10" href="#rest_code_3a005373147d45759c1e064cb9e01773-10"></a><span class="w">        </span><span class="c1"># we'll use this feed entry attribute to filter only recent entries</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-11" name="rest_code_3a005373147d45759c1e064cb9e01773-11" href="#rest_code_3a005373147d45759c1e064cb9e01773-11"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">updated</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-12" name="rest_code_3a005373147d45759c1e064cb9e01773-12" href="#rest_code_3a005373147d45759c1e064cb9e01773-12"></a><span class="w">    </span><span class="nt">regexp</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-13" name="rest_code_3a005373147d45759c1e064cb9e01773-13" href="#rest_code_3a005373147d45759c1e064cb9e01773-13"></a><span class="w">      </span><span class="nt">accept</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-14" name="rest_code_3a005373147d45759c1e064cb9e01773-14" href="#rest_code_3a005373147d45759c1e064cb9e01773-14"></a><span class="w">        </span><span class="c1"># you could filter entries by your team's name, at least NBA section</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-15" name="rest_code_3a005373147d45759c1e064cb9e01773-15" href="#rest_code_3a005373147d45759c1e064cb9e01773-15"></a><span class="w">        </span><span class="c1"># has pretty rigid title format rules</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-16" name="rest_code_3a005373147d45759c1e064cb9e01773-16" href="#rest_code_3a005373147d45759c1e064cb9e01773-16"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"Golden</span><span class="nv"> </span><span class="s">State</span><span class="nv"> </span><span class="s">Warriors"</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-17" name="rest_code_3a005373147d45759c1e064cb9e01773-17" href="#rest_code_3a005373147d45759c1e064cb9e01773-17"></a><span class="w">        </span><span class="c1"># WA-A-ARRIORS! =)</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-18" name="rest_code_3a005373147d45759c1e064cb9e01773-18" href="#rest_code_3a005373147d45759c1e064cb9e01773-18"></a><span class="w">        </span><span class="c1"># remove this "match-all" regexp to enable filtering by team</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-19" name="rest_code_3a005373147d45759c1e064cb9e01773-19" href="#rest_code_3a005373147d45759c1e064cb9e01773-19"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"."</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-20" name="rest_code_3a005373147d45759c1e064cb9e01773-20" href="#rest_code_3a005373147d45759c1e064cb9e01773-20"></a><span class="w">      </span><span class="nt">reject</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-21" name="rest_code_3a005373147d45759c1e064cb9e01773-21" href="#rest_code_3a005373147d45759c1e064cb9e01773-21"></a><span class="w">        </span><span class="c1"># screw commentary in Russian</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-22" name="rest_code_3a005373147d45759c1e064cb9e01773-22" href="#rest_code_3a005373147d45759c1e064cb9e01773-22"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RU</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-23" name="rest_code_3a005373147d45759c1e064cb9e01773-23" href="#rest_code_3a005373147d45759c1e064cb9e01773-23"></a><span class="w">    </span><span class="nt">age</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-24" name="rest_code_3a005373147d45759c1e064cb9e01773-24" href="#rest_code_3a005373147d45759c1e064cb9e01773-24"></a><span class="w">      </span><span class="c1"># usually you want the latest games, right?</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-25" name="rest_code_3a005373147d45759c1e064cb9e01773-25" href="#rest_code_3a005373147d45759c1e064cb9e01773-25"></a><span class="w">      </span><span class="nt">age</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1 days</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-26" name="rest_code_3a005373147d45759c1e064cb9e01773-26" href="#rest_code_3a005373147d45759c1e064cb9e01773-26"></a><span class="w">      </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">updated</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-27" name="rest_code_3a005373147d45759c1e064cb9e01773-27" href="#rest_code_3a005373147d45759c1e064cb9e01773-27"></a><span class="w">      </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reject</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-28" name="rest_code_3a005373147d45759c1e064cb9e01773-28" href="#rest_code_3a005373147d45759c1e064cb9e01773-28"></a><span class="w">    </span><span class="c1"># if you don't set quality, you are likely to download two or three files</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-29" name="rest_code_3a005373147d45759c1e064cb9e01773-29" href="#rest_code_3a005373147d45759c1e064cb9e01773-29"></a><span class="w">    </span><span class="c1"># for each game</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-30" name="rest_code_3a005373147d45759c1e064cb9e01773-30" href="#rest_code_3a005373147d45759c1e064cb9e01773-30"></a><span class="w">    </span><span class="nt">quality</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1080p</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-31" name="rest_code_3a005373147d45759c1e064cb9e01773-31" href="#rest_code_3a005373147d45759c1e064cb9e01773-31"></a><span class="w">    </span><span class="c1"># and now for some magic!</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-32" name="rest_code_3a005373147d45759c1e064cb9e01773-32" href="#rest_code_3a005373147d45759c1e064cb9e01773-32"></a><span class="w">    </span><span class="nt">manipulate</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-33" name="rest_code_3a005373147d45759c1e064cb9e01773-33" href="#rest_code_3a005373147d45759c1e064cb9e01773-33"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">updated</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-34" name="rest_code_3a005373147d45759c1e064cb9e01773-34" href="#rest_code_3a005373147d45759c1e064cb9e01773-34"></a><span class="w">          </span><span class="nt">extract</span><span class="p">:</span><span class="w"> </span><span class="s">'^([^+]+)'</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-35" name="rest_code_3a005373147d45759c1e064cb9e01773-35" href="#rest_code_3a005373147d45759c1e064cb9e01773-35"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">teams_n_date</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-36" name="rest_code_3a005373147d45759c1e064cb9e01773-36" href="#rest_code_3a005373147d45759c1e064cb9e01773-36"></a><span class="w">          </span><span class="nt">from</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">title</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-37" name="rest_code_3a005373147d45759c1e064cb9e01773-37" href="#rest_code_3a005373147d45759c1e064cb9e01773-37"></a><span class="w">          </span><span class="nt">extract</span><span class="p">:</span><span class="w"> </span><span class="s">'([0-9.]{8,10}</span><span class="nv"> </span><span class="s">/</span><span class="nv"> </span><span class="s">\{[A-Za-z0-9</span><span class="nv"> </span><span class="s">@]+\})'</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-38" name="rest_code_3a005373147d45759c1e064cb9e01773-38" href="#rest_code_3a005373147d45759c1e064cb9e01773-38"></a><span class="w">    </span><span class="nt">unique</span><span class="p">:</span><span class="w"></span>
+<a id="rest_code_3a005373147d45759c1e064cb9e01773-39" name="rest_code_3a005373147d45759c1e064cb9e01773-39" href="#rest_code_3a005373147d45759c1e064cb9e01773-39"></a><span class="w">      </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">teams_n_date</span><span class="w"></span>
+</pre></div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/basketball/" rel="tag">basketball</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../femball/" rel="prev" title="International Women's Basketball Day">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                    <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="skrattaren-bblogg",
+            disqus_url="https://skrattaren.github.io/posts/flexget-rutracker-and-nba-games/",
+        disqus_title="FlexGet, RuTracker and NBA games",
+        disqus_identifier="cache/posts/flexget-rutracker-and-nba-games.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="skrattaren-bblogg";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2022         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a> <br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Unseen Hexadecimals</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nikolaj
+Šujskij</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+Attribution-ShareAlike 4.0 International License</a>.
+
+            
+        </footer>
+</div>
+</div>
+
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
