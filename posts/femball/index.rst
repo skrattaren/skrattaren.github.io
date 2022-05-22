@@ -1,8 +1,8 @@
 .. title: International Women's Basketball Day
 .. slug: femball
 .. date: 2018-03-08 00:21:32 UTC+03:00
-.. tags: madskillz
-.. category: basketball
+.. tags: madskillz, basketball
+.. category:
 .. link: 
 .. description: 
 .. type: text
