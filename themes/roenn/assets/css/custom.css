@@ -1,4 +1,4 @@
-/* author name etc shoul be idented! */
+/* author name etc should be idented! */
 div.metadata {
     margin-left: 3em;
     margin-bottom: 1em;
@@ -34,6 +34,7 @@ h1.entry-title a {
 body {
     color: #cccccc;
     background-color: #162f13;
+    font-size: 14pt;
 }
 
 .navbar-inverse {
@@ -49,6 +50,10 @@ pre {
     background-color: #51551c;
     border-color: #777777;
     color: #b5b5b5;
+}
+
+div.code pre {
+    font-size: 13pt;
 }
 
 .pager li > a {
