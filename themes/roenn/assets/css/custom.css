@@ -56,6 +56,11 @@ div.code pre {
     font-size: 13pt;
 }
 
+code.literal {
+    background-color: #162f13;
+    outline: dotted white 1px;
+}
+
 .pager li > a {
     background-color: #333333;
     border-color: #444444;
