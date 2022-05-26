@@ -6,7 +6,7 @@
 If you had tried to use `Flask <http://flask.pocoo.org/>`__ sessions
 and got something like that:
 
-::
+.. code-block:: python
 
       File "/usr/lib64/python2.7/site-packages/flask/app.py", line 889, in __call__
         return self.wsgi_app(environ, start_response)
@@ -30,14 +30,14 @@ and got something like that:
 
 ...you might be obscured. Fear not! The reason may lurk in
 
-::
+.. code-block:: python
 
     from __future__ import unicode_literals
 
 
-Just declare your SECRET\_KEY as \`bytes\` object and get happy again!
+Just declare your ``SECRET_KEY`` as a ``bytes`` object and get happy again!
 
-::
+.. code-block:: python
 
     SECRET_KEY = b'smthverrysekret'
 
