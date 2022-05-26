@@ -22,10 +22,8 @@
 hooks I wrote for my work.
 One is a reminder to mention Trac
 tickets in commit messages, and the other notifies a developer when
-someone (not him) touches his part of project.
-
-
-H">
+someone (not them) touches their part of project.
+">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2011-03-16T15:03:48+03:00">
 <meta property="article:tag" content="hg">
@@ -109,55 +107,45 @@ H">
 <a class="reference external" href="http://mercurial.selenic.com/wiki/Hook">hooks</a> I wrote for my work.
 One is a reminder to mention <a class="reference external" href="http://trac.edgewall.com/">Trac</a>
 tickets in commit messages, and the other notifies a developer when
-someone (not him) touches his part of&nbsp;project.</p>
+someone (not them) touches their part of&nbsp;project.</p>
 <!-- TEASER_END -->
-<hr class="docutils">
 <p>Here&#8217;s reminder. It&#8217;s commit hook, run after commit was made. If you
-forgot to write something like &#8220;fixes #666&#8221;, it&#8217;d <em>echo</em> &#8220;Have you
-forgot to mention ticket?&#8221; and commit message back to you, just in time
-for <em>hg rollback</em> (or <em>hg commit &#8212;amend</em> in recent Mercurial versions)
+forgot to write something like &#8220;fixes #666&#8221;,&nbsp;it&#8217;d <code class="docutils literal">echo</code> <em><span class="dquo">&#8220;</span>Have you
+forgot to mention ticket?&#8221;</em> and commit message back to you, just in time&nbsp;for <code class="docutils literal">hg rollback</code> (or <code class="docutils literal">hg commit <span class="pre">--amend</span></code> in recent Mercurial versions)
 and changing message. Or ignoring it, of&nbsp;course.</p>
-<pre class="literal-block">#!/bin/sh
-
-ci_msg=$(hg log -r "${HG_NODE}" --template "{desc}")
-
-echo $ci_msg | egrep -q '#[[:digit:]]{1,4}' &amp;&amp; exit 0
-
-echo "Have you forgot to mention ticket?"hg log -r "${HG_NODE}" --template "{desc}\n"</pre>
-<hr class="docutils">
+<div class="code"><pre class="code shell"><a id="rest_code_82b6778025974eab926b36ef2fb93f8a-1" name="rest_code_82b6778025974eab926b36ef2fb93f8a-1" href="#rest_code_82b6778025974eab926b36ef2fb93f8a-1"></a><span class="ch">#!/bin/sh</span>
+<a id="rest_code_82b6778025974eab926b36ef2fb93f8a-2" name="rest_code_82b6778025974eab926b36ef2fb93f8a-2" href="#rest_code_82b6778025974eab926b36ef2fb93f8a-2"></a>
+<a id="rest_code_82b6778025974eab926b36ef2fb93f8a-3" name="rest_code_82b6778025974eab926b36ef2fb93f8a-3" href="#rest_code_82b6778025974eab926b36ef2fb93f8a-3"></a><span class="nv">ci_msg</span><span class="o">=</span><span class="k">$(</span>hg log -r <span class="s2">"</span><span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span><span class="s2">"</span> --template <span class="s2">"{desc}"</span><span class="k">)</span>
+<a id="rest_code_82b6778025974eab926b36ef2fb93f8a-4" name="rest_code_82b6778025974eab926b36ef2fb93f8a-4" href="#rest_code_82b6778025974eab926b36ef2fb93f8a-4"></a><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$ci_msg</span><span class="s2">"</span> <span class="p">|</span> grep -E -q <span class="s1">'#[[:digit:]]{1,4}'</span> <span class="o">&amp;&amp;</span> <span class="nb">exit</span> <span class="m">0</span>
+<a id="rest_code_82b6778025974eab926b36ef2fb93f8a-5" name="rest_code_82b6778025974eab926b36ef2fb93f8a-5" href="#rest_code_82b6778025974eab926b36ef2fb93f8a-5"></a><span class="nb">echo</span> <span class="s2">"Have you forgot to mention ticket?</span>
+<a id="rest_code_82b6778025974eab926b36ef2fb93f8a-6" name="rest_code_82b6778025974eab926b36ef2fb93f8a-6" href="#rest_code_82b6778025974eab926b36ef2fb93f8a-6"></a><span class="s2">hg log -r "</span><span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span><span class="s2">" --template "</span><span class="o">{</span>desc<span class="o">}</span><span class="se">\n</span><span class="s2">"</span>
+</pre></div>
 <p>And here&#8217;s notifier. It&#8217;s intended to be <em>incoming</em> hook and looks if
 files in certain directories were modifiled by anyone except certain
 person. And sends message via&nbsp;ssmtp.</p>
-<pre class="literal-block">#!/bin/sh
-
-notify() {
-    cp -f /var/hg/ntf.templ /tmp
-    echo "See http://hg.server/repo/rev/${HG_NODE}" &gt;&gt; /tmp/ntf.templ
-    hg log -r ${HG_NODE} -p &gt;&gt; /tmp/ntf.templ
-    sendmail recipient@mail.domain &lt; "/tmp/ntf.templ"
-}
-
-
-
-hg log -r ${HG_NODE} --template "{author}" | grep -q 'author-to-be-ignored' &amp;&amp; exit 0
-
-hg log -r ${HG_NODE} --template "{files}" | egrep -q 'regexp for files' &amp;&amp; notify
-
-exit 0</pre>
-<p>Regexp example (looks for files in <em>`hg root`/modules/</em> and <em>`hg
-root`/lib/modules/</em>):</p>
-<pre class="literal-block">(^| )(lib/)?modules</pre>
-<p>Sample <em>/var/hg/ntf.templ</em>:</p>
-<pre class="literal-block">To: recipient@mail.domain
-
-From: notifier@mail.domain
-
-Subject: Achtung Minen!
-
-
-
-&lt;Notification message body&gt;</pre>
-<p><a class="reference external" href="http://pygments.org/">**Pygmented**</a></p>
+<div class="code"><pre class="code shell"><a id="rest_code_77541c047f7840779c94c4a7ec292e4d-1" name="rest_code_77541c047f7840779c94c4a7ec292e4d-1" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-1"></a><span class="ch">#!/bin/sh</span>
+<a id="rest_code_77541c047f7840779c94c4a7ec292e4d-2" name="rest_code_77541c047f7840779c94c4a7ec292e4d-2" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-2"></a>
+<a id="rest_code_77541c047f7840779c94c4a7ec292e4d-3" name="rest_code_77541c047f7840779c94c4a7ec292e4d-3" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-3"></a>notify<span class="o">()</span> <span class="o">{</span>
+<a id="rest_code_77541c047f7840779c94c4a7ec292e4d-4" name="rest_code_77541c047f7840779c94c4a7ec292e4d-4" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-4"></a>    cp -f /var/hg/ntf.templ /tmp
+<a id="rest_code_77541c047f7840779c94c4a7ec292e4d-5" name="rest_code_77541c047f7840779c94c4a7ec292e4d-5" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-5"></a>    <span class="nb">echo</span> <span class="s2">"See https://&lt;HG-SERVER&gt;/&lt;REPO&gt;/rev/</span><span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span><span class="s2">"</span> &gt;&gt; /tmp/ntf.templ
+<a id="rest_code_77541c047f7840779c94c4a7ec292e4d-6" name="rest_code_77541c047f7840779c94c4a7ec292e4d-6" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-6"></a>    hg log -r <span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span> -p &gt;&gt; /tmp/ntf.templ
+<a id="rest_code_77541c047f7840779c94c4a7ec292e4d-7" name="rest_code_77541c047f7840779c94c4a7ec292e4d-7" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-7"></a>    sendmail recipient@mail.domain &lt; <span class="s2">"/tmp/ntf.templ"</span>
+<a id="rest_code_77541c047f7840779c94c4a7ec292e4d-8" name="rest_code_77541c047f7840779c94c4a7ec292e4d-8" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-8"></a><span class="o">}</span>
+<a id="rest_code_77541c047f7840779c94c4a7ec292e4d-9" name="rest_code_77541c047f7840779c94c4a7ec292e4d-9" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-9"></a>
+<a id="rest_code_77541c047f7840779c94c4a7ec292e4d-10" name="rest_code_77541c047f7840779c94c4a7ec292e4d-10" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-10"></a>hg log -r <span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span> --template <span class="s2">"{author}"</span> <span class="p">|</span> grep -q <span class="s1">'&lt;AUTHOR-TO-BE-IGNORED&gt;'</span> <span class="o">&amp;&amp;</span> <span class="nb">exit</span> <span class="m">0</span>
+<a id="rest_code_77541c047f7840779c94c4a7ec292e4d-11" name="rest_code_77541c047f7840779c94c4a7ec292e4d-11" href="#rest_code_77541c047f7840779c94c4a7ec292e4d-11"></a>hg log -r <span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span> --template <span class="s2">"{files}"</span> <span class="p">|</span> grep -E -q <span class="s1">'&lt;FILE-REGEX&gt;'</span> <span class="o">&amp;&amp;</span> notify
+</pre></div>
+<p>Regex example (looks for files&nbsp;in <code class="docutils literal">$(hg <span class="pre">root)/modules/</span></code> and
+<code class="docutils literal">$(hg <span class="pre">root)/lib/modules/</span></code>):</p>
+<div class="code"><pre class="code text"><a id="rest_code_55871e3687754aee99909eb544e996af-1" name="rest_code_55871e3687754aee99909eb544e996af-1" href="#rest_code_55871e3687754aee99909eb544e996af-1"></a>(^| )(lib/)?modules
+</pre></div>
+<p>Sample <code class="docutils literal">/var/hg/ntf.templ</code>:</p>
+<div class="code"><pre class="code text"><a id="rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-1" name="rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-1" href="#rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-1"></a>To: recipient@mail.domain
+<a id="rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-2" name="rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-2" href="#rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-2"></a>From: notifier@mail.domain
+<a id="rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-3" name="rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-3" href="#rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-3"></a>Subject: Achtung Minen!
+<a id="rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-4" name="rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-4" href="#rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-4"></a>
+<a id="rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-5" name="rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-5" href="#rest_code_9f1ac8e1f7dc43e19ad9e6caebd81a9e-5"></a>&lt;Notification message body&gt;
+</pre></div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/hg/" rel="tag">hg</a></li>
