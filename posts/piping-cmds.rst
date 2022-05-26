@@ -3,12 +3,12 @@
 .. date: 2012-07-04 12:07:18
 .. tags: gentoo,linux
 
-(Just to save a useful and complex construct for future reference)
+*(Just to save a useful and complex construct for future reference)*
 
 List all the overlay maintainers who hasn't migrated their packages to
-*virtual/pkgconfig*:
+``virtual/pkgconfig``:
 
-::
+.. code-block:: shell
 
     ag --files-with-matches dev-util/pkgconfig | xargs dirname | uniq \
            | xargs -I {} grep '<name>' '{}/metadata.xml' \
