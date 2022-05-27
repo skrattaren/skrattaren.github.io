@@ -10,6 +10,9 @@
 Мне приснилось, что я в Гималаях записываю партию флейты вместе с
 `Corvus Corax`_ для клипа в поддержку Украины.
 
-.. _Corvus Corax: https://www.corvuscorax.de/
+Вот примерно так это звучало и выглядело во сне (только в Гималаях,
+естественно).
 
 .. youtube:: XW91sq0bptY
+
+.. _Corvus Corax: https://www.corvuscorax.de/

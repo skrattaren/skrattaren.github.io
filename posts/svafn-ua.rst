@@ -10,6 +10,9 @@
 Today I dreamt about helping `Corvus Corax`_ with recording flute in Himalayas
 for their music video in support for the Ukraine.
 
-.. _Corvus Corax: https://www.corvuscorax.de/
+Here's the closest I found to what it was in a dream (except for Himalayas, of
+course).
 
 .. youtube:: XW91sq0bptY
+
+.. _Corvus Corax: https://www.corvuscorax.de/
