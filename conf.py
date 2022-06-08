@@ -744,8 +744,8 @@ FILTERS = {
    ".html": ["filters.typogrify"],
    ".js": ["filters.jsminify"],
    ".css": ["filters.cssminify"],
-   ".png": ["filters.optipng"],
-   ".jpg": ["jpegoptim --strip-all -v %s"],
+   # ".png": ["filters.optipng"],
+   # ".jpg": ["jpegoptim --strip-all -v %s"],
 }
 
 # Executable for the "yui_compressor" filter (defaults to 'yui-compressor').
