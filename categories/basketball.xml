@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unseen Hexadecimals (Posts about basketball)</title><link>https://skrattaren.github.io/</link><description></description><atom:link href="https://skrattaren.github.io/categories/basketball.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 06 Jun 2022 09:17:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>FlexGet, RuTracker and NBA games</title><link>https://skrattaren.github.io/posts/flexget-rutracker-and-nba-games/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;So, you can't afford NBA League Pass and wanna do some piracy?  One could
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unseen Hexadecimals (Posts about basketball)</title><link>https://skrattaren.github.io/</link><description></description><atom:link href="https://skrattaren.github.io/categories/basketball.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:skrattaren@yandex.ru"&gt;Николай Шуйский (Nikolaj Šujskij)&lt;/a&gt; 
+&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;
+&lt;img alt="Creative Commons License" style="border-width:0"
+src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span
+xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
+property="dct:title" rel="dct:type"&gt;Unseen Hexadecimals&lt;/span&gt; by &lt;span
+xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"&gt;Nikolaj
+Šujskij&lt;/span&gt; is licensed under a &lt;a rel="license"
+href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons
+Attribution-ShareAlike 4.0 International License&lt;/a&gt;.
+</copyright><lastBuildDate>Wed, 08 Jun 2022 10:57:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>FlexGet, RuTracker and NBA games</title><link>https://skrattaren.github.io/posts/flexget-rutracker-and-nba-games/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;So, you can't afford NBA League Pass and wanna do some piracy?  One could
 download practically anything from &lt;a class="reference external" href="https://rutracker.org/"&gt;RuTracker&lt;/a&gt;, including &lt;a class="reference external" href="https://rutracker.org/forum/viewforum.php?f=1997"&gt;NBA games&lt;/a&gt;.  But
 what if you're also a lazy bugger?  Well, there's &lt;a class="reference external" href="https://flexget.com/"&gt;FlexGet&lt;/a&gt;!  And it turns out
 to work great with &lt;em&gt;RuTracker&lt;/em&gt;, but configuration is a bit quirky.  So here's

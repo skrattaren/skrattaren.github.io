@@ -7,869 +7,910 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://skrattaren.github.io/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/2006/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/2007/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/2008/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/2009/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/2010/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/2011/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/2012/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/2013/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/2018/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/2022/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://skrattaren.github.io/about/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
-  <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/about/" />
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/archive.html</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/basketball/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/boker/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/django/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/gentoo/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/git/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/hg/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/jabber/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/khe-khe/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/lang/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/link/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/linux/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/madskillz/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/musik/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/programmierung/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/python/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/svafn/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/categories/vim/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/index-1.html</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/index-2.html</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/index-3.html</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/index-4.html</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/listings/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/listings/flexget-config.yml.html</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/pages/about/</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/pages/about/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/OK-krigaren/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/OK-krigaren/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/about-springs/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/about-springs/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/asmegin-fotto/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/asmegin-fotto/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/bazqux/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/bazqux/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/check-iso-burning/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/codewatch/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/codewatch/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/deluge/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/den-norsk-ridder/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/den-norsk-ridder/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/digikam-menyrad/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/digikam-menyrad/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/dir-or-not/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/django-querysets/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/django-querysets/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/driver-dagg-faller-regn/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/edicode/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/edicode/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/enterprize-python/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/eselect-xorg-conf/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/eselect-xorg-conf/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/femball/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/flask-u-literals/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/flexget-rutracker-and-nba-games/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/font/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/font/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/gentoo-pgsql-server/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/gentoobook/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/gentoobook/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/git-diff-index/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/git-koans/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/gnofract-4d/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/heh/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/heh/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/hg-zsh-vim/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/hghooks/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/high-and-low-level/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/high-and-low-level/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/imified/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/imified/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/islenska/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/islenska/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/joke/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/joke/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/make-sense/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/matplotlib/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/matplotlib/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/metall/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/munharpa.br/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/nyheter/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/nyheter/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/omni-nationalism/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/pgsql-gentoo/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/philips-xenium-e100-review/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/philips-xenium-e100-review/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/piping-cmds/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/portage-bisect/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/portage-bisect/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/presenter/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/presenter/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/psi-mpd/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/psi-mpd/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/psycopg-tuples-of-strings/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/psycopg-tuples-of-strings-ru/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/py-nested-iter/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/py-nested-iter/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/quest/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/quest/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/radeon-drm-gentoo/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/radeon-drm-gentoo/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/raud-ants/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/shantaram/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/shantaram/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/sony-reader-review/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/sony-reader-review/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/sterkrig-is-min-nama/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/sterkrig-is-min-nama/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/subtitles/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/subtitles/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/tabs-n-spaces/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/tocharian/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/tocharian/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/tp-accordion/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/ua-svafn/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="ru" href="https://skrattaren.github.io/ru/posts/ua-svafn/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/posts/vikingarock-valhalla/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2006/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2007/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2008/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2009/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2010/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2011/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2012/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2013/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2014/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2017/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/2022/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
- </url>
- <url>
-  <loc>https://skrattaren.github.io/ru/about/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/archive.html</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/basketball/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/boker/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/django/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/folk/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/gentoo/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/hg/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/jabber/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/khe-khe/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/lang/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/linux/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/musik/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/programmierung/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/python/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/sagor/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/skapelse/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/categories/svafn/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/ru/index-1.html</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/ru/index-2.html</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/ru/index-3.html</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/ru/index-4.html</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/ru/index-5.html</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/ru/index-6.html</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://skrattaren.github.io/ru/pages/about/</loc>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/pages/about/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/OK-krigaren/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/OK-krigaren/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/about-springs/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/about-springs/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/argu/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/asmegin-fotto/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/asmegin-fotto/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/awesome-jabber-conf/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/balsam/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/bazqux/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/bazqux/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/bloke-in-a-pub-told-me/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/ceeled/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/clothe-in-splav/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/codewatch/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/codewatch/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/coined/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/den-norsk-ridder/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/den-norsk-ridder/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/die-liebeslieder/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/digikam-menyrad/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/digikam-menyrad/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/django-querysets/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/django-querysets/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/dso/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/edicode/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/edicode/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/eselect-xorg-conf/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/eselect-xorg-conf/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/euskaldunak/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/firebat/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/foersta/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/font/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/font/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/fount/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/fudge-ms/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/gabriel/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/gentoobook/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/gentoobook/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/heh-2/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/heh/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/heh/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/hellinguists/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/high-and-low-level/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/high-and-low-level/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/ho/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/hphones/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/imified/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/imified/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/islenska/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/islenska/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/joke/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/joke/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/kharms/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/kookeez/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/loirille/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/loirin-takana/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/lorquotes/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/matplotlib/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/matplotlib/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/multilang-doc/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/munharpa/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/nikodim/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/nikolaj-sjujskij-seagull/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/nyheter/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/nyheter/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/om-manul/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/otto/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/philips-xenium-e100-review/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/philips-xenium-e100-review/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/picking-teams/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/poetry-indeed/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/portage-bisect/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/portage-bisect/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/presenter/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/presenter/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/psi-mpd/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/psi-mpd/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/psycopg-tuples-of-strings-ru/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/psycopg-tuples-of-strings/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/py-nested-iter/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/py-nested-iter/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/quest/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/quest/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/radeon-drm-gentoo/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/radeon-drm-gentoo/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/rivulette-lyrics/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/ru-sa-musik/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/rus-and-ru/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/satchmo-ru/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/secretest-secret/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/shantaram/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/shantaram/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/sin-cos/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/skjorta/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/slagsmaal/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/smiley/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/sony-reader-review/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/sony-reader-review/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/sterkrig-is-min-nama/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/sterkrig-is-min-nama/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/subtitles/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/subtitles/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/sudden/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/svafn/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/tocharian/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/tocharian/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/ua-svafn/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://skrattaren.github.io/posts/ua-svafn/" />
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/useful-note/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/vikingarock/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://skrattaren.github.io/ru/posts/winmoney/</loc>
-  <lastmod>2022-06-06T09:17:00Z</lastmod>
+  <lastmod>2022-06-08T10:57:00Z</lastmod>
  </url>
 </urlset>

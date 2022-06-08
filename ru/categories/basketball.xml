@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unseen Hexadecimals (Записи о basketball)</title><link>https://skrattaren.github.io/</link><description></description><atom:link href="https://skrattaren.github.io/ru/categories/basketball.xml" rel="self" type="application/rss+xml"></atom:link><language>ru</language><lastBuildDate>Mon, 06 Jun 2022 09:17:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Деление на команды</title><link>https://skrattaren.github.io/ru/posts/picking-teams/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Чтоб в игры вроде баскетбола было интереснее играть, команды должны быть
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unseen Hexadecimals (Записи о basketball)</title><link>https://skrattaren.github.io/</link><description></description><atom:link href="https://skrattaren.github.io/ru/categories/basketball.xml" rel="self" type="application/rss+xml"></atom:link><language>ru</language><copyright>Contents © 2022 &lt;a href="mailto:skrattaren@yandex.ru"&gt;Николай Шуйский (Nikolaj Šujskij)&lt;/a&gt; 
+&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;
+&lt;img alt="Creative Commons License" style="border-width:0"
+src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span
+xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
+property="dct:title" rel="dct:type"&gt;Unseen Hexadecimals&lt;/span&gt; by &lt;span
+xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"&gt;Nikolaj
+Šujskij&lt;/span&gt; is licensed under a &lt;a rel="license"
+href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons
+Attribution-ShareAlike 4.0 International License&lt;/a&gt;.
+</copyright><lastBuildDate>Wed, 08 Jun 2022 10:57:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Деление на команды</title><link>https://skrattaren.github.io/ru/posts/picking-teams/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Чтоб в игры вроде баскетбола было интереснее играть, команды должны быть
 примерно равны по силе.  Конечно, если есть постоянные хорошо сыгранные
 команды, это прекрасно.  Но мы здесь поговорим о другом случае: собралось &lt;strong&gt;N&lt;/strong&gt;
 человек, которые хотят поиграть, и им нужно быстро поделиться.  Всё как в школе

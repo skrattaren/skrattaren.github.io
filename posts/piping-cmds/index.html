@@ -104,9 +104,9 @@ ag --files-with-matches dev-util/pkgconfig ">
     <p><em>(Just to save a useful and complex construct for future&nbsp;reference)</em></p>
 <p>List all the overlay maintainers who hasn&#8217;t migrated their packages&nbsp;to
 <code class="docutils literal">virtual/pkgconfig</code>:</p>
-<div class="code"><pre class="code shell"><a id="rest_code_4b398ae5445141e8bb5571e6642a2ba1-1" name="rest_code_4b398ae5445141e8bb5571e6642a2ba1-1" href="#rest_code_4b398ae5445141e8bb5571e6642a2ba1-1"></a>ag --files-with-matches dev-util/pkgconfig <span class="p">|</span> xargs dirname <span class="p">|</span> uniq <span class="se">\</span>
-<a id="rest_code_4b398ae5445141e8bb5571e6642a2ba1-2" name="rest_code_4b398ae5445141e8bb5571e6642a2ba1-2" href="#rest_code_4b398ae5445141e8bb5571e6642a2ba1-2"></a>       <span class="p">|</span> xargs -I <span class="o">{}</span> grep <span class="s1">'&lt;name&gt;'</span> <span class="s1">'{}/metadata.xml'</span> <span class="se">\</span>
-<a id="rest_code_4b398ae5445141e8bb5571e6642a2ba1-3" name="rest_code_4b398ae5445141e8bb5571e6642a2ba1-3" href="#rest_code_4b398ae5445141e8bb5571e6642a2ba1-3"></a>       <span class="p">|</span> sed <span class="s1">'s:\s\+&lt;name&gt;\(.\+\)&lt;/name&gt;:\1:'</span> <span class="p">|</span> sort -u
+<div class="code"><pre class="code shell"><a id="rest_code_b2bb434d2b714da8afb704b376b01693-1" name="rest_code_b2bb434d2b714da8afb704b376b01693-1" href="#rest_code_b2bb434d2b714da8afb704b376b01693-1"></a>ag --files-with-matches dev-util/pkgconfig <span class="p">|</span> xargs dirname <span class="p">|</span> uniq <span class="se">\</span>
+<a id="rest_code_b2bb434d2b714da8afb704b376b01693-2" name="rest_code_b2bb434d2b714da8afb704b376b01693-2" href="#rest_code_b2bb434d2b714da8afb704b376b01693-2"></a>       <span class="p">|</span> xargs -I <span class="o">{}</span> grep <span class="s1">'&lt;name&gt;'</span> <span class="s1">'{}/metadata.xml'</span> <span class="se">\</span>
+<a id="rest_code_b2bb434d2b714da8afb704b376b01693-3" name="rest_code_b2bb434d2b714da8afb704b376b01693-3" href="#rest_code_b2bb434d2b714da8afb704b376b01693-3"></a>       <span class="p">|</span> sed <span class="s1">'s:\s\+&lt;name&gt;\(.\+\)&lt;/name&gt;:\1:'</span> <span class="p">|</span> sort -u
 </pre></div>
 <p>Yes, I use <a class="reference external" href="https://github.com/ggreer/the_silver_searcher">ag</a> instead of <em>grep</em>, being too lazy to add all the necessary
 options. And wait. And <em>ag</em> is so much better however you look at&nbsp;it.</p>
@@ -147,7 +147,8 @@ options. And wait. And <em>ag</em> is so much better however you look at&nbsp;it
         <!--End of body content-->
 
         <footer id="footer">
-            Contents © 2022         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a> <br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            Contents © 2022         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Unseen Hexadecimals</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nikolaj
 Šujskij</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
 Attribution-ShareAlike 4.0 International License</a>.
@@ -159,7 +160,7 @@ Attribution-ShareAlike 4.0 International License</a>.
 
             <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
     moment.locale("en");
-    fancydates(0, "YYYY-MM-DD HH:mm");
+    fancydates(2, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates --><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',

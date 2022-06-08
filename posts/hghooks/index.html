@@ -113,38 +113,38 @@ someone (not them) touches their part of&nbsp;project.</p>
 forgot to write something like &#8220;fixes #666&#8221;,&nbsp;it&#8217;d <code class="docutils literal">echo</code> <em><span class="dquo">&#8220;</span>Have you
 forgot to mention ticket?&#8221;</em> and commit message back to you, just in time&nbsp;for <code class="docutils literal">hg rollback</code> (or <code class="docutils literal">hg commit <span class="pre">--amend</span></code> in recent Mercurial versions)
 and changing message. Or ignoring it, of&nbsp;course.</p>
-<div class="code"><pre class="code shell"><a id="rest_code_1efb50861e8d444682d93682e5189447-1" name="rest_code_1efb50861e8d444682d93682e5189447-1" href="#rest_code_1efb50861e8d444682d93682e5189447-1"></a><span class="ch">#!/bin/sh</span>
-<a id="rest_code_1efb50861e8d444682d93682e5189447-2" name="rest_code_1efb50861e8d444682d93682e5189447-2" href="#rest_code_1efb50861e8d444682d93682e5189447-2"></a>
-<a id="rest_code_1efb50861e8d444682d93682e5189447-3" name="rest_code_1efb50861e8d444682d93682e5189447-3" href="#rest_code_1efb50861e8d444682d93682e5189447-3"></a><span class="nv">ci_msg</span><span class="o">=</span><span class="k">$(</span>hg log -r <span class="s2">"</span><span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span><span class="s2">"</span> --template <span class="s2">"{desc}"</span><span class="k">)</span>
-<a id="rest_code_1efb50861e8d444682d93682e5189447-4" name="rest_code_1efb50861e8d444682d93682e5189447-4" href="#rest_code_1efb50861e8d444682d93682e5189447-4"></a><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$ci_msg</span><span class="s2">"</span> <span class="p">|</span> grep -E -q <span class="s1">'#[[:digit:]]{1,4}'</span> <span class="o">&amp;&amp;</span> <span class="nb">exit</span> <span class="m">0</span>
-<a id="rest_code_1efb50861e8d444682d93682e5189447-5" name="rest_code_1efb50861e8d444682d93682e5189447-5" href="#rest_code_1efb50861e8d444682d93682e5189447-5"></a><span class="nb">echo</span> <span class="s2">"Have you forgot to mention ticket?</span>
-<a id="rest_code_1efb50861e8d444682d93682e5189447-6" name="rest_code_1efb50861e8d444682d93682e5189447-6" href="#rest_code_1efb50861e8d444682d93682e5189447-6"></a><span class="s2">hg log -r "</span><span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span><span class="s2">" --template "</span><span class="o">{</span>desc<span class="o">}</span><span class="se">\n</span><span class="s2">"</span>
+<div class="code"><pre class="code shell"><a id="rest_code_7c2253db0295484ba01324585ccb2cb7-1" name="rest_code_7c2253db0295484ba01324585ccb2cb7-1" href="#rest_code_7c2253db0295484ba01324585ccb2cb7-1"></a><span class="ch">#!/bin/sh</span>
+<a id="rest_code_7c2253db0295484ba01324585ccb2cb7-2" name="rest_code_7c2253db0295484ba01324585ccb2cb7-2" href="#rest_code_7c2253db0295484ba01324585ccb2cb7-2"></a>
+<a id="rest_code_7c2253db0295484ba01324585ccb2cb7-3" name="rest_code_7c2253db0295484ba01324585ccb2cb7-3" href="#rest_code_7c2253db0295484ba01324585ccb2cb7-3"></a><span class="nv">ci_msg</span><span class="o">=</span><span class="k">$(</span>hg log -r <span class="s2">"</span><span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span><span class="s2">"</span> --template <span class="s2">"{desc}"</span><span class="k">)</span>
+<a id="rest_code_7c2253db0295484ba01324585ccb2cb7-4" name="rest_code_7c2253db0295484ba01324585ccb2cb7-4" href="#rest_code_7c2253db0295484ba01324585ccb2cb7-4"></a><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$ci_msg</span><span class="s2">"</span> <span class="p">|</span> grep -E -q <span class="s1">'#[[:digit:]]{1,4}'</span> <span class="o">&amp;&amp;</span> <span class="nb">exit</span> <span class="m">0</span>
+<a id="rest_code_7c2253db0295484ba01324585ccb2cb7-5" name="rest_code_7c2253db0295484ba01324585ccb2cb7-5" href="#rest_code_7c2253db0295484ba01324585ccb2cb7-5"></a><span class="nb">echo</span> <span class="s2">"Have you forgot to mention ticket?</span>
+<a id="rest_code_7c2253db0295484ba01324585ccb2cb7-6" name="rest_code_7c2253db0295484ba01324585ccb2cb7-6" href="#rest_code_7c2253db0295484ba01324585ccb2cb7-6"></a><span class="s2">hg log -r "</span><span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span><span class="s2">" --template "</span><span class="o">{</span>desc<span class="o">}</span><span class="se">\n</span><span class="s2">"</span>
 </pre></div>
 <p>And here&#8217;s notifier. It&#8217;s intended to be <em>incoming</em> hook and looks if
 files in certain directories were modifiled by anyone except certain
 person. And sends message via&nbsp;ssmtp.</p>
-<div class="code"><pre class="code shell"><a id="rest_code_a6778773b5774167996547cd254b48ef-1" name="rest_code_a6778773b5774167996547cd254b48ef-1" href="#rest_code_a6778773b5774167996547cd254b48ef-1"></a><span class="ch">#!/bin/sh</span>
-<a id="rest_code_a6778773b5774167996547cd254b48ef-2" name="rest_code_a6778773b5774167996547cd254b48ef-2" href="#rest_code_a6778773b5774167996547cd254b48ef-2"></a>
-<a id="rest_code_a6778773b5774167996547cd254b48ef-3" name="rest_code_a6778773b5774167996547cd254b48ef-3" href="#rest_code_a6778773b5774167996547cd254b48ef-3"></a>notify<span class="o">()</span> <span class="o">{</span>
-<a id="rest_code_a6778773b5774167996547cd254b48ef-4" name="rest_code_a6778773b5774167996547cd254b48ef-4" href="#rest_code_a6778773b5774167996547cd254b48ef-4"></a>    cp -f /var/hg/ntf.templ /tmp
-<a id="rest_code_a6778773b5774167996547cd254b48ef-5" name="rest_code_a6778773b5774167996547cd254b48ef-5" href="#rest_code_a6778773b5774167996547cd254b48ef-5"></a>    <span class="nb">echo</span> <span class="s2">"See https://&lt;HG-SERVER&gt;/&lt;REPO&gt;/rev/</span><span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span><span class="s2">"</span> &gt;&gt; /tmp/ntf.templ
-<a id="rest_code_a6778773b5774167996547cd254b48ef-6" name="rest_code_a6778773b5774167996547cd254b48ef-6" href="#rest_code_a6778773b5774167996547cd254b48ef-6"></a>    hg log -r <span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span> -p &gt;&gt; /tmp/ntf.templ
-<a id="rest_code_a6778773b5774167996547cd254b48ef-7" name="rest_code_a6778773b5774167996547cd254b48ef-7" href="#rest_code_a6778773b5774167996547cd254b48ef-7"></a>    sendmail recipient@mail.domain &lt; <span class="s2">"/tmp/ntf.templ"</span>
-<a id="rest_code_a6778773b5774167996547cd254b48ef-8" name="rest_code_a6778773b5774167996547cd254b48ef-8" href="#rest_code_a6778773b5774167996547cd254b48ef-8"></a><span class="o">}</span>
-<a id="rest_code_a6778773b5774167996547cd254b48ef-9" name="rest_code_a6778773b5774167996547cd254b48ef-9" href="#rest_code_a6778773b5774167996547cd254b48ef-9"></a>
-<a id="rest_code_a6778773b5774167996547cd254b48ef-10" name="rest_code_a6778773b5774167996547cd254b48ef-10" href="#rest_code_a6778773b5774167996547cd254b48ef-10"></a>hg log -r <span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span> --template <span class="s2">"{author}"</span> <span class="p">|</span> grep -q <span class="s1">'&lt;AUTHOR-TO-BE-IGNORED&gt;'</span> <span class="o">&amp;&amp;</span> <span class="nb">exit</span> <span class="m">0</span>
-<a id="rest_code_a6778773b5774167996547cd254b48ef-11" name="rest_code_a6778773b5774167996547cd254b48ef-11" href="#rest_code_a6778773b5774167996547cd254b48ef-11"></a>hg log -r <span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span> --template <span class="s2">"{files}"</span> <span class="p">|</span> grep -E -q <span class="s1">'&lt;FILE-REGEX&gt;'</span> <span class="o">&amp;&amp;</span> notify
+<div class="code"><pre class="code shell"><a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-1" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-1" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-1"></a><span class="ch">#!/bin/sh</span>
+<a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-2" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-2" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-2"></a>
+<a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-3" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-3" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-3"></a>notify<span class="o">()</span> <span class="o">{</span>
+<a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-4" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-4" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-4"></a>    cp -f /var/hg/ntf.templ /tmp
+<a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-5" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-5" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-5"></a>    <span class="nb">echo</span> <span class="s2">"See https://&lt;HG-SERVER&gt;/&lt;REPO&gt;/rev/</span><span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span><span class="s2">"</span> &gt;&gt; /tmp/ntf.templ
+<a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-6" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-6" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-6"></a>    hg log -r <span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span> -p &gt;&gt; /tmp/ntf.templ
+<a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-7" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-7" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-7"></a>    sendmail recipient@mail.domain &lt; <span class="s2">"/tmp/ntf.templ"</span>
+<a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-8" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-8" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-8"></a><span class="o">}</span>
+<a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-9" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-9" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-9"></a>
+<a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-10" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-10" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-10"></a>hg log -r <span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span> --template <span class="s2">"{author}"</span> <span class="p">|</span> grep -q <span class="s1">'&lt;AUTHOR-TO-BE-IGNORED&gt;'</span> <span class="o">&amp;&amp;</span> <span class="nb">exit</span> <span class="m">0</span>
+<a id="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-11" name="rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-11" href="#rest_code_2e87c3c715f54493a7ff4fbfc5c7edda-11"></a>hg log -r <span class="si">${</span><span class="nv">HG_NODE</span><span class="si">}</span> --template <span class="s2">"{files}"</span> <span class="p">|</span> grep -E -q <span class="s1">'&lt;FILE-REGEX&gt;'</span> <span class="o">&amp;&amp;</span> notify
 </pre></div>
 <p>Regex example (looks for files&nbsp;in <code class="docutils literal">$(hg <span class="pre">root)/modules/</span></code> and
 <code class="docutils literal">$(hg <span class="pre">root)/lib/modules/</span></code>):</p>
-<div class="code"><pre class="code text"><a id="rest_code_21b70773118843699713874bfa73ce0f-1" name="rest_code_21b70773118843699713874bfa73ce0f-1" href="#rest_code_21b70773118843699713874bfa73ce0f-1"></a>(^| )(lib/)?modules
+<div class="code"><pre class="code text"><a id="rest_code_933545345c394f4e8ddb32d4be55f525-1" name="rest_code_933545345c394f4e8ddb32d4be55f525-1" href="#rest_code_933545345c394f4e8ddb32d4be55f525-1"></a>(^| )(lib/)?modules
 </pre></div>
 <p>Sample <code class="docutils literal">/var/hg/ntf.templ</code>:</p>
-<div class="code"><pre class="code text"><a id="rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-1" name="rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-1" href="#rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-1"></a>To: recipient@mail.domain
-<a id="rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-2" name="rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-2" href="#rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-2"></a>From: notifier@mail.domain
-<a id="rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-3" name="rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-3" href="#rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-3"></a>Subject: Achtung Minen!
-<a id="rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-4" name="rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-4" href="#rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-4"></a>
-<a id="rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-5" name="rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-5" href="#rest_code_9e2eeaa5de184dd7b643d0e46ad5b86e-5"></a>&lt;Notification message body&gt;
+<div class="code"><pre class="code text"><a id="rest_code_e3316405e3754f5693b345c45daf2cfe-1" name="rest_code_e3316405e3754f5693b345c45daf2cfe-1" href="#rest_code_e3316405e3754f5693b345c45daf2cfe-1"></a>To: recipient@mail.domain
+<a id="rest_code_e3316405e3754f5693b345c45daf2cfe-2" name="rest_code_e3316405e3754f5693b345c45daf2cfe-2" href="#rest_code_e3316405e3754f5693b345c45daf2cfe-2"></a>From: notifier@mail.domain
+<a id="rest_code_e3316405e3754f5693b345c45daf2cfe-3" name="rest_code_e3316405e3754f5693b345c45daf2cfe-3" href="#rest_code_e3316405e3754f5693b345c45daf2cfe-3"></a>Subject: Achtung Minen!
+<a id="rest_code_e3316405e3754f5693b345c45daf2cfe-4" name="rest_code_e3316405e3754f5693b345c45daf2cfe-4" href="#rest_code_e3316405e3754f5693b345c45daf2cfe-4"></a>
+<a id="rest_code_e3316405e3754f5693b345c45daf2cfe-5" name="rest_code_e3316405e3754f5693b345c45daf2cfe-5" href="#rest_code_e3316405e3754f5693b345c45daf2cfe-5"></a>&lt;Notification message body&gt;
 </pre></div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
@@ -183,7 +183,8 @@ person. And sends message via&nbsp;ssmtp.</p>
         <!--End of body content-->
 
         <footer id="footer">
-            Contents © 2022         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a> <br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            Contents © 2022         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Unseen Hexadecimals</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nikolaj
 Šujskij</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
 Attribution-ShareAlike 4.0 International License</a>.
@@ -195,7 +196,7 @@ Attribution-ShareAlike 4.0 International License</a>.
 
             <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
     moment.locale("en");
-    fancydates(0, "YYYY-MM-DD HH:mm");
+    fancydates(2, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates --><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
