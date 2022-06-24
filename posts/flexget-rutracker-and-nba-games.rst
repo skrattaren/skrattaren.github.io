@@ -2,10 +2,8 @@
 .. slug: flexget-rutracker-and-nba-games
 .. date: 2022-05-22 18:26:24 UTC+03:00
 .. tags: basketball
-.. category: 
-.. link: 
-.. description: 
 .. type: text
+.. status: private
 
 So, you can't afford NBA League Pass and wanna do some piracy?  One could
 download practically anything from RuTracker_, including `NBA games`_.  But
