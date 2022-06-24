@@ -1,1 +1,72 @@
-div.metadata{margin-left:3em;margin-bottom:1em;font-style:italic;font-size:80%}footer{border-top:1px solid;margin:3em auto 0;text-align:center;width:60%}a{color:#8cc88c}a:focus,a:hover{color:#bbf3bb}h1.entry-title a{color:#b2c9b2}.navbar-inverse .navbar-brand{color:#e42a1a}body{color:#ccc;background-color:#162f13;font-size:14pt}.navbar-inverse{background-color:#463415;border-bottom-color:#777}.navbar-inverse .navbar-nav>li>a{color:#dab5a2}pre{background-color:#51551c;border-color:#777;color:#b5b5b5}div.code pre{font-size:13pt}code.literal{background-color:#162f13;outline:dotted white 1px}.pager li>a{background-color:#333;border-color:#444}.pager li>a:focus,.pager li>a:hover{background-color:#444}
+/* author name etc should be idented! */
+div.metadata {
+    margin-left: 3em;
+    margin-bottom: 1em;
+    font-style: italic;
+    font-size:80%;
+}
+
+/* discern footer */
+footer {
+    border-top: 1px solid;
+    margin: 3em auto 0;
+    text-align: center;
+    width: 60%;
+}
+
+/* colours! */
+a {
+    color: #8cc88c;
+}
+
+a:hover, a:focus {
+    color: #bbf3bb;
+}
+
+h1.entry-title a {
+    color: #b2c9b2;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #e42a1a;
+}
+
+body {
+    color: #cccccc;
+    background-color: #162f13;
+    font-size: 14pt;
+}
+
+.navbar-inverse {
+    background-color: #463415;
+    border-bottom-color: #777777;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #dab5a2;
+}
+
+pre {
+    background-color: #51551c;
+    border-color: #777777;
+    color: #b5b5b5;
+}
+
+div.code pre {
+    font-size: 13pt;
+}
+
+code.literal {
+    background-color: #162f13;
+    outline: dotted white 1px;
+}
+
+.pager li > a {
+    background-color: #333333;
+    border-color: #444444;
+}
+
+.pager li > a:hover,
+.pager li > a:focus {
+    background-color: #444444;
+}
