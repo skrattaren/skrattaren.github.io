@@ -1,3 +1,5 @@
+name: Deploy Nikola to Github Pages
+
 on: [push]
 
 jobs:
