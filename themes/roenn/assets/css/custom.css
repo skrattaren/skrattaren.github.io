@@ -37,6 +37,7 @@ body {
     font-size: 14pt;
 }
 
+/* TODO: bring back bottom border */
 nav.bg-dark {
     background-color: #463415 !important;
     border-bottom-color: #777777;
