@@ -27,7 +27,7 @@ h1.entry-title a {
     color: #b2c9b2;
 }
 
-.navbar-inverse .navbar-brand {
+.navbar-dark .navbar-brand {
     color: #e42a1a;
 }
 
@@ -37,12 +37,13 @@ body {
     font-size: 14pt;
 }
 
-.navbar-inverse {
-    background-color: #463415;
+nav.bg-dark {
+    background-color: #463415 !important;
     border-bottom-color: #777777;
+    border-bottom-width: 1px !important;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-dark .navbar-nav a.nav-link {
     color: #dab5a2;
 }
 
