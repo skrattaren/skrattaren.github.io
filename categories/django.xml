@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unseen Hexadecimals (Posts about django)</title><link>https://skrattaren.github.io/</link><description></description><atom:link href="https://skrattaren.github.io/categories/django.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:skrattaren@yandex.ru"&gt;Николай Шуйский (Nikolaj Šujskij)&lt;/a&gt; 
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unseen Hexadecimals (Posts about django)</title><link>https://skrattaren.github.io/</link><description></description><atom:link href="https://skrattaren.github.io/categories/django.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:skrattaren@yandex.ru"&gt;Николай Шуйский (Nikolaj Šujskij)&lt;/a&gt; 
 &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License" style="border-width:0"
 src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span
@@ -9,7 +9,7 @@ xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"&gt;Nikol
 Šujskij&lt;/span&gt; is licensed under a &lt;a rel="license"
 href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons
 Attribution-ShareAlike 4.0 International License&lt;/a&gt;.
-</copyright><lastBuildDate>Fri, 24 Jun 2022 19:33:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Django: limiting querysets in admin forms</title><link>https://skrattaren.github.io/posts/django-querysets/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Let's suppose you have two related types of objects in your Django app.
+</copyright><lastBuildDate>Sat, 10 May 2025 16:48:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Django: limiting querysets in admin forms</title><link>https://skrattaren.github.io/posts/django-querysets/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Let's suppose you have two related types of objects in your Django app.
 Call them &lt;strong&gt;Object&lt;/strong&gt; and &lt;strong&gt;SuperObject&lt;/strong&gt;, related &lt;em&gt;ManyToMany&lt;/em&gt;'ly. And
 when you add/change &lt;strong&gt;SuperObject&lt;/strong&gt; in Django admin, there's all
 &lt;strong&gt;Object&lt;/strong&gt;s available for selection. But you need to limit the

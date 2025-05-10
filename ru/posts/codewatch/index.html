@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="ru">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,45 +36,44 @@ Jinja2, навострил текстовые редакторы и
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
 <!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Включить навигацию</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://skrattaren.github.io/ru/">
+        <a class="navbar-brand" href="../../">
 
-                <span id="blog-title">Unseen Hexadecimals</span>
-            </a>
-        </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
-            <ul class="nav navbar-nav">
-<li>
-<a href="../../archive.html">Подшивка</a>
+            <span id="blog-title">Unseen Hexadecimals</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../archive.html" class="nav-link">Подшивка</a>
                 </li>
-<li>
-<a href="../../categories/index.html">Ярлыки</a>
+<li class="nav-item">
+<a href="../../categories/index.html" class="nav-link">Ярлыки</a>
                 </li>
-<li>
-<a href="../../about">Про&nbsp;меня</a>
+<li class="nav-item">
+<a href="../../about" class="nav-link">Про&nbsp;меня</a>
                 </li>
-<li>
-<a href="../../rss.xml">Лента&nbsp;<span class="caps">RSS</span></a>
+<li class="nav-item">
+<a href="../../rss.xml" class="nav-link">Лента&nbsp;<span class="caps">RSS</span></a>
 
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right">
+<ul class="navbar-nav navbar-right">
 <li>            </li>
-<li><a href="https://skrattaren.github.io/" rel="alternate" hreflang="en">English</a></li>
+<li class="nav-item"><a href="../../../" rel="alternate" hreflang="en" class="nav-link">English</a></li>
 
-    <li>
-    <a href="index.rst" id="sourcelink">Источник</a>
+        <li class="nav-item">
+    <a href="index.rst" id="sourcelink" class="nav-link">Источник</a>
     </li>
+
                 
             </ul>
 </div>
@@ -82,8 +83,7 @@ Jinja2, навострил текстовые редакторы и
 </nav><!-- End of Menubar --><div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
-        <div class="row">
-            
+        
 <article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Пишешь код и видишь&nbsp;результат</a></h1>
 
         <div class="metadata">
@@ -128,53 +128,53 @@ Linux</a>, а ядро Linux умеет
 изменяются, перезагружать модуль, запускать главную функцию,
 раскрашивать результат, скармливать его <em>less</em>&#8216;у и ждать следующего&nbsp;события.</p>
 <p><strong>And here&#8217;s the code</strong>:</p>
-<div class="code"><pre class="code python"><a id="rest_code_9be977a4800645f992a535830c200a10-1" name="rest_code_9be977a4800645f992a535830c200a10-1" href="#rest_code_9be977a4800645f992a535830c200a10-1"></a><span class="ch">#!/usr/bin/env python</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-2" name="rest_code_9be977a4800645f992a535830c200a10-2" href="#rest_code_9be977a4800645f992a535830c200a10-2"></a><span class="c1"># -*- coding: utf-8 -*-</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-3" name="rest_code_9be977a4800645f992a535830c200a10-3" href="#rest_code_9be977a4800645f992a535830c200a10-3"></a>
-<a id="rest_code_9be977a4800645f992a535830c200a10-4" name="rest_code_9be977a4800645f992a535830c200a10-4" href="#rest_code_9be977a4800645f992a535830c200a10-4"></a><span class="kn">from</span> <span class="nn">inotifyx</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-5" name="rest_code_9be977a4800645f992a535830c200a10-5" href="#rest_code_9be977a4800645f992a535830c200a10-5"></a><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">logging</span><span class="o">,</span> <span class="nn">subprocess</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-6" name="rest_code_9be977a4800645f992a535830c200a10-6" href="#rest_code_9be977a4800645f992a535830c200a10-6"></a>
-<a id="rest_code_9be977a4800645f992a535830c200a10-7" name="rest_code_9be977a4800645f992a535830c200a10-7" href="#rest_code_9be977a4800645f992a535830c200a10-7"></a><span class="kn">import</span> <span class="nn">templater</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-8" name="rest_code_9be977a4800645f992a535830c200a10-8" href="#rest_code_9be977a4800645f992a535830c200a10-8"></a>
-<a id="rest_code_9be977a4800645f992a535830c200a10-9" name="rest_code_9be977a4800645f992a535830c200a10-9" href="#rest_code_9be977a4800645f992a535830c200a10-9"></a><span class="kn">from</span> <span class="nn">pygments</span> <span class="kn">import</span> <span class="n">highlight</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-10" name="rest_code_9be977a4800645f992a535830c200a10-10" href="#rest_code_9be977a4800645f992a535830c200a10-10"></a><span class="kn">from</span> <span class="nn">pygments.lexers</span> <span class="kn">import</span> <span class="n">HtmlLexer</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-11" name="rest_code_9be977a4800645f992a535830c200a10-11" href="#rest_code_9be977a4800645f992a535830c200a10-11"></a><span class="kn">from</span> <span class="nn">pygments.formatters</span> <span class="kn">import</span> <span class="n">TerminalFormatter</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-12" name="rest_code_9be977a4800645f992a535830c200a10-12" href="#rest_code_9be977a4800645f992a535830c200a10-12"></a>
-<a id="rest_code_9be977a4800645f992a535830c200a10-13" name="rest_code_9be977a4800645f992a535830c200a10-13" href="#rest_code_9be977a4800645f992a535830c200a10-13"></a><span class="c1"># Logging is helpful in debugging</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-14" name="rest_code_9be977a4800645f992a535830c200a10-14" href="#rest_code_9be977a4800645f992a535830c200a10-14"></a><span class="n">LOG_FILENAME</span> <span class="o">=</span> <span class="s1">'/tmp/debug_viewer.log'</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-15" name="rest_code_9be977a4800645f992a535830c200a10-15" href="#rest_code_9be977a4800645f992a535830c200a10-15"></a><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">LOG_FILENAME</span><span class="p">,</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-16" name="rest_code_9be977a4800645f992a535830c200a10-16" href="#rest_code_9be977a4800645f992a535830c200a10-16"></a>
-<a id="rest_code_9be977a4800645f992a535830c200a10-17" name="rest_code_9be977a4800645f992a535830c200a10-17" href="#rest_code_9be977a4800645f992a535830c200a10-17"></a><span class="c1"># Initting inotifyx</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-18" name="rest_code_9be977a4800645f992a535830c200a10-18" href="#rest_code_9be977a4800645f992a535830c200a10-18"></a><span class="n">fd</span> <span class="o">=</span> <span class="n">init</span><span class="p">()</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-19" name="rest_code_9be977a4800645f992a535830c200a10-19" href="#rest_code_9be977a4800645f992a535830c200a10-19"></a>
-<a id="rest_code_9be977a4800645f992a535830c200a10-20" name="rest_code_9be977a4800645f992a535830c200a10-20" href="#rest_code_9be977a4800645f992a535830c200a10-20"></a><span class="n">watcher</span> <span class="o">=</span> <span class="n">add_watch</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="s1">'templater.py'</span><span class="p">,</span> <span class="n">IN_MODIFY</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-21" name="rest_code_9be977a4800645f992a535830c200a10-21" href="#rest_code_9be977a4800645f992a535830c200a10-21"></a>
-<a id="rest_code_9be977a4800645f992a535830c200a10-22" name="rest_code_9be977a4800645f992a535830c200a10-22" href="#rest_code_9be977a4800645f992a535830c200a10-22"></a><span class="k">try</span><span class="p">:</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-23" name="rest_code_9be977a4800645f992a535830c200a10-23" href="#rest_code_9be977a4800645f992a535830c200a10-23"></a>    <span class="c1"># Starting infinite loop</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-24" name="rest_code_9be977a4800645f992a535830c200a10-24" href="#rest_code_9be977a4800645f992a535830c200a10-24"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-25" name="rest_code_9be977a4800645f992a535830c200a10-25" href="#rest_code_9be977a4800645f992a535830c200a10-25"></a>        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Starting iteration</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-26" name="rest_code_9be977a4800645f992a535830c200a10-26" href="#rest_code_9be977a4800645f992a535830c200a10-26"></a>        <span class="k">try</span><span class="p">:</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-27" name="rest_code_9be977a4800645f992a535830c200a10-27" href="#rest_code_9be977a4800645f992a535830c200a10-27"></a>            <span class="n">reload</span><span class="p">(</span><span class="n">templater</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-28" name="rest_code_9be977a4800645f992a535830c200a10-28" href="#rest_code_9be977a4800645f992a535830c200a10-28"></a>            <span class="n">string</span> <span class="o">=</span> <span class="n">templater</span><span class="o">.</span><span class="n">render_template</span><span class="p">()</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-29" name="rest_code_9be977a4800645f992a535830c200a10-29" href="#rest_code_9be977a4800645f992a535830c200a10-29"></a>            <span class="n">highlighted</span> <span class="o">=</span> <span class="n">highlight</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">HtmlLexer</span><span class="p">(),</span> <span class="n">TerminalFormatter</span><span class="p">())</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-30" name="rest_code_9be977a4800645f992a535830c200a10-30" href="#rest_code_9be977a4800645f992a535830c200a10-30"></a>            <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Spawning less</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-31" name="rest_code_9be977a4800645f992a535830c200a10-31" href="#rest_code_9be977a4800645f992a535830c200a10-31"></a>            <span class="n">less</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">([</span><span class="s1">'less'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">],</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-32" name="rest_code_9be977a4800645f992a535830c200a10-32" href="#rest_code_9be977a4800645f992a535830c200a10-32"></a>                                    <span class="n">stdin</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-33" name="rest_code_9be977a4800645f992a535830c200a10-33" href="#rest_code_9be977a4800645f992a535830c200a10-33"></a>            <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'less spawned, piping data</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-34" name="rest_code_9be977a4800645f992a535830c200a10-34" href="#rest_code_9be977a4800645f992a535830c200a10-34"></a>            <span class="n">less</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">highlighted</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-35" name="rest_code_9be977a4800645f992a535830c200a10-35" href="#rest_code_9be977a4800645f992a535830c200a10-35"></a>            <span class="n">less</span><span class="o">.</span><span class="n">stdin</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-36" name="rest_code_9be977a4800645f992a535830c200a10-36" href="#rest_code_9be977a4800645f992a535830c200a10-36"></a>        <span class="k">except</span> <span class="ne">SyntaxError</span><span class="p">,</span> <span class="n">e_text</span><span class="p">:</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-37" name="rest_code_9be977a4800645f992a535830c200a10-37" href="#rest_code_9be977a4800645f992a535830c200a10-37"></a>            <span class="nb">print</span> <span class="s1">'SyntaxError was raised'</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-38" name="rest_code_9be977a4800645f992a535830c200a10-38" href="#rest_code_9be977a4800645f992a535830c200a10-38"></a>            <span class="nb">print</span> <span class="ne">SyntaxError</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-39" name="rest_code_9be977a4800645f992a535830c200a10-39" href="#rest_code_9be977a4800645f992a535830c200a10-39"></a>        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Data piped, waiting for inotification</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-40" name="rest_code_9be977a4800645f992a535830c200a10-40" href="#rest_code_9be977a4800645f992a535830c200a10-40"></a>        <span class="n">get_events</span><span class="p">(</span><span class="n">fd</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-41" name="rest_code_9be977a4800645f992a535830c200a10-41" href="#rest_code_9be977a4800645f992a535830c200a10-41"></a>        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Inotified, killing less</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-42" name="rest_code_9be977a4800645f992a535830c200a10-42" href="#rest_code_9be977a4800645f992a535830c200a10-42"></a>        <span class="n">less</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-43" name="rest_code_9be977a4800645f992a535830c200a10-43" href="#rest_code_9be977a4800645f992a535830c200a10-43"></a>        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'_______________________</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-44" name="rest_code_9be977a4800645f992a535830c200a10-44" href="#rest_code_9be977a4800645f992a535830c200a10-44"></a>
-<a id="rest_code_9be977a4800645f992a535830c200a10-45" name="rest_code_9be977a4800645f992a535830c200a10-45" href="#rest_code_9be977a4800645f992a535830c200a10-45"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-46" name="rest_code_9be977a4800645f992a535830c200a10-46" href="#rest_code_9be977a4800645f992a535830c200a10-46"></a>    <span class="n">less</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
-<a id="rest_code_9be977a4800645f992a535830c200a10-47" name="rest_code_9be977a4800645f992a535830c200a10-47" href="#rest_code_9be977a4800645f992a535830c200a10-47"></a>    <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fd</span><span class="p">)</span>
+<div class="code"><pre class="code python"><a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-1" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-1" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-2" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-2" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-2"></a><span class="c1"># -*- coding: utf-8 -*-</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-3" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-3" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-3"></a>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-4" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-4" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">inotifyx</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-5" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-5" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-5"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span><span class="o">,</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">logging</span><span class="o">,</span><span class="w"> </span><span class="nn">subprocess</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-6" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-6" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-6"></a>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-7" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-7" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">templater</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-8" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-8" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-8"></a>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-9" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-9" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-9"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pygments</span><span class="w"> </span><span class="kn">import</span> <span class="n">highlight</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-10" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-10" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-10"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.lexers</span><span class="w"> </span><span class="kn">import</span> <span class="n">HtmlLexer</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-11" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-11" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-11"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.formatters</span><span class="w"> </span><span class="kn">import</span> <span class="n">TerminalFormatter</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-12" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-12" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-12"></a>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-13" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-13" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-13"></a><span class="c1"># Logging is helpful in debugging</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-14" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-14" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-14"></a><span class="n">LOG_FILENAME</span> <span class="o">=</span> <span class="s1">'/tmp/debug_viewer.log'</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-15" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-15" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-15"></a><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">LOG_FILENAME</span><span class="p">,</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-16" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-16" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-16"></a>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-17" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-17" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-17"></a><span class="c1"># Initting inotifyx</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-18" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-18" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-18"></a><span class="n">fd</span> <span class="o">=</span> <span class="n">init</span><span class="p">()</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-19" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-19" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-19"></a>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-20" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-20" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-20"></a><span class="n">watcher</span> <span class="o">=</span> <span class="n">add_watch</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="s1">'templater.py'</span><span class="p">,</span> <span class="n">IN_MODIFY</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-21" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-21" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-21"></a>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-22" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-22" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-22"></a><span class="k">try</span><span class="p">:</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-23" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-23" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-23"></a>    <span class="c1"># Starting infinite loop</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-24" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-24" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-24"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-25" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-25" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-25"></a>        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Starting iteration</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-26" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-26" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-26"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-27" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-27" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-27"></a>            <span class="n">reload</span><span class="p">(</span><span class="n">templater</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-28" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-28" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-28"></a>            <span class="n">string</span> <span class="o">=</span> <span class="n">templater</span><span class="o">.</span><span class="n">render_template</span><span class="p">()</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-29" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-29" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-29"></a>            <span class="n">highlighted</span> <span class="o">=</span> <span class="n">highlight</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">HtmlLexer</span><span class="p">(),</span> <span class="n">TerminalFormatter</span><span class="p">())</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-30" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-30" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-30"></a>            <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Spawning less</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-31" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-31" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-31"></a>            <span class="n">less</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">([</span><span class="s1">'less'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">],</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-32" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-32" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-32"></a>                                    <span class="n">stdin</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-33" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-33" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-33"></a>            <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'less spawned, piping data</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-34" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-34" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-34"></a>            <span class="n">less</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">highlighted</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-35" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-35" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-35"></a>            <span class="n">less</span><span class="o">.</span><span class="n">stdin</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-36" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-36" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-36"></a>        <span class="k">except</span> <span class="ne">SyntaxError</span><span class="p">,</span> <span class="n">e_text</span><span class="p">:</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-37" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-37" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-37"></a>            <span class="nb">print</span> <span class="s1">'SyntaxError was raised'</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-38" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-38" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-38"></a>            <span class="nb">print</span> <span class="ne">SyntaxError</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-39" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-39" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-39"></a>        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Data piped, waiting for inotification</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-40" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-40" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-40"></a>        <span class="n">get_events</span><span class="p">(</span><span class="n">fd</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-41" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-41" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-41"></a>        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Inotified, killing less</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-42" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-42" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-42"></a>        <span class="n">less</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-43" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-43" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-43"></a>        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'_______________________</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-44" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-44" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-44"></a>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-45" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-45" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-45"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-46" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-46" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-46"></a>    <span class="n">less</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
+<a id="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-47" name="rest_code_fc1f8201f9c84c6e8ca115575e2f2533-47" href="#rest_code_fc1f8201f9c84c6e8ca115575e2f2533-47"></a>    <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fd</span><span class="p">)</span>
 </pre></div>
 <p>За комментарии считайте записи для журналирования (следил за ними через
 <em>tail -f</em> в третьем&nbsp;терминале)</p>
@@ -230,12 +230,8 @@ Linux</a>, а ядро Linux умеет
     <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-        </section></article><script>var disqus_shortname="skrattaren-bblogg";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
-</div>
-        <!--End of body content-->
-
-        <footer id="footer">
-            Contents © 2022         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+        </section></article><script>var disqus_shortname="skrattaren-bblogg";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2025         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Unseen Hexadecimals</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nikolaj
 Šujskij</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
@@ -246,15 +242,13 @@ Attribution-ShareAlike 4.0 International License</a>.
 </div>
 </div>
 
-            <script src="../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("ru");
-    fancydates(2, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/luxon.min.js"></script><!-- fancy dates --><script>
+        luxon.Settings.defaultLocale = "ru";
+        fancydates(2, {"preset": false, "format": "yyyy-MM-dd HH:mm"});
+        </script><!-- end fancy dates --><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

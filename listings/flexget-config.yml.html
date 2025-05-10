@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="flexget-config.yml">
@@ -20,45 +22,44 @@
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
 <!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://skrattaren.github.io/">
+        <a class="navbar-brand" href="../">
 
-                <span id="blog-title">Unseen Hexadecimals</span>
-            </a>
-        </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
-            <ul class="nav navbar-nav">
-<li>
-<a href="../archive.html">Archive</a>
+            <span id="blog-title">Unseen Hexadecimals</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../archive.html" class="nav-link">Archive</a>
                 </li>
-<li>
-<a href="../categories/">Tags</a>
+<li class="nav-item">
+<a href="../categories/" class="nav-link">Tags</a>
                 </li>
-<li>
-<a href="../about">About&nbsp;me</a>
+<li class="nav-item">
+<a href="../about" class="nav-link">About&nbsp;me</a>
                 </li>
-<li>
-<a href="../rss.xml"><span class="caps">RSS</span>&nbsp;feed</a>
+<li class="nav-item">
+<a href="../rss.xml" class="nav-link"><span class="caps">RSS</span>&nbsp;feed</a>
 
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right">
+<ul class="navbar-nav navbar-right">
 <li>            </li>
-<li><a href="https://skrattaren.github.io/ru/" rel="alternate" hreflang="ru">Русский</a></li>
+<li class="nav-item"><a href="../ru/" rel="alternate" hreflang="ru" class="nav-link">Русский</a></li>
 
-    <li>
-    <a href="flexget-config.yml" id="sourcelink">Source</a>
+        <li class="nav-item">
+    <a href="flexget-config.yml" id="sourcelink" class="nav-link">Source</a>
     </li>
+
                 
             </ul>
 </div>
@@ -68,216 +69,214 @@
 </nav><!-- End of Menubar --><div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
-        <div class="row">
-            
+        
 <nav class="breadcrumbs"><ul class="breadcrumb">
-<li><a href=".">listings</a></li>
-                <li>flexget-config.yml</li>
+<li class="breadcrumb-item"><a href=".">listings</a></li>
+                <li class="breadcrumb-item active">flexget-config.yml</li>
 </ul></nav><h1>flexget-config.yml
         <small><a href="flexget-config.yml">(Source)</a></small>
     </h1>
     <div class="code"><table class="codetable">
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-1"><code data-line-number=" 1"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-1" name="listingsflexget-configyml-1"></a><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-1" name="listingsflexget-configyml-1"></a><span class="nt">variables</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-2"><code data-line-number=" 2"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-2" name="listingsflexget-configyml-2"></a><span class="w">  </span><span class="c1"># RuTracker forum id, look it up in URL</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-2" name="listingsflexget-configyml-2"></a><span class="w">  </span><span class="c1"># RuTracker forum id, look it up in URL</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-3"><code data-line-number=" 3"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-3" name="listingsflexget-configyml-3"></a><span class="w">  </span><span class="c1"># e.g. https://rutracker.org/forum/viewforum.php?f=1997</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-3" name="listingsflexget-configyml-3"></a><span class="w">  </span><span class="c1"># e.g. https://rutracker.org/forum/viewforum.php?f=1997</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-4"><code data-line-number=" 4"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-4" name="listingsflexget-configyml-4"></a><span class="w">  </span><span class="nt">rtr_f_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1997</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-4" name="listingsflexget-configyml-4"></a><span class="w">  </span><span class="nt">rtr_f_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1997</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-5"><code data-line-number=" 5"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-5" name="listingsflexget-configyml-5"></a><span class="nt">tasks</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-5" name="listingsflexget-configyml-5"></a><span class="nt">tasks</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-6"><code data-line-number=" 6"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-6" name="listingsflexget-configyml-6"></a><span class="w">  </span><span class="nt">nba_tracker</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-6" name="listingsflexget-configyml-6"></a><span class="w">  </span><span class="nt">nba_tracker</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-7"><code data-line-number=" 7"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-7" name="listingsflexget-configyml-7"></a><span class="w">    </span><span class="nt">rss</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-7" name="listingsflexget-configyml-7"></a><span class="w">    </span><span class="nt">rss</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-8"><code data-line-number=" 8"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-8" name="listingsflexget-configyml-8"></a><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s">"http://feed.rutracker.cc/atom/f/{?</span><span class="nv"> </span><span class="s">rtr_f_id</span><span class="nv"> </span><span class="s">?}.atom"</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-8" name="listingsflexget-configyml-8"></a><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s">"http://feed.rutracker.cc/atom/f/{?</span><span class="nv"> </span><span class="s">rtr_f_id</span><span class="nv"> </span><span class="s">?}.atom"</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-9"><code data-line-number=" 9"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-9" name="listingsflexget-configyml-9"></a><span class="w">      </span><span class="nt">other_fields</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-9" name="listingsflexget-configyml-9"></a><span class="w">      </span><span class="nt">other_fields</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-10"><code data-line-number="10"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-10" name="listingsflexget-configyml-10"></a><span class="w">        </span><span class="c1"># we'll use this feed entry attribute to filter only recent entries</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-10" name="listingsflexget-configyml-10"></a><span class="w">        </span><span class="c1"># we'll use this feed entry attribute to filter only recent entries</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-11"><code data-line-number="11"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-11" name="listingsflexget-configyml-11"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">updated</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-11" name="listingsflexget-configyml-11"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">updated</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-12"><code data-line-number="12"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-12" name="listingsflexget-configyml-12"></a><span class="w">    </span><span class="nt">regexp</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-12" name="listingsflexget-configyml-12"></a><span class="w">    </span><span class="nt">regexp</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-13"><code data-line-number="13"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-13" name="listingsflexget-configyml-13"></a><span class="w">      </span><span class="nt">accept</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-13" name="listingsflexget-configyml-13"></a><span class="w">      </span><span class="nt">accept</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-14"><code data-line-number="14"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-14" name="listingsflexget-configyml-14"></a><span class="w">        </span><span class="c1"># you could filter entries by your team's name, at least NBA section</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-14" name="listingsflexget-configyml-14"></a><span class="w">        </span><span class="c1"># you could filter entries by your team's name, at least NBA section</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-15"><code data-line-number="15"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-15" name="listingsflexget-configyml-15"></a><span class="w">        </span><span class="c1"># has pretty rigid title format rules</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-15" name="listingsflexget-configyml-15"></a><span class="w">        </span><span class="c1"># has pretty rigid title format rules</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-16"><code data-line-number="16"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-16" name="listingsflexget-configyml-16"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"Golden</span><span class="nv"> </span><span class="s">State</span><span class="nv"> </span><span class="s">Warriors"</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-16" name="listingsflexget-configyml-16"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"Golden</span><span class="nv"> </span><span class="s">State</span><span class="nv"> </span><span class="s">Warriors"</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-17"><code data-line-number="17"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-17" name="listingsflexget-configyml-17"></a><span class="w">        </span><span class="c1"># WA-A-ARRIORS! =)</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-17" name="listingsflexget-configyml-17"></a><span class="w">        </span><span class="c1"># WA-A-ARRIORS! =)</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-18"><code data-line-number="18"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-18" name="listingsflexget-configyml-18"></a><span class="w">        </span><span class="c1"># remove this "match-all" regexp to enable filtering by team</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-18" name="listingsflexget-configyml-18"></a><span class="w">        </span><span class="c1"># remove this "match-all" regexp to enable filtering by team</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-19"><code data-line-number="19"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-19" name="listingsflexget-configyml-19"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"."</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-19" name="listingsflexget-configyml-19"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"."</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-20"><code data-line-number="20"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-20" name="listingsflexget-configyml-20"></a><span class="w">      </span><span class="nt">reject</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-20" name="listingsflexget-configyml-20"></a><span class="w">      </span><span class="nt">reject</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-21"><code data-line-number="21"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-21" name="listingsflexget-configyml-21"></a><span class="w">        </span><span class="c1"># screw commentary in Russian</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-21" name="listingsflexget-configyml-21"></a><span class="w">        </span><span class="c1"># screw commentary in Russian</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-22"><code data-line-number="22"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-22" name="listingsflexget-configyml-22"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RU</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-22" name="listingsflexget-configyml-22"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RU</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-23"><code data-line-number="23"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-23" name="listingsflexget-configyml-23"></a><span class="w">    </span><span class="nt">age</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-23" name="listingsflexget-configyml-23"></a><span class="w">    </span><span class="nt">age</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-24"><code data-line-number="24"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-24" name="listingsflexget-configyml-24"></a><span class="w">      </span><span class="c1"># usually you want the latest games, right?</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-24" name="listingsflexget-configyml-24"></a><span class="w">      </span><span class="c1"># usually you want the latest games, right?</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-25"><code data-line-number="25"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-25" name="listingsflexget-configyml-25"></a><span class="w">      </span><span class="nt">age</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1 days</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-25" name="listingsflexget-configyml-25"></a><span class="w">      </span><span class="nt">age</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1 days</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-26"><code data-line-number="26"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-26" name="listingsflexget-configyml-26"></a><span class="w">      </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">updated</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-26" name="listingsflexget-configyml-26"></a><span class="w">      </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">updated</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-27"><code data-line-number="27"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-27" name="listingsflexget-configyml-27"></a><span class="w">      </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reject</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-27" name="listingsflexget-configyml-27"></a><span class="w">      </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reject</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-28"><code data-line-number="28"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-28" name="listingsflexget-configyml-28"></a><span class="w">    </span><span class="c1"># if you don't set quality, you are likely to download two or three files</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-28" name="listingsflexget-configyml-28"></a><span class="w">    </span><span class="c1"># if you don't set quality, you are likely to download two or three files</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-29"><code data-line-number="29"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-29" name="listingsflexget-configyml-29"></a><span class="w">    </span><span class="c1"># for each game</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-29" name="listingsflexget-configyml-29"></a><span class="w">    </span><span class="c1"># for each game</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-30"><code data-line-number="30"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-30" name="listingsflexget-configyml-30"></a><span class="w">    </span><span class="nt">quality</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1080p</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-30" name="listingsflexget-configyml-30"></a><span class="w">    </span><span class="nt">quality</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1080p</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-31"><code data-line-number="31"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-31" name="listingsflexget-configyml-31"></a><span class="w">    </span><span class="c1"># and now for some magic!</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-31" name="listingsflexget-configyml-31"></a><span class="w">    </span><span class="c1"># and now for some magic!</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-32"><code data-line-number="32"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-32" name="listingsflexget-configyml-32"></a><span class="w">    </span><span class="nt">manipulate</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-32" name="listingsflexget-configyml-32"></a><span class="w">    </span><span class="nt">manipulate</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-33"><code data-line-number="33"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-33" name="listingsflexget-configyml-33"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">updated</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-33" name="listingsflexget-configyml-33"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">updated</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-34"><code data-line-number="34"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-34" name="listingsflexget-configyml-34"></a><span class="w">          </span><span class="nt">extract</span><span class="p">:</span><span class="w"> </span><span class="s">'^([^+]+)'</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-34" name="listingsflexget-configyml-34"></a><span class="w">          </span><span class="nt">extract</span><span class="p">:</span><span class="w"> </span><span class="s">'^([^+]+)'</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-35"><code data-line-number="35"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-35" name="listingsflexget-configyml-35"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">teams_n_date</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-35" name="listingsflexget-configyml-35"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">teams_n_date</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-36"><code data-line-number="36"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-36" name="listingsflexget-configyml-36"></a><span class="w">          </span><span class="nt">from</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">title</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-36" name="listingsflexget-configyml-36"></a><span class="w">          </span><span class="nt">from</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">title</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-37"><code data-line-number="37"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-37" name="listingsflexget-configyml-37"></a><span class="w">          </span><span class="nt">extract</span><span class="p">:</span><span class="w"> </span><span class="s">'([0-9.]{8,10}</span><span class="nv"> </span><span class="s">/</span><span class="nv"> </span><span class="s">\{[A-Za-z0-9</span><span class="nv"> </span><span class="s">@]+\})'</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-37" name="listingsflexget-configyml-37"></a><span class="w">          </span><span class="nt">extract</span><span class="p">:</span><span class="w"> </span><span class="s">'([0-9.]{8,10}</span><span class="nv"> </span><span class="s">/</span><span class="nv"> </span><span class="s">\{[A-Za-z0-9</span><span class="nv"> </span><span class="s">@]+\})'</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-38"><code data-line-number="38"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-38" name="listingsflexget-configyml-38"></a><span class="w">    </span><span class="nt">unique</span><span class="p">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-38" name="listingsflexget-configyml-38"></a><span class="w">    </span><span class="nt">unique</span><span class="p">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsflexget-configyml-39"><code data-line-number="39"></code></a></td>
-<td class="code"><code><a id="listingsflexget-configyml-39" name="listingsflexget-configyml-39"></a><span class="w">      </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">teams_n_date</span><span class="w"></span>
+<td class="code"><code><a id="listingsflexget-configyml-39" name="listingsflexget-configyml-39"></a><span class="w">      </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">teams_n_date</span>
 </code></td>
 </tr>
 </table></div>
-        </div>
         <!--End of body content-->
 
         <footer id="footer">
-            Contents © 2022         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2025         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Unseen Hexadecimals</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nikolaj
 Šujskij</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
@@ -288,15 +287,13 @@ Attribution-ShareAlike 4.0 International License</a>.
 </div>
 </div>
 
-            <script src="../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("en");
-    fancydates(2, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="../assets/js/all-nocdn.js"></script><script src="../assets/js/luxon.min.js"></script><!-- fancy dates --><script>
+        luxon.Settings.defaultLocale = "en";
+        fancydates(2, {"preset": false, "format": "yyyy-MM-dd HH:mm"});
+        </script><!-- end fancy dates --><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

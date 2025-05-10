@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="ru">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Usual collection of thoughts, things I want all the internets to know, and various stuff of historical and sentimental value. Pretty common homepage, really.">
@@ -20,41 +22,39 @@
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
 <!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Включить навигацию</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://skrattaren.github.io/ru/">
+        <a class="navbar-brand" href="../">
 
-                <span id="blog-title">Unseen Hexadecimals</span>
-            </a>
-        </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
-            <ul class="nav navbar-nav">
-<li>
-<a href="../archive.html">Подшивка</a>
+            <span id="blog-title">Unseen Hexadecimals</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../archive.html" class="nav-link">Подшивка</a>
                 </li>
-<li>
-<a href="../categories/index.html">Ярлыки</a>
+<li class="nav-item">
+<a href="../categories/index.html" class="nav-link">Ярлыки</a>
                 </li>
-<li>
-<a href="../about">Про&nbsp;меня</a>
+<li class="nav-item">
+<a href="../about" class="nav-link">Про&nbsp;меня</a>
                 </li>
-<li>
-<a href="../rss.xml">Лента&nbsp;<span class="caps">RSS</span></a>
+<li class="nav-item">
+<a href="../rss.xml" class="nav-link">Лента&nbsp;<span class="caps">RSS</span></a>
 
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right">
+<ul class="navbar-nav navbar-right">
 <li>            </li>
-<li><a href="https://skrattaren.github.io/" rel="alternate" hreflang="en">English</a></li>
+<li class="nav-item"><a href="../../" rel="alternate" hreflang="en" class="nav-link">English</a></li>
 
                 
             </ul>
@@ -65,8 +65,7 @@
 </nav><!-- End of Menubar --><div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
-        <div class="row">
-            
+        
 <article class="listpage"><header><h1>Записи за 2006&nbsp;год</h1>
     </header><div class="translationslist translations">
             <h3 class="translationslist-intro">Также доступно&nbsp;на:</h3>
@@ -93,12 +92,8 @@
         <li>
 <time class="listdate" datetime="2006-11-26T23:11:52+03:00" title="26.11.2006, 23:11">26.11.2006, 23:11</time><a href="../posts/foersta/" class="listtitle">Первый</a>
 </li>
-    </ul></article>
-</div>
-        <!--End of body content-->
-
-        <footer id="footer">
-            Contents © 2022         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+    </ul></article><!--End of body content--><footer id="footer">
+            Contents © 2025         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Unseen Hexadecimals</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nikolaj
 Šujskij</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
@@ -109,15 +104,13 @@ Attribution-ShareAlike 4.0 International License</a>.
 </div>
 </div>
 
-            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("ru");
-    fancydates(2, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/luxon.min.js"></script><!-- fancy dates --><script>
+        luxon.Settings.defaultLocale = "ru";
+        fancydates(2, {"preset": false, "format": "yyyy-MM-dd HH:mm"});
+        </script><!-- end fancy dates --><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

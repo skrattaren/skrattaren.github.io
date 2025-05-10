@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="ru">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Usual collection of thoughts, things I want all the internets to know, and various stuff of historical and sentimental value. Pretty common homepage, really.">
@@ -22,41 +24,39 @@
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
 <!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Включить навигацию</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://skrattaren.github.io/ru/">
+        <a class="navbar-brand" href=".">
 
-                <span id="blog-title">Unseen Hexadecimals</span>
-            </a>
-        </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
-            <ul class="nav navbar-nav">
-<li>
-<a href="archive.html">Подшивка</a>
+            <span id="blog-title">Unseen Hexadecimals</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="archive.html" class="nav-link">Подшивка</a>
                 </li>
-<li>
-<a href="categories/index.html">Ярлыки</a>
+<li class="nav-item">
+<a href="categories/index.html" class="nav-link">Ярлыки</a>
                 </li>
-<li>
-<a href="about">Про&nbsp;меня</a>
+<li class="nav-item">
+<a href="about" class="nav-link">Про&nbsp;меня</a>
                 </li>
-<li>
-<a href="rss.xml">Лента&nbsp;<span class="caps">RSS</span></a>
+<li class="nav-item">
+<a href="rss.xml" class="nav-link">Лента&nbsp;<span class="caps">RSS</span></a>
 
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right">
+<ul class="navbar-nav navbar-right">
 <li>            </li>
-<li><a href="https://skrattaren.github.io/" rel="alternate" hreflang="en">English</a></li>
+<li class="nav-item"><a href="../" rel="alternate" hreflang="en" class="nav-link">English</a></li>
 
                 
             </ul>
@@ -67,19 +67,23 @@
 </nav><!-- End of Menubar --><div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
-        <div class="row">
-            
-<div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/psycopg-tuples-of-strings-ru/" class="u-url">psycopg2 возвращает кортеж из&nbsp;строки</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/psycopg-tuples-of-strings-ru/" rel="bookmark"><time class="published dt-published" datetime="2009-12-29T14:12:20+03:00" title="29.12.2009, 14:12">29.12.2009, 14:12</time></a></p>
-                <p class="commentline">        <a href="posts/psycopg-tuples-of-strings-ru/#disqus_thread" data-disqus-identifier="cache/posts/psycopg-tuples-of-strings.html">Комментарии</a>
+        
+        
+        
+    <div class="postindex">
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/psycopg-tuples-of-strings-ru/" class="u-url">psycopg2 возвращает кортеж из&nbsp;строки</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/psycopg-tuples-of-strings-ru/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-12-29T14:12:20+03:00" itemprop="datePublished" title="29.12.2010, 14:12">29.12.2010, 14:12</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/psycopg-tuples-of-strings-ru/#disqus_thread" data-disqus-identifier="cache/posts/psycopg-tuples-of-strings.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>Игрался я сегодня с базой на <a class="reference external" href="http://www.postgresql.org/">PostgreSQL</a>
+            </header><div class="p-summary entry-summary">
+                    <p>Игрался я сегодня с базой на <a class="reference external" href="http://www.postgresql.org/">PostgreSQL</a>
 (v8.3, если кому интересно) из Python посредством psycopg2, но внезапно
 застрял, да как-то неожиданно. Вылез в оболочку
 <a class="reference external" href="http://www.bpython-interpreter.org/">bpython</a>а и&nbsp;узрел…</p>
@@ -98,17 +102,20 @@
 (0, 1)</pre>
 <p>Вот такие пироги, остерегайтесь. А я тем временем попытаюсь выяснить,
 что это за ерунда, да и ерунда ли&nbsp;вообще.</p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/codewatch/" class="u-url">Пишешь код и видишь&nbsp;результат</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/codewatch/" rel="bookmark"><time class="published dt-published" datetime="2009-12-22T18:12:20+03:00" title="22.12.2009, 18:12">22.12.2009, 18:12</time></a></p>
-                <p class="commentline">        <a href="posts/codewatch/#disqus_thread" data-disqus-identifier="cache/posts/codewatch.html">Комментарии</a>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/codewatch/" class="u-url">Пишешь код и видишь&nbsp;результат</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/codewatch/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-12-22T18:12:20+03:00" itemprop="datePublished" title="22.12.2009, 18:12">22.12.2009, 18:12</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/codewatch/#disqus_thread" data-disqus-identifier="cache/posts/codewatch.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <div>
+            </header><div class="p-summary entry-summary">
+                    <div>
 <p>Пришла мне тут в голову интересная идея. Нужно написать генератор кода
 на C++ (по данным, вытягиваемым из базы данных), так что я установил
 <a class="reference external" href="http://jinja.pocoo.org/2/">Jinja2</a>, навострил текстовые редакторы и
@@ -117,31 +124,37 @@
 писать, а второй пусть результат&nbsp;кажет.»</p>
 <p class="more"><a href="posts/codewatch/">Читать&nbsp;далее…</a></p>
 </div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/awesome-jabber-conf/" class="u-url">Jabber-конференция про&nbsp;x11-wm/awesome</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/awesome-jabber-conf/" rel="bookmark"><time class="published dt-published" datetime="2009-10-03T17:10:50+04:00" title="03.10.2009, 17:10">03.10.2009, 17:10</time></a></p>
-                <p class="commentline">        <a href="posts/awesome-jabber-conf/#disqus_thread" data-disqus-identifier="cache/posts/awesome-jabber-conf.ru.html">Комментарии</a>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/awesome-jabber-conf/" class="u-url">Jabber-конференция про&nbsp;x11-wm/awesome</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/awesome-jabber-conf/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-10-03T17:10:50+04:00" itemprop="datePublished" title="03.10.2009, 17:10">03.10.2009, 17:10</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/awesome-jabber-conf/#disqus_thread" data-disqus-identifier="cache/posts/awesome-jabber-conf.ru.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>Для русскоязычных пользователей приказчикаъ оконъ (window manager)
+            </header><div class="p-summary entry-summary">
+                    <p>Для русскоязычных пользователей приказчикаъ оконъ (window manager)
 <a class="reference external" href="http://awesome.naquadah.org/">awesome</a> открыта&nbsp;Jabber-конференция
 <code class="docutils literal">awesome@conference.gentoo.ru</code>. Костяк там, конечно, составляют
 пользователи Gentoo, но мы открыты и для пользователей других&nbsp;дистрибутивов.</p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/useful-note/" class="u-url">Хозяйке на&nbsp;заметку</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/useful-note/" rel="bookmark"><time class="published dt-published" datetime="2009-08-20T21:08:16+04:00" title="20.08.2009, 21:08">20.08.2009, 21:08</time></a></p>
-                <p class="commentline">        <a href="posts/useful-note/#disqus_thread" data-disqus-identifier="cache/posts/useful-note.ru.html">Комментарии</a>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/useful-note/" class="u-url">Хозяйке на&nbsp;заметку</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/useful-note/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-08-20T21:08:16+04:00" itemprop="datePublished" title="20.08.2009, 21:08">20.08.2009, 21:08</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/useful-note/#disqus_thread" data-disqus-identifier="cache/posts/useful-note.ru.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>Кое-что полезное из вынесенных поездок, что хочется записать. «Так, на
+            </header><div class="p-summary entry-summary">
+                    <p>Кое-что полезное из вынесенных поездок, что хочется записать. «Так, на
 всякий&nbsp;случай»</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="http://www.accord-ufa.ru/">Какбыгостиница в Уфе</a>. Дёшево и
@@ -158,16 +171,19 @@
 запомнил время окончания их работы&nbsp;(-%Е</p></li>
 </ol>
 </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/philips-xenium-e100-review/" class="u-url">Philips Xenium E100:&nbsp;отзыв</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/philips-xenium-e100-review/" rel="bookmark"><time class="published dt-published" datetime="2009-07-10T22:07:58+04:00" title="10.07.2009, 22:07">10.07.2009, 22:07</time></a></p>
-                <p class="commentline">        <a href="posts/philips-xenium-e100-review/#disqus_thread" data-disqus-identifier="cache/posts/philips-xenium-e100-review.html">Комментарии</a>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/philips-xenium-e100-review/" class="u-url">Philips Xenium E100:&nbsp;отзыв</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/philips-xenium-e100-review/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-07-10T22:07:58+04:00" itemprop="datePublished" title="10.07.2009, 22:07">10.07.2009, 22:07</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/philips-xenium-e100-review/#disqus_thread" data-disqus-identifier="cache/posts/philips-xenium-e100-review.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <div>
+            </header><div class="p-summary entry-summary">
+                    <div>
 <p>Решил купить телефон на замену умершему Siemens C60. Поскольку в
 телефонах ничего не понимаю и ничего от них не требую, решил взять самый
 простой (пусть звонит и <span class="caps">SMS</span> пишет) из Philips Xenium (батарея долго
@@ -175,31 +191,37 @@
 E100</a>.</p>
 <p class="more"><a href="posts/philips-xenium-e100-review/">Читать&nbsp;далее…</a></p>
 </div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/om-manul/" class="u-url">Про&nbsp;манула</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/om-manul/" rel="bookmark"><time class="published dt-published" datetime="2009-05-24T18:05:06+04:00" title="24.05.2009, 18:05">24.05.2009, 18:05</time></a></p>
-                <p class="commentline">        <a href="posts/om-manul/#disqus_thread" data-disqus-identifier="cache/posts/om-manul.ru.html">Комментарии</a>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/om-manul/" class="u-url">Про&nbsp;манула</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/om-manul/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-05-24T18:05:06+04:00" itemprop="datePublished" title="24.05.2009, 18:05">24.05.2009, 18:05</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/om-manul/#disqus_thread" data-disqus-identifier="cache/posts/om-manul.ru.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>Придумал вот, надо&nbsp;задокументировать.</p>
+            </header><div class="p-summary entry-summary">
+                    <p>Придумал вот, надо&nbsp;задокументировать.</p>
 <blockquote>
 <p>Манул уныл, и на луну&nbsp;заныл.</p>
 </blockquote>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/satchmo-ru/" class="u-url">Satchmo&nbsp;по-русски</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/satchmo-ru/" rel="bookmark"><time class="published dt-published" datetime="2009-04-16T21:04:53+04:00" title="16.04.2009, 21:04">16.04.2009, 21:04</time></a></p>
-                <p class="commentline">        <a href="posts/satchmo-ru/#disqus_thread" data-disqus-identifier="cache/posts/satchmo-ru.ru.html">Комментарии</a>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/satchmo-ru/" class="u-url">Satchmo&nbsp;по-русски</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/satchmo-ru/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-04-16T21:04:53+04:00" itemprop="datePublished" title="16.04.2009, 21:04">16.04.2009, 21:04</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/satchmo-ru/#disqus_thread" data-disqus-identifier="cache/posts/satchmo-ru.ru.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>Итак, я перевёл-таки
+            </header><div class="p-summary entry-summary">
+                    <p>Итак, я перевёл-таки
 <a class="reference external" href="http://www.satchmoproject.com/trac/ticket/787">Satchmo</a> на русский
 язык. Самому мне он оказался не нужен, но, надеюсь, кому-нибудь
 пригодится. Сам перевод брать
@@ -207,17 +229,20 @@ E100</a>.</p>
 <hr class="docutils">
 <p>Ха-ха. В svn-версии перевод на русский был с начала марта, то есть как
 раз после того, как я решился переводить. Забавно&nbsp;(-%Е</p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/radeon-drm-gentoo/" class="u-url">Gentoo: <span class="caps">DRM</span>, Radeon/RadeonHD, <span class="caps">ATI</span>&nbsp;R6xx/R7xx</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/radeon-drm-gentoo/" rel="bookmark"><time class="published dt-published" datetime="2009-03-28T15:03:39+03:00" title="28.03.2009, 15:03">28.03.2009, 15:03</time></a></p>
-                <p class="commentline">        <a href="posts/radeon-drm-gentoo/#disqus_thread" data-disqus-identifier="cache/posts/radeon-drm-gentoo.html">Комментарии</a>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/radeon-drm-gentoo/" class="u-url">Gentoo: <span class="caps">DRM</span>, Radeon/RadeonHD, <span class="caps">ATI</span>&nbsp;R6xx/R7xx</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/radeon-drm-gentoo/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-03-28T15:03:39+03:00" itemprop="datePublished" title="28.03.2009, 15:03">28.03.2009, 15:03</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/radeon-drm-gentoo/#disqus_thread" data-disqus-identifier="cache/posts/radeon-drm-gentoo.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>Результат часового разбирательства на канале
+            </header><div class="p-summary entry-summary">
+                    <p>Результат часового разбирательства на канале
 <a class="reference external" href="http://dri.freedesktop.org/wiki/ATIRadeon">**#radeon**</a>:</p>
 <ul class="simple">
 <li><p>старые версии drm не создают <em>/dev/dri/*</em> для карт на базе
@@ -239,17 +264,20 @@ x11</a>,
 <hr class="docutils">
 <p><strong>Позднейшая добавка:</strong> при использовании ядра 2.6.30 и выше эти
 манипуляции не нужны, просто включите соответствующие&nbsp;<span class="caps">DRM</span>-модули.</p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/winmoney/" class="u-url">Разворачиваем боевые действия: возврат предустановленной&nbsp;Windows</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/winmoney/" rel="bookmark"><time class="published dt-published" datetime="2009-02-24T14:02:16+03:00" title="24.02.2009, 14:02">24.02.2009, 14:02</time></a></p>
-                <p class="commentline">        <a href="posts/winmoney/#disqus_thread" data-disqus-identifier="cache/posts/winmoney.ru.html">Комментарии</a>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/winmoney/" class="u-url">Разворачиваем боевые действия: возврат предустановленной&nbsp;Windows</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/winmoney/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-02-24T14:02:16+03:00" itemprop="datePublished" title="24.02.2009, 14:02">24.02.2009, 14:02</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/winmoney/#disqus_thread" data-disqus-identifier="cache/posts/winmoney.ru.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>ЦеСТ начинает действовать:
+            </header><div class="p-summary entry-summary">
+                    <p>ЦеСТ начинает действовать:
 <a class="reference external" href="http://www.centercest.ru/archive/2009/02241.return.vista/">ЦеСТ намерен бороться с навязыванием
 <span class="caps">OEM</span>-программ</a>
 Прошу всех заинтересованных принять участие в распространении новости
@@ -259,30 +287,36 @@ x11</a>,
 <p>Сообщаем, что Ваше обращение принято и зарегистрировано под номером&nbsp;1</p>
 </blockquote>
 <p>Хо-хо-хо.</p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/gentoobook/" class="u-url">Toshiba Satellite&nbsp;<span class="caps">L350D</span>-10X</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/gentoobook/" rel="bookmark"><time class="published dt-published" datetime="2009-02-13T21:02:47+03:00" title="13.02.2009, 21:02">13.02.2009, 21:02</time></a></p>
-                <p class="commentline">        <a href="posts/gentoobook/#disqus_thread" data-disqus-identifier="cache/posts/gentoobook.html">Комментарии</a>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/gentoobook/" class="u-url">Toshiba Satellite&nbsp;<span class="caps">L350D</span>-10X</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/gentoobook/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-02-13T21:02:47+03:00" itemprop="datePublished" title="13.02.2009, 21:02">13.02.2009, 21:02</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/gentoobook/#disqus_thread" data-disqus-identifier="cache/posts/gentoobook.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p><a class="reference external" href="http://ru.computers.toshiba-europe.com/innovation/product/Satellite-L350D-10X/1055720/toshibaShop/false/">Ну и вот</a>&nbsp;(-:Е</p>
+            </header><div class="p-summary entry-summary">
+                    <p><a class="reference external" href="http://ru.computers.toshiba-europe.com/innovation/product/Satellite-L350D-10X/1055720/toshibaShop/false/">Ну и вот</a>&nbsp;(-:Е</p>
 <p>Снёс винду, <a class="reference external" href="http://en.gentoo-wiki.com/wiki/Toshiba_Satellite_L350D-10X">затеял статью</a> в Gentoo&nbsp;Wiki.</p>
 <p><img alt="image0" src="http://images.digitalshop.ru/big/t/toshiba_l350d.jpg"></p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/fudge-ms/" class="u-url">ФАС&nbsp;Microsoft!</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/fudge-ms/" rel="bookmark"><time class="published dt-published" datetime="2009-02-12T18:02:57+03:00" title="12.02.2009, 18:02">12.02.2009, 18:02</time></a></p>
-                <p class="commentline">        <a href="posts/fudge-ms/#disqus_thread" data-disqus-identifier="cache/posts/fudge-ms.ru.html">Комментарии</a>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/fudge-ms/" class="u-url">ФАС&nbsp;Microsoft!</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/fudge-ms/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-02-12T18:02:57+03:00" itemprop="datePublished" title="12.02.2009, 18:02">12.02.2009, 18:02</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/fudge-ms/#disqus_thread" data-disqus-identifier="cache/posts/fudge-ms.ru.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <div>
+            </header><div class="p-summary entry-summary">
+                    <div>
 <p><a class="reference external" href="http://www.kommersant.ru/doc.aspx?DocsID=1117248">ФАС РФ собирается провести расследование на предмет законности и
 оправданности предустановки
 Windows</a>
@@ -292,28 +326,34 @@ Windows</a>
 <p>Вдруг да поможет&nbsp;(-:Е</p>
 <p class="more"><a href="posts/fudge-ms/">Читать&nbsp;далее…</a></p>
 </div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sin-cos/" class="u-url">Тригонометрическое тождество&nbsp;утверждает</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/sin-cos/" rel="bookmark"><time class="published dt-published" datetime="2008-12-18T14:12:23+03:00" title="18.12.2008, 14:12">18.12.2008, 14:12</time></a></p>
-                <p class="commentline">        <a href="posts/sin-cos/#disqus_thread" data-disqus-identifier="cache/posts/sin-cos.ru.html">Комментарии</a>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/sin-cos/" class="u-url">Тригонометрическое тождество&nbsp;утверждает</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/sin-cos/" rel="bookmark">
+            <time class="published dt-published" datetime="2008-12-18T14:12:23+03:00" itemprop="datePublished" title="18.12.2008, 14:12">18.12.2008, 14:12</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/sin-cos/#disqus_thread" data-disqus-identifier="cache/posts/sin-cos.ru.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>В военное время значение косинуса может&nbsp;достигать <span class="math">\(\pm{}i\sqrt{15}\)</span></p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/matplotlib/" class="u-url">Matplotlib</a></h1>
-        <div class="metadata">
-            <p class="dateline"><a href="posts/matplotlib/" rel="bookmark"><time class="published dt-published" datetime="2008-12-15T12:12:33+03:00" title="15.12.2008, 12:12">15.12.2008, 12:12</time></a></p>
-                <p class="commentline">        <a href="posts/matplotlib/#disqus_thread" data-disqus-identifier="cache/posts/matplotlib.html">Комментарии</a>
+            </header><div class="p-summary entry-summary">
+                    <p>В военное время значение косинуса может&nbsp;достигать <span class="math">\(\pm{}i\sqrt{15}\)</span></p>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/matplotlib/" class="u-url">Matplotlib</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/matplotlib/" rel="bookmark">
+            <time class="published dt-published" datetime="2008-12-15T12:12:33+03:00" itemprop="datePublished" title="15.12.2008, 12:12">15.12.2008, 12:12</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/matplotlib/#disqus_thread" data-disqus-identifier="cache/posts/matplotlib.html">Комментарии</a>
 
 
-        </p>
+                </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>В помощь начинающим использовать рисовательную библиотеку
+            </header><div class="p-summary entry-summary">
+                    <p>В помощь начинающим использовать рисовательную библиотеку
 <a class="reference external" href="http://matplotlib.sourceforge.net/index.html">Matplotlib</a>: тамошняя
 <a class="reference external" href="http://matplotlib.sourceforge.net/contents.html">документация</a>
 просторна и обширна, но, к сожалению, довольно запутана. Так что после
@@ -321,24 +361,17 @@ Windows</a>
 примеров</a>, где при
 некотором навыке можно найти не просто кучу полезных примеров, но и
 вычленить интересующие&nbsp;элементы.</p>
-    </div>
-    </article>
+                </div>
+            </article>
 </div>
-        <nav class="postindexpager"><ul class="pager">
-<li class="previous">
-                <a href="index-6.html" rel="prev">Новые&nbsp;записи</a>
-            </li>
-            <li class="next">
-                <a href="index-4.html" rel="next">Старые&nbsp;записи</a>
-            </li>
-        </ul></nav><script>var disqus_shortname="skrattaren-bblogg";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+            <ul class="pager postindexpager clearfix">
+<li class="previous"><a href="index-6.html" rel="prev">Новые&nbsp;записи</a></li>
+            <li class="next"><a href="index-4.html" rel="next">Старые&nbsp;записи</a></li>
+        </ul>
+<script>var disqus_shortname="skrattaren-bblogg";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
-        </script>
-</div>
-        <!--End of body content-->
-
-        <footer id="footer">
-            Contents © 2022         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+        </script><!--End of body content--><footer id="footer">
+            Contents © 2025         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Unseen Hexadecimals</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nikolaj
 Šujskij</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
@@ -349,15 +382,13 @@ Attribution-ShareAlike 4.0 International License</a>.
 </div>
 </div>
 
-            <script src="../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("ru");
-    fancydates(2, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="../assets/js/all-nocdn.js"></script><script src="../assets/js/luxon.min.js"></script><!-- fancy dates --><script>
+        luxon.Settings.defaultLocale = "ru";
+        fancydates(2, {"preset": false, "format": "yyyy-MM-dd HH:mm"});
+        </script><!-- end fancy dates --><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

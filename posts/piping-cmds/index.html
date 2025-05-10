@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,45 +34,44 @@ ag --files-with-matches dev-util/pkgconfig ">
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
 <!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://skrattaren.github.io/">
+        <a class="navbar-brand" href="../../">
 
-                <span id="blog-title">Unseen Hexadecimals</span>
-            </a>
-        </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
-            <ul class="nav navbar-nav">
-<li>
-<a href="../../archive.html">Archive</a>
+            <span id="blog-title">Unseen Hexadecimals</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../archive.html" class="nav-link">Archive</a>
                 </li>
-<li>
-<a href="../../categories/">Tags</a>
+<li class="nav-item">
+<a href="../../categories/" class="nav-link">Tags</a>
                 </li>
-<li>
-<a href="../../about">About&nbsp;me</a>
+<li class="nav-item">
+<a href="../../about" class="nav-link">About&nbsp;me</a>
                 </li>
-<li>
-<a href="../../rss.xml"><span class="caps">RSS</span>&nbsp;feed</a>
+<li class="nav-item">
+<a href="../../rss.xml" class="nav-link"><span class="caps">RSS</span>&nbsp;feed</a>
 
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right">
+<ul class="navbar-nav navbar-right">
 <li>            </li>
-<li><a href="https://skrattaren.github.io/ru/" rel="alternate" hreflang="ru">Русский</a></li>
+<li class="nav-item"><a href="../../ru/" rel="alternate" hreflang="ru" class="nav-link">Русский</a></li>
 
-    <li>
-    <a href="index.rst" id="sourcelink">Source</a>
+        <li class="nav-item">
+    <a href="index.rst" id="sourcelink" class="nav-link">Source</a>
     </li>
+
                 
             </ul>
 </div>
@@ -80,8 +81,7 @@ ag --files-with-matches dev-util/pkgconfig ">
 </nav><!-- End of Menubar --><div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
-        <div class="row">
-            
+        
 <article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Piping commands till it&nbsp;hurts</a></h1>
 
         <div class="metadata">
@@ -104,9 +104,9 @@ ag --files-with-matches dev-util/pkgconfig ">
     <p><em>(Just to save a useful and complex construct for future&nbsp;reference)</em></p>
 <p>List all the overlay maintainers who hasn&#8217;t migrated their packages&nbsp;to
 <code class="docutils literal">virtual/pkgconfig</code>:</p>
-<div class="code"><pre class="code shell"><a id="rest_code_6dbdf2231afc44949205b11ac0dcd05a-1" name="rest_code_6dbdf2231afc44949205b11ac0dcd05a-1" href="#rest_code_6dbdf2231afc44949205b11ac0dcd05a-1"></a>ag --files-with-matches dev-util/pkgconfig <span class="p">|</span> xargs dirname <span class="p">|</span> uniq <span class="se">\</span>
-<a id="rest_code_6dbdf2231afc44949205b11ac0dcd05a-2" name="rest_code_6dbdf2231afc44949205b11ac0dcd05a-2" href="#rest_code_6dbdf2231afc44949205b11ac0dcd05a-2"></a>       <span class="p">|</span> xargs -I <span class="o">{}</span> grep <span class="s1">'&lt;name&gt;'</span> <span class="s1">'{}/metadata.xml'</span> <span class="se">\</span>
-<a id="rest_code_6dbdf2231afc44949205b11ac0dcd05a-3" name="rest_code_6dbdf2231afc44949205b11ac0dcd05a-3" href="#rest_code_6dbdf2231afc44949205b11ac0dcd05a-3"></a>       <span class="p">|</span> sed <span class="s1">'s:\s\+&lt;name&gt;\(.\+\)&lt;/name&gt;:\1:'</span> <span class="p">|</span> sort -u
+<div class="code"><pre class="code shell"><a id="rest_code_54a4e1b16e3445039221a65fc8904ae2-1" name="rest_code_54a4e1b16e3445039221a65fc8904ae2-1" href="#rest_code_54a4e1b16e3445039221a65fc8904ae2-1"></a>ag<span class="w"> </span>--files-with-matches<span class="w"> </span>dev-util/pkgconfig<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>dirname<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span><span class="se">\</span>
+<a id="rest_code_54a4e1b16e3445039221a65fc8904ae2-2" name="rest_code_54a4e1b16e3445039221a65fc8904ae2-2" href="#rest_code_54a4e1b16e3445039221a65fc8904ae2-2"></a><span class="w">       </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="o">{}</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">'&lt;name&gt;'</span><span class="w"> </span><span class="s1">'{}/metadata.xml'</span><span class="w"> </span><span class="se">\</span>
+<a id="rest_code_54a4e1b16e3445039221a65fc8904ae2-3" name="rest_code_54a4e1b16e3445039221a65fc8904ae2-3" href="#rest_code_54a4e1b16e3445039221a65fc8904ae2-3"></a><span class="w">       </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">'s:\s\+&lt;name&gt;\(.\+\)&lt;/name&gt;:\1:'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-u
 </pre></div>
 <p>Yes, I use <a class="reference external" href="https://github.com/ggreer/the_silver_searcher">ag</a> instead of <em>grep</em>, being too lazy to add all the necessary
 options. And wait. And <em>ag</em> is so much better however you look at&nbsp;it.</p>
@@ -142,12 +142,8 @@ options. And wait. And <em>ag</em> is so much better however you look at&nbsp;it
     <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-        </section></article><script>var disqus_shortname="skrattaren-bblogg";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
-</div>
-        <!--End of body content-->
-
-        <footer id="footer">
-            Contents © 2022         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+        </section></article><script>var disqus_shortname="skrattaren-bblogg";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2025         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Unseen Hexadecimals</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nikolaj
 Šujskij</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
@@ -158,15 +154,13 @@ Attribution-ShareAlike 4.0 International License</a>.
 </div>
 </div>
 
-            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("en");
-    fancydates(2, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/luxon.min.js"></script><!-- fancy dates --><script>
+        luxon.Settings.defaultLocale = "en";
+        fancydates(2, {"preset": false, "format": "yyyy-MM-dd HH:mm"});
+        </script><!-- end fancy dates --><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>
