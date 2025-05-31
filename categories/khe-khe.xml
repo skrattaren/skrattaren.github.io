@@ -9,7 +9,7 @@ xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"&gt;Nikol
 Šujskij&lt;/span&gt; is licensed under a &lt;a rel="license"
 href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons
 Attribution-ShareAlike 4.0 International License&lt;/a&gt;.
-</copyright><lastBuildDate>Sat, 10 May 2025 16:48:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Make up your mind</title><link>https://skrattaren.github.io/posts/dir-or-not/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;GNU coreutils are so elusive:&lt;/p&gt;
+</copyright><lastBuildDate>Sat, 31 May 2025 09:50:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Make up your mind</title><link>https://skrattaren.github.io/posts/dir-or-not/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;GNU coreutils are so elusive:&lt;/p&gt;
 &lt;pre class="literal-block"&gt; [b0x123a@i6n66 ~]$ rm bin/
 rm: cannot remove `bin/': Is a directory
  [b0x123a@i6n66 ~]$ rm bin/ -r
