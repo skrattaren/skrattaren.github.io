@@ -9,7 +9,7 @@ xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"&gt;Nikol
 Šujskij&lt;/span&gt; is licensed under a &lt;a rel="license"
 href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons
 Attribution-ShareAlike 4.0 International License&lt;/a&gt;.
-</copyright><lastBuildDate>Fri, 06 Jun 2025 20:15:37 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>{hg, git} bisect + portage</title><link>https://skrattaren.github.io/ru/posts/portage-bisect/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Не так давно имел я счастье вляпаться в &lt;a class="reference external" href="http://awesome.naquadah.org/bugs/index.php?do=details&amp;amp;task_id=772"&gt;неприятную
+</copyright><lastBuildDate>Fri, 06 Jun 2025 20:26:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>{hg, git} bisect + portage</title><link>https://skrattaren.github.io/ru/posts/portage-bisect/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Не так давно имел я счастье вляпаться в &lt;a class="reference external" href="http://awesome.naquadah.org/bugs/index.php?do=details&amp;amp;task_id=772"&gt;неприятную
 ошибочку&lt;/a&gt;
 с моим любимым awesome. Разрабы попросили сделать &lt;em&gt;git bisect&lt;/em&gt;, чтоб
 найти причину косяка, но выяснилось, что просто запуском свежесобранного
