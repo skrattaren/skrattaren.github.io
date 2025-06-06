@@ -41,7 +41,8 @@
 ----
 
 Вина в Грузии недорогие, множество очень приличных и интересных бутылок стоит
-по 20-30 лари.
+по 20-30 лари (7-10$ по курсу июня 2025).  Верхнего предела, понятно, не
+существует -- это ж вино!
 
 Максимальная грузинскость
 =========================
@@ -50,7 +51,8 @@
 (оранжевые) вина и вина, изготовленные в квеври (глиняные сосуды вроде амфор,
 только объёмом в сотни литров).  Если будет интересно, я вам прожужжу все уши
 про детали, а пока просто скажу, что в целом логично увозить в качестве
-диковинки именно такие вина.  Янтарные (amber wines) отличаются от белых цветом
+диковинки (ну или просто пробовать из этнографического интереса
+именно такие вина.  Янтарные (amber wines) отличаются от белых цветом
 (от насыщенного золота до коньяка и старого мёда), большей терпкостью, средней
 или сильной кислотностью и более мощной ароматикой (обычны сухофрукты, реже
 пряные травы, аптечные ноты и пр.).  Степень выраженности этих признаков сильно
@@ -67,6 +69,7 @@
 =============================
 
 Пройдёмся по основным пунктикам, известным и не очень.
+Для каждой стилистики предложу одно-два вина из тех, что мне понравились.
 
 Цинандали?  Лучше!
 ------------------
@@ -83,6 +86,11 @@
 хорошей кислотностью, но ароматика скорее фруктовая: жёлтые яблоки, груши,
 абрикос, всякое такое.
 
+- `Vinoveli Tsinandali Classic <https://8000vintages.ge/tetri/tetrimshrali/vinoveli-tsinandali-2021-classic/>`_
+- `Chelti Krakhuna <https://8000vintages.ge/tetri/tetrimshrali/chelti-krakhuna-2023/>`_
+- `Churi Chinebuli Krakhuna Qvevri <https://8000vintages.ge/tetri/tetrimshrali/churi-chinebuli-krakhuna-2022-qvevri/>`_
+- `Marnaveli Tsolikauri <https://8000vintages.ge/tetri/tetrimshrali/marnaveli-tsolikauri-2023/>`_
+
 *Мцване* и *чинури*
 -------------------
 
@@ -93,6 +101,11 @@
 вариант для начала знакомства с янтарными винами.  Подобное же могу сказать про
 сорт *чинури*, но вино из него ещё чуть поплотнее (в среднем по больнице).
 
+- `Vazisubani Estate Mtsvane <https://8000vintages.ge/tetri/tetrimshrali/vazisubani-estate-mtsvane-2021-ve-collection/>`_
+- `Uzunashvili Mukuzani Cellar Mtsvane <https://8000vintages.ge/qvevri/amber-wine/uzunashvili-mukuzani-cellar-mtsvane-2020/>`_
+- `Binekhi Chinuri <https://8000vintages.ge/tetri/tetrimshrali/binekhi-chinuri-2019/>`_
+- `Vine Ponto Chinuri <https://8000vintages.ge/tetri/tetrimshrali/vine-ponto-chinuri-2018/>`_
+
 *Ркацители*
 -----------
 
@@ -102,12 +115,19 @@
 излишне грубое и резкое вино, а к такому желательно быть подготовленным.  А вот
 для блендов — отличный материал.
 
+- `Simoneti Wine Cellar Rkatsiteli <https://8000vintages.ge/tetri/tetrimshrali/simoneti-wine-cellar-rkatsiteli-2021/>`_
+- `Manaveli Rkatsiteli Qvevri <https://8000vintages.ge/qvevri/amber-wine/manaveli-rkatsiteli-2015-qvevri/>`_
+- `Winery Keburia Rkatsiteli Kisi Qvevri <https://8000vintages.ge/tetri/tetrimshrali/winery-keburia-rkatsiteli-kisi-2022-qvevri/>`_
+
 Прочие белые/янтарные
 ---------------------
 
 Другие распространённые и очень достойные белые сорта — *киси* и *хихви*, обычно
 мощны и насыщенны (особенно второй), делают из них почти исключительно
 янтарные.
+
+- `Koncho Kisi Qvevri <https://8000vintages.ge/tetri/tetrimshrali/koncho-kisi-2020-qvevri/>`_
+- `M.D. Winery Khikhvi Qvevri <https://8000vintages.ge/tetri/tetrimshrali/m-d-winery-khikhvi-qvevri-2020/>`_
 
 Розовые и игристые
 ------------------
@@ -128,22 +148,34 @@
 Например, *Мукузани* — вино из небольшого одноименного микрорегиона (ЗГУ), тоже
 производится из *саперави*, дружелюбное и понятное вино, ароматное и ягодное.
 
+- `Giorgi Solomnishvili Revolution Saperavi <https://8000vintages.ge/witeli/witelimshrali/solomnishvili-revolution2017/>`_
+- `Bruale Saperavi Qvevri <https://8000vintages.ge/witeli/witelimshrali/bruale-saperavi-2023-qvevri/>`_
+- `Schuchmann Mukuzani <https://8000vintages.ge/witeli/witelimshrali/schuchmann-mukuzani-2021/>`_
+- `Vine Ponto Mukuzani <https://8000vintages.ge/witeli/witelimshrali/vine-ponto-mukuzani-2020/>`_
+
 Красная экзотика
 ----------------
 
 Если хочется чего-то поэкзотичнее, то можем предложить *тавквери* (обычно
 довольно лёгкие и несколько скучные вина, типа среднего *мерло*) и *шавкапито*
-(более интересные, несколько похожие на южноитальянские красные).
+(более интересные, несколько похожие на помесь южноитальянских красных и божоле
+нуво).
+
+- `Damilie Tavkveri Shavkapito <https://8000vintages.ge/qvevri/qvevriwiteli/damilie-tavkveri-shavkapito-2023/>`_
+- `Tchotiashvili Shiraz Tavkveri Qvevri <https://8000vintages.ge/witeli/witelimshrali/tchotiashvili-vineyards-shiraz-2018-qvevri-uta-satsnakheli/>`_
 
 Полусладкие
 -----------
 
 Про полусладкие грузинские слышали все, и не зря.  *Хванчкара* и *Киндзмараули*
-(это тоже микрорегионы, кстати) от 30-40 лари — отличный надёжный вариант.
+(это тоже микрорегионы, кстати) от 30-40 лари (порядка 20$)— отличный надёжный вариант.
 Лично я больше всего уважаю *Хванчкару* из квеври, зачастую получается очень
 интересное и богатое вино.  Из экзотики — вина из региона Рача-Лечхуми, там
 делают как раз в основном полусладкие, притом из всяких малоизвестных сортов.
 Также примечательны вина *Твиши* (тоже ЗГУ) из уже упоминавшегося *цоликоури*.
+
+Увы, помочь тут я могу только теорией, пью их очень мало и совсем незнаком с их
+ассортиментом в **8 Киловинтажах**.
 
 Производители, которые не подведут
 ==================================
@@ -151,9 +183,12 @@
 Есть несколько виноделен, которые мне запомнились хорошей линейкой и достойным
 исполнением, за них я более-менее ручаюсь:
 
-- Vazisubani Estate
-- Ponto
-- Schuhmann
+- `Vazisubani Estate <https://8000vintages.ge/winery-vazisubani-estate/>`_
+- `Chelti <https://8000vintages.ge/chelti-ka/>`_
+- `Schuchmann Wines Georgia <https://8000vintages.ge/schuchmann-wines-georgia/>`_
+- `Churi Chinebuli <https://8000vintages.ge/churi-chinebuli/>`_
+- `Vine Ponto <https://8000vintages.ge/winery-vine-ponto/>`_
+- `M.D. Winery <https://8000vintages.ge/mdwinery/>`_
 
 Скупой пьёт дважды
 ==================
