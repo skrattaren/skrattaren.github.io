@@ -115,6 +115,7 @@
 излишне грубое и резкое вино, а к такому желательно быть подготовленным.  А вот
 для блендов — отличный материал.
 
+- `Eclipse Narnari Tsitskari <https://8000vintages.ge/tetri/tetrinaxevradmshrali/eclipse-rkatsiteli-2022-semi-dry-narnari-tsiskari/>`_
 - `Simoneti Wine Cellar Rkatsiteli <https://8000vintages.ge/tetri/tetrimshrali/simoneti-wine-cellar-rkatsiteli-2021/>`_
 - `Manaveli Rkatsiteli Qvevri <https://8000vintages.ge/qvevri/amber-wine/manaveli-rkatsiteli-2015-qvevri/>`_
 - `Winery Keburia Rkatsiteli Kisi Qvevri <https://8000vintages.ge/tetri/tetrimshrali/winery-keburia-rkatsiteli-kisi-2022-qvevri/>`_
@@ -149,6 +150,7 @@
 производится из *саперави*, дружелюбное и понятное вино, ароматное и ягодное.
 
 - `Giorgi Solomnishvili Revolution Saperavi <https://8000vintages.ge/witeli/witelimshrali/solomnishvili-revolution2017/>`_
+- `Eclipse Saperavi Esabi Noble <https://8000vintages.ge/witeli/witelimshrali/eclipse-saperavi-2021-esabi-noble/>`_
 - `Bruale Saperavi Qvevri <https://8000vintages.ge/witeli/witelimshrali/bruale-saperavi-2023-qvevri/>`_
 - `Schuchmann Mukuzani <https://8000vintages.ge/witeli/witelimshrali/schuchmann-mukuzani-2021/>`_
 - `Vine Ponto Mukuzani <https://8000vintages.ge/witeli/witelimshrali/vine-ponto-mukuzani-2020/>`_
@@ -177,6 +179,20 @@
 Увы, помочь тут я могу только теорией, пью их очень мало и совсем незнаком с их
 ассортиментом в **8 Киловинтажах**.
 
+Ты нас за нищебродов считаешь?!
+-------------------------------
+
+Я человек простой, и по большей части пью не самое дорогое вино, поэтому тут
+фигурировали, в основном, не самые дорогие варианты.  Но если Вы хочете *лухари*,
+то их есть у меня:
+
+- `Eclipse Kisi Qvevri <https://8000vintages.ge/tetri/tetrimshrali/eclipse-kisi-2021-qvevri/>`_
+- `Koncho and Company Kakhuri Mtsvivani Qvevri <https://8000vintages.ge/tetri/tetrimshrali/koncho-and-company-kakhuri-mtsvivani-qvevri-2018/>`_
+- `Papari Valley Mtsvane Qvevri Reserve <https://8000vintages.ge/tetri/tetrimshrali/papari-valley-mtsvane-reserve-2018-qvevri/>`_
+
+Ну или выберите самое *илитное* у избранных производителей (см. ниже), они
+с радостью заберут ваши денежки!
+
 Производители, которые не подведут
 ==================================
 
@@ -189,6 +205,7 @@
 - `Churi Chinebuli <https://8000vintages.ge/churi-chinebuli/>`_
 - `Vine Ponto <https://8000vintages.ge/winery-vine-ponto/>`_
 - `M.D. Winery <https://8000vintages.ge/mdwinery/>`_
+- `Eclipse <https://8000vintages.ge/eclipse/>`_
 
 Скупой пьёт дважды
 ==================
