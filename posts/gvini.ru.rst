@@ -7,6 +7,7 @@
 .. description: 
 .. type: text
 .. status: draft
+.. previewimage: /images/blog/gvino.webp
 
 .. image:: /images/blog/gvino.webp
    :alt: Веселидзе!
