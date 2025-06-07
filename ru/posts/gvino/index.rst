@@ -1,12 +1,11 @@
 .. title: Грузинское вино в Тбилиси: советы бывалых
 .. slug: gvino
 .. date: 2025-06-06 19:19:26 UTC+04:00
-.. tags: 
+.. tags: вино
 .. category: 
 .. link: 
 .. description: 
 .. type: text
-.. status: draft
 .. previewimage: /images/blog/gvino.webp
 
 .. image:: /images/blog/gvino.webp
