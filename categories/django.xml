@@ -9,7 +9,7 @@ xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"&gt;Nikol
 Šujskij&lt;/span&gt; is licensed under a &lt;a rel="license"
 href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons
 Attribution-ShareAlike 4.0 International License&lt;/a&gt;.
-</copyright><lastBuildDate>Thu, 26 Jun 2025 14:14:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Django: limiting querysets in admin forms</title><link>https://skrattaren.github.io/posts/django-querysets/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Let's suppose you have two related types of objects in your Django app.
+</copyright><lastBuildDate>Thu, 26 Jun 2025 17:48:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Django: limiting querysets in admin forms</title><link>https://skrattaren.github.io/posts/django-querysets/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Let's suppose you have two related types of objects in your Django app.
 Call them &lt;strong&gt;Object&lt;/strong&gt; and &lt;strong&gt;SuperObject&lt;/strong&gt;, related &lt;em&gt;ManyToMany&lt;/em&gt;'ly. And
 when you add/change &lt;strong&gt;SuperObject&lt;/strong&gt; in Django admin, there's all
 &lt;strong&gt;Object&lt;/strong&gt;s available for selection. But you need to limit the
