@@ -3,13 +3,14 @@
 .. date: 2012-01-08 14:01:33
 .. tags: musik
 
+.. soundcloud:: 547939464
+
 | Herr Olof han rider att möta sin brud
 | långt borta i främmande land
 | skön Jungfrun hon sömmar en gyllene skrud
 | hon väver de skira gullband.
 
 .. TEASER_END
-..
 
 | När hösten är kommen skall brudkransen viras
 | och Olof sitt bröllop med Jungfrun ska firas
