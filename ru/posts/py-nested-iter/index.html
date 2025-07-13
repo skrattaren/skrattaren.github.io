@@ -6,7 +6,12 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Python: вложенный итератор | Unseen Hexadecimals</title>
-<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/baguetteBox.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/custom.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS (ru)" hreflang="ru" href="../../rss.xml">
@@ -114,33 +119,33 @@ bg-dark
     <p>Просто образчик вложенного итератора на Python, через рекурсивное
 выражение <strong>*yield*</strong>.</p>
 <!-- TEASER_END -->
-<div class="code"><pre class="code python"><a id="rest_code_2309b53655ba467ea328bacbfded836e-1" name="rest_code_2309b53655ba467ea328bacbfded836e-1" href="#rest_code_2309b53655ba467ea328bacbfded836e-1"></a><span class="ch">#!/usr/bin/env python</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-2" name="rest_code_2309b53655ba467ea328bacbfded836e-2" href="#rest_code_2309b53655ba467ea328bacbfded836e-2"></a><span class="c1"># -*- coding: utf-8 -*-</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-3" name="rest_code_2309b53655ba467ea328bacbfded836e-3" href="#rest_code_2309b53655ba467ea328bacbfded836e-3"></a>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-4" name="rest_code_2309b53655ba467ea328bacbfded836e-4" href="#rest_code_2309b53655ba467ea328bacbfded836e-4"></a><span class="n">sample</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">6</span><span class="p">,</span> <span class="p">((</span><span class="mi">7</span><span class="p">,</span> <span class="p">),</span> <span class="mi">8</span><span class="p">),</span> <span class="mi">9</span><span class="p">)</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-5" name="rest_code_2309b53655ba467ea328bacbfded836e-5" href="#rest_code_2309b53655ba467ea328bacbfded836e-5"></a>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-6" name="rest_code_2309b53655ba467ea328bacbfded836e-6" href="#rest_code_2309b53655ba467ea328bacbfded836e-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">cycle</span><span class="p">(</span><span class="n">smth</span><span class="p">):</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-7" name="rest_code_2309b53655ba467ea328bacbfded836e-7" href="#rest_code_2309b53655ba467ea328bacbfded836e-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">smth</span><span class="p">:</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-8" name="rest_code_2309b53655ba467ea328bacbfded836e-8" href="#rest_code_2309b53655ba467ea328bacbfded836e-8"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-9" name="rest_code_2309b53655ba467ea328bacbfded836e-9" href="#rest_code_2309b53655ba467ea328bacbfded836e-9"></a>            <span class="k">yield</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-10" name="rest_code_2309b53655ba467ea328bacbfded836e-10" href="#rest_code_2309b53655ba467ea328bacbfded836e-10"></a>        <span class="k">else</span><span class="p">:</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-11" name="rest_code_2309b53655ba467ea328bacbfded836e-11" href="#rest_code_2309b53655ba467ea328bacbfded836e-11"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-12" name="rest_code_2309b53655ba467ea328bacbfded836e-12" href="#rest_code_2309b53655ba467ea328bacbfded836e-12"></a>                <span class="k">yield</span> <span class="n">j</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-13" name="rest_code_2309b53655ba467ea328bacbfded836e-13" href="#rest_code_2309b53655ba467ea328bacbfded836e-13"></a>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-14" name="rest_code_2309b53655ba467ea328bacbfded836e-14" href="#rest_code_2309b53655ba467ea328bacbfded836e-14"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">sample</span><span class="p">):</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-15" name="rest_code_2309b53655ba467ea328bacbfded836e-15" href="#rest_code_2309b53655ba467ea328bacbfded836e-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-16" name="rest_code_2309b53655ba467ea328bacbfded836e-16" href="#rest_code_2309b53655ba467ea328bacbfded836e-16"></a>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-17" name="rest_code_2309b53655ba467ea328bacbfded836e-17" href="#rest_code_2309b53655ba467ea328bacbfded836e-17"></a><span class="o">-------------</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-18" name="rest_code_2309b53655ba467ea328bacbfded836e-18" href="#rest_code_2309b53655ba467ea328bacbfded836e-18"></a>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-19" name="rest_code_2309b53655ba467ea328bacbfded836e-19" href="#rest_code_2309b53655ba467ea328bacbfded836e-19"></a><span class="mi">1</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-20" name="rest_code_2309b53655ba467ea328bacbfded836e-20" href="#rest_code_2309b53655ba467ea328bacbfded836e-20"></a><span class="mi">4</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-21" name="rest_code_2309b53655ba467ea328bacbfded836e-21" href="#rest_code_2309b53655ba467ea328bacbfded836e-21"></a><span class="mi">9</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-22" name="rest_code_2309b53655ba467ea328bacbfded836e-22" href="#rest_code_2309b53655ba467ea328bacbfded836e-22"></a><span class="mi">16</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-23" name="rest_code_2309b53655ba467ea328bacbfded836e-23" href="#rest_code_2309b53655ba467ea328bacbfded836e-23"></a><span class="mi">25</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-24" name="rest_code_2309b53655ba467ea328bacbfded836e-24" href="#rest_code_2309b53655ba467ea328bacbfded836e-24"></a><span class="mi">36</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-25" name="rest_code_2309b53655ba467ea328bacbfded836e-25" href="#rest_code_2309b53655ba467ea328bacbfded836e-25"></a><span class="mi">49</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-26" name="rest_code_2309b53655ba467ea328bacbfded836e-26" href="#rest_code_2309b53655ba467ea328bacbfded836e-26"></a><span class="mi">64</span>
-<a id="rest_code_2309b53655ba467ea328bacbfded836e-27" name="rest_code_2309b53655ba467ea328bacbfded836e-27" href="#rest_code_2309b53655ba467ea328bacbfded836e-27"></a><span class="mi">81</span>
+<div class="code"><pre class="code python"><a id="rest_code_56e373b1024d4ab98226c6c8720e3939-1" name="rest_code_56e373b1024d4ab98226c6c8720e3939-1" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-2" name="rest_code_56e373b1024d4ab98226c6c8720e3939-2" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-2"></a><span class="c1"># -*- coding: utf-8 -*-</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-3" name="rest_code_56e373b1024d4ab98226c6c8720e3939-3" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-3"></a>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-4" name="rest_code_56e373b1024d4ab98226c6c8720e3939-4" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-4"></a><span class="n">sample</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">6</span><span class="p">,</span> <span class="p">((</span><span class="mi">7</span><span class="p">,</span> <span class="p">),</span> <span class="mi">8</span><span class="p">),</span> <span class="mi">9</span><span class="p">)</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-5" name="rest_code_56e373b1024d4ab98226c6c8720e3939-5" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-5"></a>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-6" name="rest_code_56e373b1024d4ab98226c6c8720e3939-6" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">cycle</span><span class="p">(</span><span class="n">smth</span><span class="p">):</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-7" name="rest_code_56e373b1024d4ab98226c6c8720e3939-7" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">smth</span><span class="p">:</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-8" name="rest_code_56e373b1024d4ab98226c6c8720e3939-8" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-8"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-9" name="rest_code_56e373b1024d4ab98226c6c8720e3939-9" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-9"></a>            <span class="k">yield</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-10" name="rest_code_56e373b1024d4ab98226c6c8720e3939-10" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-10"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-11" name="rest_code_56e373b1024d4ab98226c6c8720e3939-11" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-11"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-12" name="rest_code_56e373b1024d4ab98226c6c8720e3939-12" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-12"></a>                <span class="k">yield</span> <span class="n">j</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-13" name="rest_code_56e373b1024d4ab98226c6c8720e3939-13" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-13"></a>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-14" name="rest_code_56e373b1024d4ab98226c6c8720e3939-14" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-14"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cycle</span><span class="p">(</span><span class="n">sample</span><span class="p">):</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-15" name="rest_code_56e373b1024d4ab98226c6c8720e3939-15" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-16" name="rest_code_56e373b1024d4ab98226c6c8720e3939-16" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-16"></a>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-17" name="rest_code_56e373b1024d4ab98226c6c8720e3939-17" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-17"></a><span class="o">-------------</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-18" name="rest_code_56e373b1024d4ab98226c6c8720e3939-18" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-18"></a>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-19" name="rest_code_56e373b1024d4ab98226c6c8720e3939-19" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-19"></a><span class="mi">1</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-20" name="rest_code_56e373b1024d4ab98226c6c8720e3939-20" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-20"></a><span class="mi">4</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-21" name="rest_code_56e373b1024d4ab98226c6c8720e3939-21" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-21"></a><span class="mi">9</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-22" name="rest_code_56e373b1024d4ab98226c6c8720e3939-22" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-22"></a><span class="mi">16</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-23" name="rest_code_56e373b1024d4ab98226c6c8720e3939-23" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-23"></a><span class="mi">25</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-24" name="rest_code_56e373b1024d4ab98226c6c8720e3939-24" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-24"></a><span class="mi">36</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-25" name="rest_code_56e373b1024d4ab98226c6c8720e3939-25" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-25"></a><span class="mi">49</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-26" name="rest_code_56e373b1024d4ab98226c6c8720e3939-26" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-26"></a><span class="mi">64</span>
+<a id="rest_code_56e373b1024d4ab98226c6c8720e3939-27" name="rest_code_56e373b1024d4ab98226c6c8720e3939-27" href="#rest_code_56e373b1024d4ab98226c6c8720e3939-27"></a><span class="mi">81</span>
 </pre></div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
@@ -185,7 +190,7 @@ Attribution-ShareAlike 4.0 International License</a>.
 </div>
 </div>
 
-        <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/luxon.min.js"></script><!-- fancy dates --><script>
+            <script src="../../../assets/js/jquery.min.js"></script><script src="../../../assets/js/popper.min.js"></script><script src="../../../assets/js/bootstrap.min.js"></script><script src="../../../assets/js/baguetteBox.min.js"></script><script src="../../../assets/js/luxon.min.js"></script><script src="../../../assets/js/fancydates.min.js"></script><!-- fancy dates --><script>
         luxon.Settings.defaultLocale = "ru";
         fancydates(2, {"preset": false, "format": "yyyy-MM-dd HH:mm"});
         </script><!-- end fancy dates --><script>

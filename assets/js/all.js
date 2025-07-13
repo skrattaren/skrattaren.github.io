@@ -1,1 +1,0 @@
-function fancydates(t,e){if(0!==t)for(var a=document.querySelectorAll(".dt-published, .dt-updated, .listdate"),o=a.length,r=0;r<o;r++){var i,l=luxon.DateTime.fromISO(a[r].attributes.datetime.value);i=1===t&&e.preset?l.toLocal().toLocaleString(luxon.DateTime[e.format]):1===t?l.toLocal().toFormat(e.format):l.toRelative(),a[r].innerHTML=i}}
