@@ -116,15 +116,20 @@ bg-dark
 constantly swivel down to text, so that you&#8217;re bound to miss something.
 On the other hand, you might misheard or misunderstand and take a peek
 in subtitles. Here&#8217;s how I&#8217;ve decided to deal with it: set subtitle
-delay to a couple of seconds and turn them off. In case of
-emergency^Wneed to consult them, just turn them on again, by that time
-the desired moment would appear on screen. How to do it in&nbsp;mplayer:</p>
+delay to a couple of seconds and turn them off. In case of&nbsp;emergency<code class="docutils literal">^W</code>need to consult them, just turn them on again, by that time
+the desired moment would appear on screen. How to do it in <em>mpv</em>:</p>
 <ul class="simple">
-<li><p>select subtitle with <em>j</em>&nbsp;key;</p></li>
-<li><p>set delay with <em>z</em>;</p></li>
-<li><p>turn off subtitles by pressing <em>v</em>, then use it again to turn them&nbsp;on/off.</p></li>
+<li><p>select subtitle&nbsp;with <code class="docutils literal">j</code> key</p></li>
+<li><p>set delay&nbsp;with <code class="docutils literal">z</code></p></li>
+<li><p>turn off subtitles by&nbsp;pressing <code class="docutils literal">v</code>, then use it again to turn them&nbsp;on/off</p></li>
 </ul>
-</div>
+<p>Or, in <cite>mpv.conf</cite>:</p>
+<div class="code"><pre class="code ini"><a id="rest_code_0be1800718564959bbe835deba53ffc3-1" name="rest_code_0be1800718564959bbe835deba53ffc3-1" href="#rest_code_0be1800718564959bbe835deba53ffc3-1"></a><span class="k">[default]</span>
+<a id="rest_code_0be1800718564959bbe835deba53ffc3-2" name="rest_code_0be1800718564959bbe835deba53ffc3-2" href="#rest_code_0be1800718564959bbe835deba53ffc3-2"></a><span class="na">slang</span><span class="o">=</span><span class="s">eng,swe,rus</span>
+<a id="rest_code_0be1800718564959bbe835deba53ffc3-3" name="rest_code_0be1800718564959bbe835deba53ffc3-3" href="#rest_code_0be1800718564959bbe835deba53ffc3-3"></a><span class="na">sub-delay</span><span class="o">=</span><span class="s">2</span>
+<a id="rest_code_0be1800718564959bbe835deba53ffc3-4" name="rest_code_0be1800718564959bbe835deba53ffc3-4" href="#rest_code_0be1800718564959bbe835deba53ffc3-4"></a><span class="na">no-sub-visibility</span>
+</pre></div>
+    </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
                 <a href="../driver-dagg-faller-regn/" rel="prev" title="Driver dagg, faller regn">Previous&nbsp;post</a>
