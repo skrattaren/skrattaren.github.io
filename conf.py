@@ -743,7 +743,7 @@ GITHUB_COMMIT_SOURCE = True
 FILTERS = {
    ".html": ["filters.typogrify"],
    ".js": ["filters.jsminify"],
-   ".css": ["filters.cssminify"],
+   # ".css": ["filters.cssminify"],
    # ".png": ["filters.optipng"],
    # ".jpg": ["jpegoptim --strip-all -v %s"],
 }

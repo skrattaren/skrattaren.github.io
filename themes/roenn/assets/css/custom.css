@@ -72,3 +72,35 @@ code.literal {
 .pager li > a:focus {
     background-color: #444444;
 }
+
+blockquote {
+    padding-left: 2rem;
+    position: relative;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        position: absolute;
+        color: #777;
+    }
+
+    &::before {
+        content: "//";
+        transform: rotate(90deg);
+        left: 0;
+    }
+
+    &::after {
+        content: "";
+        left: 5px;
+        top: 25px;
+        width: 1px;
+        height: 100%;
+        background-color: currentColor;
+  }
+
+  p.attribution {
+      text-align: left;
+      margin-left: 17%;
+  }
+}
