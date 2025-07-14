@@ -17,4 +17,4 @@ about without showing off intelligence. If you heed my advice, read it.
     Anyone who walks away from *Shantaram* untouched is either heartless or
     dead or both.
 
-- Jonathan Carroll
+    -- Jonathan Carroll

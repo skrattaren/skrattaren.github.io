@@ -239,9 +239,9 @@ there&#8217;s a saner&nbsp;way: <code class="docutils literal">git diff <span cl
                     <p><em>(Just to save a useful and complex construct for future&nbsp;reference)</em></p>
 <p>List all the overlay maintainers who hasn&#8217;t migrated their packages&nbsp;to
 <code class="docutils literal">virtual/pkgconfig</code>:</p>
-<div class="code"><pre class="code shell"><a id="rest_code_50ce9da57b834802bbd1a96047ae29d1-1" name="rest_code_50ce9da57b834802bbd1a96047ae29d1-1" href="posts/piping-cmds/#rest_code_50ce9da57b834802bbd1a96047ae29d1-1"></a>ag<span class="w"> </span>--files-with-matches<span class="w"> </span>dev-util/pkgconfig<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>dirname<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span><span class="se">\</span>
-<a id="rest_code_50ce9da57b834802bbd1a96047ae29d1-2" name="rest_code_50ce9da57b834802bbd1a96047ae29d1-2" href="posts/piping-cmds/#rest_code_50ce9da57b834802bbd1a96047ae29d1-2"></a><span class="w">       </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="o">{}</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">'&lt;name&gt;'</span><span class="w"> </span><span class="s1">'{}/metadata.xml'</span><span class="w"> </span><span class="se">\</span>
-<a id="rest_code_50ce9da57b834802bbd1a96047ae29d1-3" name="rest_code_50ce9da57b834802bbd1a96047ae29d1-3" href="posts/piping-cmds/#rest_code_50ce9da57b834802bbd1a96047ae29d1-3"></a><span class="w">       </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">'s:\s\+&lt;name&gt;\(.\+\)&lt;/name&gt;:\1:'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-u
+<div class="code"><pre class="code shell"><a id="rest_code_4ca285319e4a4f5887d997407d3ddb2e-1" name="rest_code_4ca285319e4a4f5887d997407d3ddb2e-1" href="posts/piping-cmds/#rest_code_4ca285319e4a4f5887d997407d3ddb2e-1"></a>ag<span class="w"> </span>--files-with-matches<span class="w"> </span>dev-util/pkgconfig<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>dirname<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span><span class="se">\</span>
+<a id="rest_code_4ca285319e4a4f5887d997407d3ddb2e-2" name="rest_code_4ca285319e4a4f5887d997407d3ddb2e-2" href="posts/piping-cmds/#rest_code_4ca285319e4a4f5887d997407d3ddb2e-2"></a><span class="w">       </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="o">{}</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">'&lt;name&gt;'</span><span class="w"> </span><span class="s1">'{}/metadata.xml'</span><span class="w"> </span><span class="se">\</span>
+<a id="rest_code_4ca285319e4a4f5887d997407d3ddb2e-3" name="rest_code_4ca285319e4a4f5887d997407d3ddb2e-3" href="posts/piping-cmds/#rest_code_4ca285319e4a4f5887d997407d3ddb2e-3"></a><span class="w">       </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">'s:\s\+&lt;name&gt;\(.\+\)&lt;/name&gt;:\1:'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-u
 </pre></div>
 <p>Yes, I use <a class="reference external" href="https://github.com/ggreer/the_silver_searcher">ag</a> instead of <em>grep</em>, being too lazy to add all the necessary
 options. And wait. And <em>ag</em> is so much better however you look at&nbsp;it.</p>
@@ -271,11 +271,9 @@ about without showing off intelligence. If you heed my advice, read&nbsp;it.</p>
 <blockquote>
 <p>Anyone who walks away from <em>Shantaram</em> untouched is either heartless or
 dead or&nbsp;both.</p>
+<p class="attribution">—Jonathan&nbsp;Carroll</p>
 </blockquote>
-<ul class="simple">
-<li><p>Jonathan&nbsp;Carroll</p></li>
-</ul>
-</div>
+                </div>
             </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/hg-zsh-vim/" class="u-url">Mercurial zsh completion with&nbsp;vim</a></h1>
                 <div class="metadata">
             <p class="dateline">
