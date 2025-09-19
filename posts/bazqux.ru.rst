@@ -22,7 +22,7 @@
 отечественным погромистом, да и вообще весьма хорош.
 
 .. _BazQux: http://bazqux.com/
-.. _The Old Reader: http://theoldreader/
+.. _The Old Reader: http://theoldreader.com/
 .. _Feedly: http://feedly.com/
 .. _управление с клавиатуры: http://blog.bazqux.com/2013/11/public-feeds-ifttt-keyboard-navigation.html
 
