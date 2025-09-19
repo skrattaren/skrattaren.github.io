@@ -22,7 +22,7 @@ can evaluate it for free, it's written in Haskell by a Russian programmer and
 has quite a bunch of features.
 
 .. _BazQux: http://bazqux.com/
-.. _The Old Reader: http://theoldreader/
+.. _The Old Reader: http://theoldreader.com/
 .. _Feedly: http://feedly.com/
 .. _keyboard shortcuts: http://blog.bazqux.com/2013/11/public-feeds-ifttt-keyboard-navigation.html
 
