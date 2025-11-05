@@ -1,7 +1,7 @@
 .. title: Злободневный сон
 .. slug: ua-svafn
 .. date: 2022-04-23 07:08:09 UTC+03:00
-.. tags: svafn
+.. tags: svafn, musik
 .. category: 
 .. link: 
 .. description: 
