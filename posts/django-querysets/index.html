@@ -75,10 +75,6 @@ bg-dark
 <li>            </li>
 <li class="nav-item"><a href="../../ru/" rel="alternate" hreflang="ru" class="nav-link">Русский</a></li>
 
-        <li class="nav-item">
-    <a href="index.rst" id="sourcelink" class="nav-link">Source</a>
-    </li>
-
                 
             </ul>
 </div>
@@ -102,10 +98,9 @@ bg-dark
                 <p class="commentline">        <a href="#disqus_thread" data-disqus-identifier="cache/posts/django-querysets.html">Comments</a>
 
 
-                    </p>
-<p class="sourceline"><a href="index.rst" class="sourcelink">Source</a></p>
-
-        </div>
+            
+        </p>
+</div>
                 <div class="metadata posttranslations translations">
             <h3 class="posttranslations-intro">Also available&nbsp;in:</h3>
                 <p><a href="../../ru/posts/django-querysets/" rel="alternate" hreflang="ru">Русский</a></p>
@@ -119,20 +114,20 @@ when you add/change <strong>SuperObject</strong> in Django admin, there&#8217;s 
 choices, and limit dynamically (perhaps, depending on current user).
 Here&#8217;s quite straightforward but working&nbsp;technique.</p>
 <!-- TEASER_END -->
-<div class="code"><pre class="code python"><a id="rest_code_08ba4acc50a4463ab4a07d2691095154-1" name="rest_code_08ba4acc50a4463ab4a07d2691095154-1" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">make_metaform</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-2" name="rest_code_08ba4acc50a4463ab4a07d2691095154-2" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-2"></a>    <span class="k">class</span><span class="w"> </span><span class="nc">MetaForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-3" name="rest_code_08ba4acc50a4463ab4a07d2691095154-3" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-3"></a>        <span class="k">class</span><span class="w"> </span><span class="nc">Meta</span><span class="p">:</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-4" name="rest_code_08ba4acc50a4463ab4a07d2691095154-4" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-4"></a>            <span class="n">model</span> <span class="o">=</span> <span class="n">SuperObject</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-5" name="rest_code_08ba4acc50a4463ab4a07d2691095154-5" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-5"></a>        <span class="n">objects_list</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ModelMultipleChoiceField</span><span class="p">(</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-6" name="rest_code_08ba4acc50a4463ab4a07d2691095154-6" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-6"></a>                <span class="n">queryset</span><span class="o">=</span><span class="n">Object</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">objectmod__user__id</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-7" name="rest_code_08ba4acc50a4463ab4a07d2691095154-7" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-7"></a>                                                 <span class="n">objectmod__can_read</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-8" name="rest_code_08ba4acc50a4463ab4a07d2691095154-8" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-8"></a>    <span class="k">return</span> <span class="n">MetaForm</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-9" name="rest_code_08ba4acc50a4463ab4a07d2691095154-9" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-9"></a>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-10" name="rest_code_08ba4acc50a4463ab4a07d2691095154-10" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-10"></a>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-11" name="rest_code_08ba4acc50a4463ab4a07d2691095154-11" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-11"></a><span class="k">class</span><span class="w"> </span><span class="nc">MetaAdmin</span><span class="p">(</span><span class="n">ZpixObject</span><span class="p">):</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-12" name="rest_code_08ba4acc50a4463ab4a07d2691095154-12" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-12"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-13" name="rest_code_08ba4acc50a4463ab4a07d2691095154-13" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-13"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">form</span> <span class="o">=</span> <span class="n">make_metaform</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
-<a id="rest_code_08ba4acc50a4463ab4a07d2691095154-14" name="rest_code_08ba4acc50a4463ab4a07d2691095154-14" href="#rest_code_08ba4acc50a4463ab4a07d2691095154-14"></a>        <span class="k">return</span> <span class="n">ZpixObject</span><span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+<div class="code"><pre class="code python"><a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-1" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-1" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">make_metaform</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-2" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-2" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-2"></a>    <span class="k">class</span><span class="w"> </span><span class="nc">MetaForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-3" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-3" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-3"></a>        <span class="k">class</span><span class="w"> </span><span class="nc">Meta</span><span class="p">:</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-4" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-4" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-4"></a>            <span class="n">model</span> <span class="o">=</span> <span class="n">SuperObject</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-5" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-5" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-5"></a>        <span class="n">objects_list</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ModelMultipleChoiceField</span><span class="p">(</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-6" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-6" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-6"></a>                <span class="n">queryset</span><span class="o">=</span><span class="n">Object</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">objectmod__user__id</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-7" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-7" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-7"></a>                                                 <span class="n">objectmod__can_read</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-8" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-8" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-8"></a>    <span class="k">return</span> <span class="n">MetaForm</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-9" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-9" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-9"></a>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-10" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-10" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-10"></a>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-11" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-11" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-11"></a><span class="k">class</span><span class="w"> </span><span class="nc">MetaAdmin</span><span class="p">(</span><span class="n">ZpixObject</span><span class="p">):</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-12" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-12" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-12"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-13" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-13" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-13"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">form</span> <span class="o">=</span> <span class="n">make_metaform</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
+<a id="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-14" name="rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-14" href="#rest_code_0d0e46e3f2de4e099dc5a0030e69c97c-14"></a>        <span class="k">return</span> <span class="n">ZpixObject</span><span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
 </pre></div>
 <p>What do we do&nbsp;here:</p>
 <ul class="simple">

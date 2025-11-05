@@ -46,6 +46,7 @@ nav.bg-dark {
 
 .navbar-dark .navbar-nav a.nav-link {
     color: #dab5a2;
+    font-weight: bold;
 }
 
 pre {

@@ -9,7 +9,7 @@ xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"&gt;Nikol
 Šujskij&lt;/span&gt; is licensed under a &lt;a rel="license"
 href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons
 Attribution-ShareAlike 4.0 International License&lt;/a&gt;.
-</copyright><lastBuildDate>Wed, 05 Nov 2025 20:19:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Пишешь код и видишь результат</title><link>https://skrattaren.github.io/ru/posts/codewatch/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Пришла мне тут в голову интересная идея. Нужно написать генератор кода
+</copyright><lastBuildDate>Wed, 05 Nov 2025 20:45:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Пишешь код и видишь результат</title><link>https://skrattaren.github.io/ru/posts/codewatch/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Пришла мне тут в голову интересная идея. Нужно написать генератор кода
 на C++ (по данным, вытягиваемым из базы данных), так что я установил
 &lt;a class="reference external" href="http://jinja.pocoo.org/2/"&gt;Jinja2&lt;/a&gt;, навострил текстовые редакторы и
 подумал: «А не будет ли круто сразу видеть результат, прямо по ходу
