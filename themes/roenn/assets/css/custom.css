@@ -29,6 +29,7 @@ h1.entry-title a {
 
 .navbar-dark .navbar-brand {
     color: #e42a1a;
+    font-weight: bold;
 }
 
 body {
@@ -46,7 +47,6 @@ nav.bg-dark {
 
 .navbar-dark .navbar-nav a.nav-link {
     color: #dab5a2;
-    font-weight: bold;
 }
 
 pre {
