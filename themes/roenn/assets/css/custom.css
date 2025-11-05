@@ -59,6 +59,7 @@ div.code pre {
 }
 
 code.literal {
+    color: #c23333;
     background-color: #162f13;
     outline: dotted white 1px;
 }
