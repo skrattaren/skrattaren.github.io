@@ -48,10 +48,14 @@ case ``on: push`` is your friend too.
 Configuration
 *************
 
-Let's assume you're not a psychopath.
-Github Action Variables and Secrets
+Let's assume you're not a psychopath, and you don't hardcode every option and
+parameter.  Fortunately, Github Actions employ Variables_ and Secrets_.  Choose
+whatever you need.
 
 https://github.com/skrattaren/crontrackers/blob/main/.github/workflows/workflow.yml
+
+.. _Secrets: https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets
+.. _Variables: https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables
 
 Notifications
 =============
