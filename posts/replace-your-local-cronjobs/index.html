@@ -24,11 +24,9 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta property="og:site_name" content="Unseen Hexadecimals">
 <meta property="og:title" content="Replace your local cronjobs!">
 <meta property="og:url" content="https://skrattaren.github.io/posts/replace-your-local-cronjobs/">
-<meta property="og:description" content="Your code
-Running on schedule: GitHub Actions
-Passing input parameters: Github Action Variables and Secrets
-Notification: ntfy.sh
-Storing state: Pantry">
+<meta property="og:description" content="Quite often I find myself writing a script that I need running periodically.
+Since I'm an old *nix-head, my first instinct is to use a cronjob for that.
+Obviously, there is a lot of downsides to this ">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2025-05-10T19:43:24+03:00">
 </head>
@@ -99,13 +97,37 @@ bg-dark
 </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <ul class="simple">
-<li><p>Your&nbsp;code</p></li>
-<li><p>Running on schedule: GitHub&nbsp;Actions</p></li>
-<li><p>Passing input parameters: Github Action Variables and&nbsp;Secrets</p></li>
-<li><p>Notification: <a class="reference external" href="https://ntfy.sh/">ntfy.sh</a></p></li>
-<li><p>Storing state: <a class="reference external" href="https://getpantry.cloud/">Pantry</a></p></li>
-</ul>
+    <p>Quite often I find myself writing a script that I need running periodically.
+Since I&#8217;m an old *nix-head, my first instinct is to use a cronjob for that.
+Obviously, there is a lot of downsides to this approach, I won&#8217;t even list
+them.  But it&#8217;s 2025, and there&#8217;s enough free tools to adapt for&nbsp;that!</p>
+<p>So, let&#8217;s take as an example a scenario common for me: poll some service, check
+if something changed since last time, send a notification.  I&#8217;ve written a
+couple of these scripts, and put them in my <a class="reference external" href="https://github.com/skrattaren/crontrackers">crontrackers</a> repo.  On the
+earlier stages of development, they were run manually or by <em>cron</em>, stored
+their state in a local file, and showed notification using local desktop
+environment.  That had to&nbsp;change!</p>
+<section id="your-code"><h2>Your&nbsp;code</h2>
+<p>Nothing surprising here: presumably, you already have the code to poll some
+<span class="caps">API</span>, scrape the web or something.  Just commit it and push to Github, like a
+normal&nbsp;person.</p>
+</section><section id="running-the-code"><h2>Running the&nbsp;code</h2>
+<p>To run your code, we&#8217;ll be using Github Actions.  Chances are, you&#8217;re already
+familiar with them, otherwise you&#8217;re welcome to <a class="reference external" href="https://docs.github.com/en/actions"><span class="caps">RTFM</span></a> a bit.  Make sure to also
+learn how to compile/run your particular codebase (Python, C++, Rust,&nbsp;whatever).</p>
+<p>For our use case (&#8220;cloud cronjob&#8221;), one particularly interesting option&nbsp;is
+<code class="docutils literal">on: schedule</code>, see <a class="reference external" href="https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule">Events that trigger workflows</a>.  It even uses tried and
+true <span class="caps">POSIX</span> <em>cron</em>&nbsp;syntax!</p>
+<p>You might also want to re-run your action(s) on every code push event, in that&nbsp;case <code class="docutils literal">on: push</code> is your friend&nbsp;too.</p>
+<section id="configuration"><h3>Configuration</h3>
+<p>Let&#8217;s assume you&#8217;re not a psychopath.
+Github Action Variables and&nbsp;Secrets</p>
+<p><a class="reference external" href="https://github.com/skrattaren/crontrackers/blob/main/.github/workflows/workflow.yml">https://github.com/skrattaren/crontrackers/blob/main/.github/workflows/workflow.yml</a></p>
+</section></section><section id="notifications"><h2>Notifications</h2>
+<p><a class="reference external" href="https://ntfy.sh/">ntfy.sh</a></p>
+</section><section id="storing-state"><h2>Storing&nbsp;state</h2>
+<p><a class="reference external" href="https://jsonbin.io/">JSONBin.io</a> or <a class="reference external" href="https://getpantry.cloud/">Pantry</a></p>
+</section>
 </div>
     <aside class="postpromonav"><nav></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                     <div id="disqus_thread"></div>
