@@ -21,7 +21,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="icon" href="files/favicon_16.ico" sizes="16x16">
 <link rel="icon" href="files/favicon_32.ico" sizes="32x32">
 <link rel="next" href="index-4.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/ua-svafn/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/replace-your-local-cronjobs/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -75,7 +75,78 @@ bg-dark
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/ua-svafn/" class="u-url">A very topical&nbsp;dream</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/replace-your-local-cronjobs/" class="u-url">From cronjobs to abusing Github&nbsp;Actions</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/replace-your-local-cronjobs/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-11-07T14:43:24+04:00" itemprop="datePublished" title="07.11.2025, 14:43">07.11.2025, 14:43</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/replace-your-local-cronjobs/#disqus_thread" data-disqus-identifier="cache/posts/replace-your-local-cronjobs.html">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="p-summary entry-summary">
+                    <p>Quite often I find myself writing a script that I need running periodically.
+Since I&#8217;m an old *nix-head, my first instinct is to use a cronjob for that.
+Obviously, there is a lot of downsides to this approach, I won&#8217;t even list
+them.  But it&#8217;s 2025, and there&#8217;s enough free tools for&nbsp;that!</p>
+<p>So, let&#8217;s take as an example a scenario common for me: poll some service, check
+if something changed since last time, send a notification.  I&#8217;ve written a
+couple of these scripts, and put them in my <a class="reference external" href="https://github.com/skrattaren/crontrackers">crontrackers</a> repo.  On the
+earlier stages of development, they were run manually or by <em>cron</em>, stored
+their state in a local file, and showed notification using local desktop
+environment.  That had to&nbsp;change!</p>
+<section id="your-code"><h2>Your&nbsp;code</h2>
+<p>Nothing surprising here: presumably, you already have the code to poll some
+<span class="caps">API</span>, scrape the web or something.  Just commit it and push to Github, like a
+normal&nbsp;person.</p>
+</section><section id="running-it"><h2>Running&nbsp;it</h2>
+<p>To run your code, we&#8217;ll be using Github Actions.  Chances are, you&#8217;re already
+familiar with them, otherwise you&#8217;re welcome to <a class="reference external" href="https://docs.github.com/en/actions"><span class="caps">RTFM</span></a> a bit.  Make sure to also
+learn how to compile/run your particular codebase (Python, C++, Rust,&nbsp;whatever).</p>
+<p>For our use case (&#8220;cloud cronjob&#8221;), one particularly interesting option&nbsp;is
+<code class="docutils literal">on: schedule</code>, see <a class="reference external" href="https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule">Events that trigger workflows</a>.  It even uses tried and
+true <span class="caps">POSIX</span> <em>cron</em>&nbsp;syntax!</p>
+<p>You might also want to re-run your action(s) on every code push event, in that&nbsp;case <code class="docutils literal">on: push</code> is your friend&nbsp;too.</p>
+<section id="configuration"><h3>Configuration</h3>
+<p>Let&#8217;s assume you&#8217;re not a psychopath, and you don&#8217;t hardcode every option and
+parameter.  Fortunately, Github Actions employ <a class="reference external" href="https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables">Variables</a> and <a class="reference external" href="https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets">Secrets</a>.  Choose
+whatever you&nbsp;need.</p>
+<p>Take a look at <a class="reference external" href="https://github.com/skrattaren/crontrackers/blob/main/.github/workflows/workflow.yml">my example</a> to see how it all fits&nbsp;together.</p>
+</section><section id="public-repo-private-logs"><h3>Public repo, private&nbsp;logs</h3>
+<p>Quite often, you want to keep your code public, but not to expose your personal
+data, even if it&#8217;s just a list of parcels to track.  The best solution I&#8217;ve
+found so far is to keep a private fork of your public repo, and configure
+variables&nbsp;there.</p>
+</section></section><section id="notifications"><h2>Notifications</h2>
+<p>If you want some kind of notification sent by your action, I recommend
+<a class="reference external" href="https://ntfy.sh/">ntfy.sh</a>.  Send a plain old <span class="caps">HTTP</span> request, and receive a notification on your
+mobile device, or on a desktop (just keep a tab open in your&nbsp;browser).</p>
+</section><section id="storing-state"><h2>Storing&nbsp;state</h2>
+<p>Another common thing is to store some kind of state between workflow runs, even
+if it&#8217;s just a list of strings in <span class="caps">JSON</span>.  From what I learnt back in 2024, it&#8217;s
+not possible with plain vanilla Github Actions.  So I found a couple of
+services allowing storing <span class="caps">JSON</span> and managing it via&nbsp;<span class="caps">HTTP</span>.</p>
+<p><a class="reference external" href="https://getpantry.cloud/">Pantry</a>:</p>
+<ul class="simple">
+<li><p>the first I&#8217;ve&nbsp;found</p></li>
+<li><p>doesn&#8217;t require&nbsp;registration</p></li>
+<li><p>recently had a major (a whole month of!) downtime, so I decided to look&nbsp;elsewhere</p></li>
+</ul>
+<p>So for now I use <a class="reference external" href="https://jsonbin.io/">JSONBin.io</a>:</p>
+<ul class="simple">
+<li><p>basically the same, although <span class="caps">API</span> is a bit&nbsp;different</p></li>
+<li><p>requires&nbsp;registration</p></li>
+<li><p>forces&nbsp;versioning</p></li>
+<li><p>doesn&#8217;t allow empty content (<em><span class="caps">WHY</span>?!..</em>)</p></li>
+<li><p><span class="caps">UI</span>/<span class="caps">UX</span> feels a bit less&nbsp;polished</p></li>
+<li><p>stable so far, but it&#8217;s too early to&nbsp;tell.</p></li>
+</ul>
+<section id="that-s-basically-it"><h3>That&#8217;s basically&nbsp;it!</h3>
+</section></section>
+</div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/ua-svafn/" class="u-url">A very topical&nbsp;dream</a></h1>
                 <div class="metadata">
             <p class="dateline">
             <a href="posts/ua-svafn/" rel="bookmark">
@@ -239,9 +310,9 @@ there&#8217;s a saner&nbsp;way: <code class="docutils literal">git diff <span cl
                     <p><em>(Just to save a useful and complex construct for future&nbsp;reference)</em></p>
 <p>List all the overlay maintainers who hasn&#8217;t migrated their packages&nbsp;to
 <code class="docutils literal">virtual/pkgconfig</code>:</p>
-<div class="code"><pre class="code shell"><a id="rest_code_1969e19c38fb4dd08705ac96ecda11d8-1" name="rest_code_1969e19c38fb4dd08705ac96ecda11d8-1" href="posts/piping-cmds/#rest_code_1969e19c38fb4dd08705ac96ecda11d8-1"></a>ag<span class="w"> </span>--files-with-matches<span class="w"> </span>dev-util/pkgconfig<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>dirname<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span><span class="se">\</span>
-<a id="rest_code_1969e19c38fb4dd08705ac96ecda11d8-2" name="rest_code_1969e19c38fb4dd08705ac96ecda11d8-2" href="posts/piping-cmds/#rest_code_1969e19c38fb4dd08705ac96ecda11d8-2"></a><span class="w">       </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="o">{}</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">'&lt;name&gt;'</span><span class="w"> </span><span class="s1">'{}/metadata.xml'</span><span class="w"> </span><span class="se">\</span>
-<a id="rest_code_1969e19c38fb4dd08705ac96ecda11d8-3" name="rest_code_1969e19c38fb4dd08705ac96ecda11d8-3" href="posts/piping-cmds/#rest_code_1969e19c38fb4dd08705ac96ecda11d8-3"></a><span class="w">       </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">'s:\s\+&lt;name&gt;\(.\+\)&lt;/name&gt;:\1:'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-u
+<div class="code"><pre class="code shell"><a id="rest_code_e532b9bbe330421d8b6a233fabfcacdf-1" name="rest_code_e532b9bbe330421d8b6a233fabfcacdf-1" href="posts/piping-cmds/#rest_code_e532b9bbe330421d8b6a233fabfcacdf-1"></a>ag<span class="w"> </span>--files-with-matches<span class="w"> </span>dev-util/pkgconfig<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>dirname<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span><span class="se">\</span>
+<a id="rest_code_e532b9bbe330421d8b6a233fabfcacdf-2" name="rest_code_e532b9bbe330421d8b6a233fabfcacdf-2" href="posts/piping-cmds/#rest_code_e532b9bbe330421d8b6a233fabfcacdf-2"></a><span class="w">       </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="w"> </span><span class="o">{}</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">'&lt;name&gt;'</span><span class="w"> </span><span class="s1">'{}/metadata.xml'</span><span class="w"> </span><span class="se">\</span>
+<a id="rest_code_e532b9bbe330421d8b6a233fabfcacdf-3" name="rest_code_e532b9bbe330421d8b6a233fabfcacdf-3" href="posts/piping-cmds/#rest_code_e532b9bbe330421d8b6a233fabfcacdf-3"></a><span class="w">       </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">'s:\s\+&lt;name&gt;\(.\+\)&lt;/name&gt;:\1:'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-u
 </pre></div>
 <p>Yes, I use <a class="reference external" href="https://github.com/ggreer/the_silver_searcher">ag</a> instead of <em>grep</em>, being too lazy to add all the necessary
 options. And wait. And <em>ag</em> is so much better however you look at&nbsp;it.</p>
@@ -307,32 +378,6 @@ zsh_completion file</a>.</p>
                     <div>
 <p>If you watch anything in foreign language, here&#8217;s simple trick for&nbsp;you.</p>
 <p class="more"><a href="posts/subtitles/">Read&nbsp;more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/driver-dagg-faller-regn/" class="u-url">Driver dagg, faller&nbsp;regn</a></h1>
-                <div class="metadata">
-            <p class="dateline">
-            <a href="posts/driver-dagg-faller-regn/" rel="bookmark">
-            <time class="published dt-published" datetime="2012-01-08T14:01:33+04:00" itemprop="datePublished" title="08.01.2012, 14:01">08.01.2012, 14:01</time></a>
-            </p>
-                        <p class="commentline">        <a href="posts/driver-dagg-faller-regn/#disqus_thread" data-disqus-identifier="cache/posts/driver-dagg-faller-regn.html">Comments</a>
-
-
-                </p>
-</div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<div class="soundcloud-player">
-<iframe width="600" height="160" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/547939464">
-</iframe>
-</div>
-<div class="line-block">
-<div class="line">Herr Olof han rider att möta sin brud</div>
-<div class="line">långt borta i främmande land</div>
-<div class="line">skön Jungfrun hon sömmar en gyllene skrud</div>
-<div class="line">hon väver de skira gullband.</div>
-</div>
-<p class="more"><a href="posts/driver-dagg-faller-regn/">Read&nbsp;more…</a></p>
 </div>
                 </div>
             </article>
