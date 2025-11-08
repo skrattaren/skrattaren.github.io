@@ -8,6 +8,8 @@ Since I'm an old \*nix-head, my first instinct is to use a cronjob for that.
 Obviously, there is a lot of downsides to this approach, I won't even list
 them.  But it's 2025, and there's enough free tools for that!
 
+.. TEASER_END
+
 So, let's take as an example a scenario common for me: poll some service, check
 if something changed since last time, send a notification.  I've written a
 couple of these scripts, and put them in my crontrackers_ repo.  On the
