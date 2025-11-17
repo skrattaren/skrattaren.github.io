@@ -3,7 +3,7 @@
 .. date: 2006-12-07 16:12:08
 .. tags: 
 
-About two weeks ago `**LoiR** <http://my.opera.com/LoiR/about/>`__, a
+About two weeks ago `LoiR <http://my.opera.com/LoiR/about/>`__, a
 friend of mine, pointed
 `Edicode <http://www.guntherkrauss.de/computer/xml/daten/edicode.html>`__
 sidebar out for me. If you have to deal with non-ASCII symbols, absent

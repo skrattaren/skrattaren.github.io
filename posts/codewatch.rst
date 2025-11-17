@@ -22,7 +22,7 @@ Moreover, since we want not plain text but source code to get displayed,
 `Pygments <http://pygments.org/>`__ spring into mind instantly — why not
 to pygmentize output? And, of course, standard for modern \*nix
 distribuition but glorious
-neverthe\ `**less** <http://www.greenwoodsoftware.com/less/>`__ to page
+neverthe\ `less <http://www.greenwoodsoftware.com/less/>`__ to page
 the result.
 
 So the idea is basically this: we start watcher-script, which watches

@@ -4,9 +4,9 @@
 .. tags: linux
 
 Here's brief summary of one hour on
-`**#radeon** <http://dri.freedesktop.org/wiki/ATIRadeon>`__ IRC channel:
+`#radeon <http://dri.freedesktop.org/wiki/ATIRadeon>`__ IRC channel:
 
--  old DRM modules don't create */dev/dri/\** for ATI R6xx/R7xx-cards,
+-  old DRM modules don't create ``/dev/dri/*`` for ATI R6xx/R7xx-cards,
    that's normal;
 -  kernel (up to, but not incl. 2.6.30) DRM aren't that old, but neither
    aren't new enough to support the cards in question;
@@ -18,8 +18,8 @@ Here's brief summary of one hour on
    Wiki <http://wiki.x.org/wiki/radeon:r6xx_r7xx_branch>`__)
 -  use `ebuild from x11
    overlay <http://git.overlays.gentoo.org/gitweb/?p=proj/x11.git;a=tree;f=x11-base/x11-drm;h=ff0cf2072e97cae3a01ebba8e78b6cf902663bad;hb=HEAD>`__
-   with *DRM\_LIVE\_BRANCH="r6xx-r7xx-support"* added to your
-   */etc/make.conf*
+   with ``DRM_LIVE_BRANCH="r6xx-r7xx-support"`` added to your
+   ``/etc/make.conf``
 
 --------------
 

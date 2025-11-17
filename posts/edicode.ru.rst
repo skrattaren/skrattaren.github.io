@@ -3,7 +3,7 @@
 .. date: 2006-12-07 16:12:08
 .. tags: 
 
-Показал мне как-то `**LoiR** <http://my.opera.com/LoiR/about/>`__ `вот
+Показал мне как-то `LoiR <http://my.opera.com/LoiR/about/>`__ `вот
 такую
 штуку <http://www.guntherkrauss.de/computer/xml/daten/edicode.html>`__ —
 панельку с всякими раскрасивыми unicode-символами. Добавляем себе в
