@@ -26,11 +26,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta property="og:title" content="Gentoo: DRM, Radeon/RadeonHD, ATI R6xx/R7xx">
 <meta property="og:url" content="https://skrattaren.github.io/ru/posts/radeon-drm-gentoo/">
 <meta property="og:description" content="Результат часового разбирательства на канале
-**#radeon**:
+#radeon:
 
 старые версии drm не создают /dev/dri/* для карт на базе
 R6xx/R7xx, это норма;
-версии ядрёного DRM (в ядрах до 2.6.30) не столь стары, как го">
+версии ядрёного DRM (в ядрах до 2.6.30) не столь стары, как говоря">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2009-03-28T15:03:39+03:00">
 <meta property="article:tag" content="linux">
@@ -108,10 +108,10 @@ bg-dark
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <p>Результат часового разбирательства на канале
-<a class="reference external" href="http://dri.freedesktop.org/wiki/ATIRadeon">**#radeon**</a>:</p>
+<a class="reference external" href="http://dri.freedesktop.org/wiki/ATIRadeon">#radeon</a>:</p>
 <ul class="simple">
-<li><p>старые версии drm не создают <em>/dev/dri/*</em> для карт на базе
-R6xx/R7xx, это&nbsp;норма;</p></li>
+<li><p>старые версии drm не&nbsp;создают <code class="docutils literal">/dev/dri/*</code> для карт на базе
+<em>R6xx/R7xx</em>, это&nbsp;норма;</p></li>
 <li><p>версии ядрёного <span class="caps">DRM</span> (в ядрах до 2.6.30) не столь стары, как говорят,
 но всё равно недостаточно новы для этих&nbsp;карт;</p></li>
 <li><p>более того, поддержки этих карт в основной ветке <span class="caps">DRM</span> пока тоже нет,
@@ -123,8 +123,8 @@ R6xx/R7xx, это&nbsp;норма;</p></li>
 Wiki</a>)</p></li>
 <li><p>для этого есть <a class="reference external" href="http://git.overlays.gentoo.org/gitweb/?p=proj/x11.git;a=tree;f=x11-base/x11-drm;h=ff0cf2072e97cae3a01ebba8e78b6cf902663bad;hb=HEAD">ebuild из оверлея
 x11</a>,
-только не забудьте добавить <em>DRM_LIVE_BRANCH=&#8221;r6xx-r7xx-support&#8221;</em> к
-своему <em>/etc/make.conf</em></p></li>
+только не забудьте&nbsp;добавить <code class="docutils literal"><span class="pre">DRM_LIVE_BRANCH="r6xx-r7xx-support"</span></code> в&nbsp;свой
+<code class="docutils literal">/etc/make.conf</code></p></li>
 </ul>
 <hr class="docutils">
 <p><strong>Позднейшая добавка:</strong> при использовании ядра 2.6.30 и выше эти

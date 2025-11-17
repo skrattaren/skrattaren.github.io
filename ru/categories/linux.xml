@@ -9,7 +9,7 @@ xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"&gt;Nikol
 Šujskij&lt;/span&gt; is licensed under a &lt;a rel="license"
 href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons
 Attribution-ShareAlike 4.0 International License&lt;/a&gt;.
-</copyright><lastBuildDate>Mon, 17 Nov 2025 22:41:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>{hg, git} bisect + portage</title><link>https://skrattaren.github.io/ru/posts/portage-bisect/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Не так давно имел я счастье вляпаться в &lt;a class="reference external" href="http://awesome.naquadah.org/bugs/index.php?do=details&amp;amp;task_id=772"&gt;неприятную
+</copyright><lastBuildDate>Mon, 17 Nov 2025 23:13:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>{hg, git} bisect + portage</title><link>https://skrattaren.github.io/ru/posts/portage-bisect/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;div&gt;&lt;p&gt;Не так давно имел я счастье вляпаться в &lt;a class="reference external" href="http://awesome.naquadah.org/bugs/index.php?do=details&amp;amp;task_id=772"&gt;неприятную
 ошибочку&lt;/a&gt;
 с моим любимым awesome. Разрабы попросили сделать &lt;em&gt;git bisect&lt;/em&gt;, чтоб
 найти причину косяка, но выяснилось, что просто запуском свежесобранного
@@ -45,10 +45,10 @@ Portage.&lt;/p&gt;
 &lt;code class="docutils literal"&gt;awesome@conference.gentoo.ru&lt;/code&gt;. Костяк там, конечно, составляют
 пользователи Gentoo, но мы открыты и для пользователей других
 дистрибутивов.&lt;/p&gt;</description><category>jabber</category><category>linux</category><guid>https://skrattaren.github.io/ru/posts/awesome-jabber-conf/</guid><pubDate>Sat, 03 Oct 2009 13:10:50 GMT</pubDate></item><item><title>Gentoo: DRM, Radeon/RadeonHD, ATI R6xx/R7xx</title><link>https://skrattaren.github.io/ru/posts/radeon-drm-gentoo/</link><dc:creator>Николай Шуйский (Nikolaj Šujskij)</dc:creator><description>&lt;p&gt;Результат часового разбирательства на канале
-&lt;a class="reference external" href="http://dri.freedesktop.org/wiki/ATIRadeon"&gt;**#radeon**&lt;/a&gt;:&lt;/p&gt;
+&lt;a class="reference external" href="http://dri.freedesktop.org/wiki/ATIRadeon"&gt;#radeon&lt;/a&gt;:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;старые версии drm не создают &lt;em&gt;/dev/dri/*&lt;/em&gt; для карт на базе
-R6xx/R7xx, это норма;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;старые версии drm не создают &lt;code class="docutils literal"&gt;/dev/dri/*&lt;/code&gt; для карт на базе
+&lt;em&gt;R6xx/R7xx&lt;/em&gt;, это норма;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;версии ядрёного DRM (в ядрах до 2.6.30) не столь стары, как говорят,
 но всё равно недостаточно новы для этих карт;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;более того, поддержки этих карт в основной ветке DRM пока тоже нет,
@@ -60,8 +60,8 @@ R6xx/R7xx, это норма;&lt;/p&gt;&lt;/li&gt;
 Wiki&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;для этого есть &lt;a class="reference external" href="http://git.overlays.gentoo.org/gitweb/?p=proj/x11.git;a=tree;f=x11-base/x11-drm;h=ff0cf2072e97cae3a01ebba8e78b6cf902663bad;hb=HEAD"&gt;ebuild из оверлея
 x11&lt;/a&gt;,
-только не забудьте добавить &lt;em&gt;DRM_LIVE_BRANCH="r6xx-r7xx-support"&lt;/em&gt; к
-своему &lt;em&gt;/etc/make.conf&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+только не забудьте добавить &lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;DRM_LIVE_BRANCH="r6xx-r7xx-support"&lt;/span&gt;&lt;/code&gt; в свой
+&lt;code class="docutils literal"&gt;/etc/make.conf&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr class="docutils"&gt;
 &lt;p&gt;&lt;strong&gt;Позднейшая добавка:&lt;/strong&gt; при использовании ядра 2.6.30 и выше эти

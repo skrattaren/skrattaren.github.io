@@ -20,7 +20,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="canonical" href="https://skrattaren.github.io/ru/index-5.html">
 <link rel="icon" href="../files/favicon_16.ico" sizes="16x16">
 <link rel="icon" href="../files/favicon_32.ico" sizes="32x32">
-<link rel="prev" href="index-6.html" type="text/html">
+<link rel="prev" href="." type="text/html">
 <link rel="next" href="index-4.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
 </head>
@@ -76,7 +76,52 @@ bg-dark
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/eselect-xorg-conf/" class="u-url">Eselect&#8217;ing&nbsp;xorg.conf</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/portage-bisect/" class="u-url">{hg, git} bisect +&nbsp;portage</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/portage-bisect/" rel="bookmark">
+            <time class="published dt-published" datetime="2010-06-15T19:06:24+04:00" itemprop="datePublished" title="15.06.2010, 19:06">15.06.2010, 19:06</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/portage-bisect/#disqus_thread" data-disqus-identifier="cache/posts/portage-bisect.html">Комментарии</a>
+
+
+                </p>
+</div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Не так давно имел я счастье вляпаться в <a class="reference external" href="http://awesome.naquadah.org/bugs/index.php?do=details&amp;task_id=772">неприятную
+ошибочку</a>
+с моим любимым awesome. Разрабы попросили сделать <em>git bisect</em>, чтоб
+найти причину косяка, но выяснилось, что просто запуском свежесобранного
+бинарника не отделаться. Пришлось немного подумать и сопрячь <em>bisect</em> и&nbsp;Portage.</p>
+<p class="more"><a href="posts/portage-bisect/">Читать&nbsp;далее…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/kookeez/" class="u-url">Коржики!</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/kookeez/" rel="bookmark">
+            <time class="published dt-published" datetime="2010-06-14T17:06:03+04:00" itemprop="datePublished" title="14.06.2010, 17:06">14.06.2010, 17:06</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/kookeez/#disqus_thread" data-disqus-identifier="cache/posts/kookeez.ru.html">Комментарии</a>
+
+
+                </p>
+</div>
+            </header><div class="p-summary entry-summary">
+                    <p><a class="reference external" href="http://www.opera.com/download/lng/960/ouw960_uk.lng">Официальный украинский языковой файл для Opera
+9.6</a>:</p>
+<blockquote>
+<div class="line-block">
+<div class="line">; Used in the progress bar while the user selects to accept or reject a</div>
+<div class="line">; <strong>cookie</strong> in the cookie warning/confirmation dialog, when accessing a site</div>
+<div class="line">; that requires the server to set client cookies, and Opera is not set to</div>
+<div class="line">; automatically receive this kind of cookie.</div>
+<div class="line">2096696774=&#8221;Очікування підтвердження користувача щодо <strong>коржиків</strong>&#8230;&#8221;</div>
+</div>
+</blockquote>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/eselect-xorg-conf/" class="u-url">Eselect&#8217;ing&nbsp;xorg.conf</a></h1>
                 <div class="metadata">
             <p class="dateline">
             <a href="posts/eselect-xorg-conf/" rel="bookmark">
@@ -267,10 +312,10 @@ E100</a>.</p>
 </div>
             </header><div class="p-summary entry-summary">
                     <p>Результат часового разбирательства на канале
-<a class="reference external" href="http://dri.freedesktop.org/wiki/ATIRadeon">**#radeon**</a>:</p>
+<a class="reference external" href="http://dri.freedesktop.org/wiki/ATIRadeon">#radeon</a>:</p>
 <ul class="simple">
-<li><p>старые версии drm не создают <em>/dev/dri/*</em> для карт на базе
-R6xx/R7xx, это&nbsp;норма;</p></li>
+<li><p>старые версии drm не&nbsp;создают <code class="docutils literal">/dev/dri/*</code> для карт на базе
+<em>R6xx/R7xx</em>, это&nbsp;норма;</p></li>
 <li><p>версии ядрёного <span class="caps">DRM</span> (в ядрах до 2.6.30) не столь стары, как говорят,
 но всё равно недостаточно новы для этих&nbsp;карт;</p></li>
 <li><p>более того, поддержки этих карт в основной ветке <span class="caps">DRM</span> пока тоже нет,
@@ -282,8 +327,8 @@ R6xx/R7xx, это&nbsp;норма;</p></li>
 Wiki</a>)</p></li>
 <li><p>для этого есть <a class="reference external" href="http://git.overlays.gentoo.org/gitweb/?p=proj/x11.git;a=tree;f=x11-base/x11-drm;h=ff0cf2072e97cae3a01ebba8e78b6cf902663bad;hb=HEAD">ebuild из оверлея
 x11</a>,
-только не забудьте добавить <em>DRM_LIVE_BRANCH=&#8221;r6xx-r7xx-support&#8221;</em> к
-своему <em>/etc/make.conf</em></p></li>
+только не забудьте&nbsp;добавить <code class="docutils literal"><span class="pre">DRM_LIVE_BRANCH="r6xx-r7xx-support"</span></code> в&nbsp;свой
+<code class="docutils literal">/etc/make.conf</code></p></li>
 </ul>
 <hr class="docutils">
 <p><strong>Позднейшая добавка:</strong> при использовании ядра 2.6.30 и выше эти
@@ -328,52 +373,13 @@ x11</a>,
 <p>Снёс винду, <a class="reference external" href="http://en.gentoo-wiki.com/wiki/Toshiba_Satellite_L350D-10X">затеял статью</a> в Gentoo&nbsp;Wiki.</p>
 <p><img alt="image0" src="http://images.digitalshop.ru/big/t/toshiba_l350d.jpg"></p>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/fudge-ms/" class="u-url">ФАС&nbsp;Microsoft!</a></h1>
-                <div class="metadata">
-            <p class="dateline">
-            <a href="posts/fudge-ms/" rel="bookmark">
-            <time class="published dt-published" datetime="2009-02-12T18:02:57+03:00" itemprop="datePublished" title="12.02.2009, 18:02">12.02.2009, 18:02</time></a>
-            </p>
-                        <p class="commentline">        <a href="posts/fudge-ms/#disqus_thread" data-disqus-identifier="cache/posts/fudge-ms.ru.html">Комментарии</a>
-
-
-                </p>
-</div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p><a class="reference external" href="http://www.kommersant.ru/doc.aspx?DocsID=1117248">ФАС РФ собирается провести расследование на предмет законности и
-оправданности предустановки
-Windows</a>
-Желающим попытаться стронуть дело могу порекомендовать написать письмо
-<a class="reference external" href="http://www.fas.gov.ru/help/contacts/1245.shtml">в ФАС</a> в духе &#8220;Ату
-их,&nbsp;ату!&#8221;</p>
-<p>Вдруг да поможет&nbsp;(-:Е</p>
-<p class="more"><a href="posts/fudge-ms/">Читать&nbsp;далее…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/sin-cos/" class="u-url">Тригонометрическое тождество&nbsp;утверждает</a></h1>
-                <div class="metadata">
-            <p class="dateline">
-            <a href="posts/sin-cos/" rel="bookmark">
-            <time class="published dt-published" datetime="2008-12-18T14:12:23+03:00" itemprop="datePublished" title="18.12.2008, 14:12">18.12.2008, 14:12</time></a>
-            </p>
-                        <p class="commentline">        <a href="posts/sin-cos/#disqus_thread" data-disqus-identifier="cache/posts/sin-cos.ru.html">Комментарии</a>
-
-
-                </p>
-</div>
-            </header><div class="p-summary entry-summary">
-                    <p>В военное время значение косинуса может&nbsp;достигать <span class="math">\(\pm{}i\sqrt{15}\)</span></p>
-                </div>
             </article>
 </div>
             <ul class="pager postindexpager clearfix">
-<li class="previous"><a href="index-6.html" rel="prev">Новые&nbsp;записи</a></li>
+<li class="previous"><a href="." rel="prev">Новые&nbsp;записи</a></li>
             <li class="next"><a href="index-4.html" rel="next">Старые&nbsp;записи</a></li>
         </ul>
-<script>var disqus_shortname="skrattaren-bblogg";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
-        </script><!--End of body content--><footer id="footer">
+<script>var disqus_shortname="skrattaren-bblogg";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
             Contents © 2025         <a href="mailto:skrattaren@yandex.ru">Николай Шуйский (Nikolaj Šujskij)</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Unseen Hexadecimals</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nikolaj

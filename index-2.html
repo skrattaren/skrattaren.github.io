@@ -76,7 +76,30 @@ bg-dark
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/matplotlib/" class="u-url">Matplotlib</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/check-iso-burning/" class="u-url">How to check if your <span class="caps">ISO</span>-image has been burnt&nbsp;properly</a></h1>
+                <div class="metadata">
+            <p class="dateline">
+            <a href="posts/check-iso-burning/" rel="bookmark">
+            <time class="published dt-published" datetime="2009-02-08T13:02:17+03:00" itemprop="datePublished" title="08.02.2009, 13:02">08.02.2009, 13:02</time></a>
+            </p>
+                        <p class="commentline">        <a href="posts/check-iso-burning/#disqus_thread" data-disqus-identifier="cache/posts/check-iso-burning.html">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="p-summary entry-summary">
+                    <p>If you has burnt some .iso-image with known md5-checksum, you can
+verify if disk is valid and was burnt&nbsp;properly</p>
+<pre class="literal-block">dd if=&lt;your-CD/DVD-ROM-device&gt; | md5sum</pre>
+<p>Example:</p>
+<pre class="literal-block"># dd if=/dev/hdc | md5sum &amp;&amp; md5sum /mnt/win_e:/software/linux/systemrescuecd-x86-1.0.4.iso
+68f9c2d885d95c82bfe6c7df736ae0a3  -
+   &lt;dd output skipped&gt;
+68f9c2d885d95c82bfe6c7df736ae0a3  /mnt/win_e:/software/linux/systemrescuecd-x86-1.0.4.iso</pre>
+<p>As you can see, md5sums are the same, so disk is valid.
+If someone knows how it could be done under <span class="caps">MS</span> Windows, please comment&nbsp;here.</p>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/matplotlib/" class="u-url">Matplotlib</a></h1>
                 <div class="metadata">
             <p class="dateline">
             <a href="posts/matplotlib/" rel="bookmark">
@@ -301,25 +324,6 @@ it&#8217;s too late and I&#8217;m too lazy to type all that you can read on the
 off.site…&nbsp;(-;E</p>
 <p>So go <a class="reference external" href="http://imified.com/">right there</a> and find out how do you
 get notes, ToDos, reminders etc in your Jabber!&nbsp;(-:E</p>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/OK-krigaren/" class="u-url">OpenSource&nbsp;warrior</a></h1>
-                <div class="metadata">
-            <p class="dateline">
-            <a href="posts/OK-krigaren/" rel="bookmark">
-            <time class="published dt-published" datetime="2007-10-19T15:10:00+04:00" itemprop="datePublished" title="19.10.2007, 15:10">19.10.2007, 15:10</time></a>
-            </p>
-                        <p class="commentline">        <a href="posts/OK-krigaren/#disqus_thread" data-disqus-identifier="cache/posts/OK-krigaren.html">Comments</a>
-
-
-                </p>
-</div>
-            </header><div class="p-summary entry-summary">
-                    <p>I am great warrior of OpenSource, indeed. On Thu, Oct 18 <a class="reference external" href="http://kubuntu.org/announcements/7.10-release.php">Kubuntu</a> and <a class="reference external" href="http://xubuntu.org/news/gutsy/release">Xubuntu</a>
-7.10 were released and in that evening I&#8217;ve downloaded all eight <em>.iso</em>-images
-and put it out in local network for people who cannot download them by
-ourselves.  And today I managed to re-upload two images to other server for Far
-East Ubuntu users&nbsp;(-%E</p>
-<p>Веснянка - Ой, заграли музиченьки&nbsp;[2003]</p>
                 </div>
             </article>
 </div>
